@@ -3,3 +3,4 @@ pydantic
 requests
 pymongo
 python-ulid
+ujson
