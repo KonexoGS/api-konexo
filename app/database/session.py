@@ -10,7 +10,7 @@ class Database():
     def start_session(self):
         self.client._connect()
 
-    def get_collection_data(self, collection_name:string):
+    def get_collection_data(self, collection_name:str):
         db = self.__get_database()
         return db.get_collection(collection_name)
 
