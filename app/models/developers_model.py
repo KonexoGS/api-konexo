@@ -1,12 +1,21 @@
-from pydantic import BaseModel
-from typing import List
-from ulid import ULID
+from dataclasses import dataclass
+from typing import List, Dict
+from pydantic import NaiveDatetime
 
-class developers(BaseModel):
-    _id: ULID
+
+@dataclass
+class Developers():
+    email: str
     username: str
-    stacks_list: List[int]
-    projects_subscribed: List[ULID]
+    password: str
+    full_name: str
+    stacks: List[int]
+    role: List[str] 
+    level: str
+    projects_subscribed: List[str]
     experience_level: int
     badges: List[int]
-    
+    is_deleted: bool
+    social_medias: Dict[str, str]
+    created_at: NaiveDatetime
+

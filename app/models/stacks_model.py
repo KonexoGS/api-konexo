@@ -1,7 +1,7 @@
 from pydantic import BaseModel
-from ulid import ULID
+from dataclasses import dataclass
 
+@dataclass
 class stacks(BaseModel):
-    _id: ULID
-    code: int
+    friendly_code: int
     name: str

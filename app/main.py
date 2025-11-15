@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import RedirectResponse
+from typing import List, Dict, Any
 from app.database.session import Database
 from json import load
 
@@ -10,22 +10,22 @@ def on_startup():
     Database().start_session()
 
 @app.get("/default-profiles", name="Retorna usuários padrão do sistema")
-def get_default_profiles(result: str = '50'):
+def get_default_profiles(result: Any = '50'):
     try:
         if not result.isnumeric():
             raise HTTPException(status_code=400, detail='Formatação inválida. Informe um número inteiro em resultados')
         result = int(result)
 
         with open('app/local/default_profiles.json', 'r') as f:
-            data: dict = load(f);
+            data: Dict[str, Dict[str, str]] = load(f);
         if result == 50:
             return data
-        devs: list = []
-        keys: list = list(data.keys())
+        devs: List[Dict[str, str]]  = []
+        keys: List[str] = list(data.keys())
         for i in range(result):
             devs.append(data[keys[i]])
         return devs
     except HTTPException:
         raise 
-    except Exception as e:
+    except Exception:
         raise

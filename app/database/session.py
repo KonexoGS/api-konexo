@@ -15,4 +15,4 @@ class Database():
         return db.get_collection(collection_name)
 
     def __get_database(self):
-        return self.client.get_database(database_name)
+        return self.client.get_database(self.database_name)
