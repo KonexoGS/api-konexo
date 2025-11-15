@@ -5,3 +5,5 @@ requests
 pymongo
 python-ulid
 ujson
+bcrypt
+pyjwt

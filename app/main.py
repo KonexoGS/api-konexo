@@ -16,7 +16,7 @@ def get_default_profiles(result: str = '50'):
             raise HTTPException(status_code=400, detail='Formatação inválida. Informe um número inteiro em resultados')
         result = int(result)
 
-        with open('app/helpers/default_profiles.json', 'r') as f:
+        with open('app/local/default_profiles.json', 'r') as f:
             data: dict = load(f);
         if result == 50:
             return data
