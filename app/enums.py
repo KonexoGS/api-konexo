@@ -29,3 +29,9 @@ class Roles(str, Enum):
     IOT = '320'
     DATA = '325'
     
+class Indicators(str, Enum):
+    PIB = 'NY.GDP.PCAP.CD'
+    POPULATION = 'SP.POP.TOTL'
+    GINI = 'SI.POV.GINI' # Desigualdade
+    AGRO = 'SL.AGR.EMPL.ZS'
+    WORK = 'SL.TLF.TOTL.IN'
