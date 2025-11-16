@@ -7,3 +7,4 @@ python-ulid
 ujson
 bcrypt
 pyjwt
+deep-translator

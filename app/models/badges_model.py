@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 @dataclass
-class Badge:
-    _id: str
+class Badges:
+    friendly_code: str
     name: str
     description: str
     required_experience: int

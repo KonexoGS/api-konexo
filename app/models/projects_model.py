@@ -4,7 +4,7 @@ from pydantic import Base64Str
 
 
 @dataclass
-class projects():
+class Projects():
     friendly_code: str
     owner_id: str
     name: str

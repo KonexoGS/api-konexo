@@ -6,4 +6,4 @@ class Auth():
     dev_id: str
     token: str
     created_at: NaiveDatetime
-    
+    is_experied: bool
