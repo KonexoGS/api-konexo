@@ -1,20 +1,17 @@
 from typing import List, Dict, Any
-from app.models.pib_models import PibModelSchema, PibValueSchema
+from app.models.indicators_models import IndicatorsModelSchema, IndicatorsValueSchema
 from app.models.country_models import CountryBaseModel
 
 
 class FormatCountry:
 
     @staticmethod
-    def format_to_pib_model(countries: List[Dict[str, Any]]) -> PibModelSchema:
-        pib_values = [
-            PibValueSchema(
-                year=country.get('date'),
-                value=country.get('value')
-            ) for country in countries
+    def format_to_pib_model(countries: List[Dict[str, Any]]) -> IndicatorsModelSchema:
+        main_values = [
+            IndicatorsValueSchema(year=country.get('date'), value=country.get('value')) for country in countries
         ]
 
-        return PibModelSchema(country=countries[0]['country']['value'], iso_code=countries[0]['countryiso3code'], indicator=countries[0]['indicator']['value'],   pib_values=pib_values)
+        return IndicatorsModelSchema(country=countries[0]['country']['value'], iso_code=countries[0]['countryiso3code'], indicator=countries[0]['indicator']['value'],   main_values=main_values)
 
     @staticmethod
     def format_to_base_country_model(country: List[Dict[str, Any]]) -> CountryBaseModel:

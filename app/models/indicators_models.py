@@ -2,12 +2,12 @@ from typing import List, Optional
 from pydantic import BaseModel
 from dataclasses import dataclass
 
-class PibValueSchema(BaseModel):
+class IndicatorsValueSchema(BaseModel):
     year: Optional[str] = None
     value: Optional[float] = None
 
-class PibModelSchema(BaseModel):
+class IndicatorsModelSchema(BaseModel):
     country: str
     iso_code: str
     indicator: str
-    pib_values: List[PibValueSchema]
+    main_values: List[IndicatorsValueSchema]
