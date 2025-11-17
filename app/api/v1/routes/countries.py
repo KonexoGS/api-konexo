@@ -6,7 +6,7 @@ from app.utils.translator import Translator
 from app.models.indicators_models import IndicatorsModelSchema
 from app.models.country_models import CountryAllInfosBaseModel
 from fastapi import HTTPException, Query
-from fastapi.responses import Response
+from fastapi.responses import Response, PlainTextResponse
 from fastapi.exceptions import ResponseValidationError
 from typing import Annotated, Any, Literal, Dict, List
 from requests import Response, request
@@ -107,6 +107,61 @@ def get_details_from_all_default_countries(
             all_country_data.append(model)
 
         return all_country_data
+    except TypeError as type_ex:
+        raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
+    except HTTPException as http_ex:
+        raise http_ex
+    except ResponseValidationError as resp_ex:
+        raise HTTPException(detail=resp_ex.__str__(), status_code=500)
+    except Exception:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
+    
+@router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos')
+def get_average_from_all(
+    param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
+    iso_code: Annotated[str | None, Query(max_length=3)] = None
+):
+    try:
+        average: float = 0.0
+        count_years: int = 0
+        
+        if not iso_code:
+            countries = get_details_from_all_default_countries(param) 
+            total_sum = 0.0
+            
+            for country in countries:
+                for data in country.main_values:
+                    value = data.value
+                    if value is not None:
+                        total_sum += value
+                        count_years += 1
+                       
+            if count_years > 0:
+                average = total_sum / count_years 
+        
+        else:
+            countries_data = get_details_from_country(param, iso_code) 
+            total_sum = 0.0
+            
+            for data in countries_data.main_values:
+                value = data.value
+                if value is not None:
+                    total_sum += value
+                    count_years += 1
+            
+            if count_years > 0:
+                average = total_sum / count_years
+        
+        return {
+            "SearchAll": iso_code is None,
+            "AverageType": param,
+            "iso_code": iso_code.upper() if iso_code else None, # type: ignore
+            "Average": average,
+            "YearsCounted": count_years
+        }
+        
+
     except TypeError as type_ex:
         raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
     except HTTPException as http_ex:
