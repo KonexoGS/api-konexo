@@ -9,12 +9,21 @@ from fastapi import HTTPException, Query
 from fastapi.responses import Response, PlainTextResponse
 from fastapi.exceptions import ResponseValidationError
 from typing import Annotated, Any, Literal, Dict, List
+from pydantic import BaseModel
 from requests import Response, request
 from datetime import datetime
 from traceback import format_exc
 
 router = APIRouter()
 iso_codes_default = ["US","CN", "JP", "DE", "IN", "GB", "FR", "BR", "IT", "CA", "RU", "KR", "AU", "MX", "ES", "ID", "SA", "TR", "AR", "ZA"]
+
+class CalcBaseModel(BaseModel):
+    SearchAll: bool
+    DefaultDataType: str
+    iso_code: str | None
+    CalcNameResult: float
+    YearsCounted: int
+
 
 @router.get('/infos/country/{country_iso_code}', name='Busque o nome de um país, e retorna todos os dados disponíveis', response_model=CountryAllInfosBaseModel)
 def get_country_base_nfo(country_iso_code: str, year: Annotated[str | None, Query(max_length=5)] = None):
@@ -117,7 +126,7 @@ def get_details_from_all_default_countries(
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
     
-@router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos')
+@router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos até 1975', response_model=CalcBaseModel)
 def get_data_average_from_country(
     param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
     iso_code: Annotated[str | None, Query(max_length=3)] = None
@@ -151,7 +160,7 @@ def get_data_average_from_country(
         
         return {
             "SearchAll": iso_code is None,
-            "AverageType": param,
+            "DefaultDataType": param,
             "iso_code": iso_code.upper() if iso_c1ode else None,  # type: ignore
             "Average": round(average, 4),
             "YearsCounted": count_years
@@ -168,7 +177,7 @@ def get_data_average_from_country(
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
     
-@router.get('/infos/calc/{param}/variance', name='Recebe um dado e retorna a variância dos valores obtidos')
+@router.get('/infos/calc/{param}/variance', name='Recebe um dado e retorna a variância dos valores obtidos até 1975', response_model=CalcBaseModel)
 def get_data_variance_from_country(
     param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
     iso_code: Annotated[str | None, Query(max_length=3)] = None
@@ -202,7 +211,7 @@ def get_data_variance_from_country(
         
         return {
             "SearchAll": iso_code is None,
-            "AverageType": param,
+            "DefaultDataType": param,
             "iso_code": iso_code.upper() if iso_code else None,
             "Variance": round(variance, 4),
             "YearsCounted": count_years
@@ -218,3 +227,65 @@ def get_data_variance_from_country(
     except Exception:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
+    
+@router.get('/infos/calc/{default_param}/weighted-average', name='Recebe um dado e retorna a média ponderada dos valores obtidos até 1975')
+def get_data_weighted_average_from_country(
+    default_param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"],
+    weight_param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"],  
+    iso_code: Annotated[str | None, Query(max_length=3)] = None,
+    year: Annotated[str | None, Query(max_length=5)] = None
+):
+    try:
+        if default_param == weight_param:
+            raise HTTPException(status_code=500, detail="O parâmetro padrão de cálculo deve ser diferente do peso.")
+        
+        default_data = weight_data = []
+        if not iso_code:
+            default_data = get_details_from_all_default_countries(default_param, year=year)
+            weight_data = get_details_from_all_default_countries(weight_param, year=year)
+        else:
+            default_data = [get_details_from_country(default_param, country_iso_code=iso_code)]
+            weight_data = [get_details_from_country(weight_param, country_iso_code=iso_code)]
+        
+        above = 0.0
+        below = 0.0
+        count_years = 0
+
+        for i in range(len(default_data)):
+            main_values = default_data[i].main_values
+            weight_values = weight_data[i].main_values
+
+            for j in range(min(len(main_values), len(weight_values))):
+                d = main_values[j].value
+                w = weight_values[j].value
+
+                if d is None or w is None:
+                    continue
+                above += d * w
+                below += w
+                count_years += 1
+
+        if below == 0:
+            raise HTTPException(status_code=400, detail="Não há pesos válidos para calcular a média ponderada.")
+
+        weighted_average = above / below
+
+        return {
+            "SearchAll": iso_code is None,
+            "DefaultDataType": default_param,
+            "WeightedDataType": weight_param,
+            "iso_code": iso_code.upper() if iso_code else None,
+            "WeightedAverage": round(weighted_average, 4),
+            "YearsCounted": count_years
+        }
+
+    except TypeError as type_ex:
+        raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
+    except HTTPException as http_ex:
+        raise http_ex
+    except ResponseValidationError as resp_ex:
+        raise HTTPException(detail=resp_ex.__str__(), status_code=500)
+    except Exception:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
+    
