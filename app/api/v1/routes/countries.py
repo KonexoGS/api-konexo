@@ -101,7 +101,7 @@ def get_details_from_all_default_countries(
             country: Any = response.json()
 
             if len(country) <= 1:
-                continue
+                raise HTTPException(status_code=404, detail="Não foi possível localizar o país procurado.")
 
             model = FormatCountry.format_to_indicator_model(country[1])
             all_country_data.append(model)
@@ -118,7 +118,7 @@ def get_details_from_all_default_countries(
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
     
 @router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos')
-def get_average_from_all(
+def get_data_average_from_country(
     param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
     iso_code: Annotated[str | None, Query(max_length=3)] = None
 ):
@@ -131,11 +131,9 @@ def get_average_from_all(
             total_sum = 0.0
             
             for country in countries:
-                for data in country.main_values:
-                    value = data.value
-                    if value is not None:
-                        total_sum += value
-                        count_years += 1
+                valid_values = [data.value for data in country.main_values if data.value is not None]
+                total_sum += sum(valid_values)
+                count_years += len(valid_values)
                        
             if count_years > 0:
                 average = total_sum / count_years 
@@ -144,11 +142,9 @@ def get_average_from_all(
             countries_data = get_details_from_country(param, iso_code) 
             total_sum = 0.0
             
-            for data in countries_data.main_values:
-                value = data.value
-                if value is not None:
-                    total_sum += value
-                    count_years += 1
+            valid_values = [data.value for data in countries_data.main_values if data.value is not None]
+            total_sum += sum(valid_values)
+            count_years += len(valid_values)
             
             if count_years > 0:
                 average = total_sum / count_years
@@ -156,8 +152,59 @@ def get_average_from_all(
         return {
             "SearchAll": iso_code is None,
             "AverageType": param,
-            "iso_code": iso_code.upper() if iso_code else None, # type: ignore
-            "Average": average,
+            "iso_code": iso_code.upper() if iso_c1ode else None,  # type: ignore
+            "Average": round(average, 4),
+            "YearsCounted": count_years
+        }
+        
+
+    except TypeError as type_ex:
+        raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
+    except HTTPException as http_ex:
+        raise http_ex
+    except ResponseValidationError as resp_ex:
+        raise HTTPException(detail=resp_ex.__str__(), status_code=500)
+    except Exception:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
+    
+@router.get('/infos/calc/{param}/variance', name='Recebe um dado e retorna a variância dos valores obtidos')
+def get_data_variance_from_country(
+    param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
+    iso_code: Annotated[str | None, Query(max_length=3)] = None
+):
+    from math import pow
+
+    try:
+        variance: float = 0.0
+        all_values: List[float] = []
+
+        if not iso_code:
+            countries = get_details_from_all_default_countries(param) 
+            
+            for country in countries:
+                valid_values = [data.value for data in country.main_values if data.value is not None]
+                all_values.extend(valid_values)
+        else:
+            countries_data = get_details_from_country(param, iso_code) 
+            all_values = [data.value for data in countries_data.main_values if data.value is not None]
+        
+        count_years = len(all_values)
+        if count_years < 2:
+            raise HTTPException(status_code=400, detail="Não há dados suficientes para calcular a variância.")
+        
+        average = sum(all_values) / count_years
+        sum_pow = 0
+        for val in all_values: # type: ignore
+            sum_pow += pow((val - average), 2)
+            
+        variance = sum_pow / (count_years - 1)
+        
+        return {
+            "SearchAll": iso_code is None,
+            "AverageType": param,
+            "iso_code": iso_code.upper() if iso_code else None,
+            "Variance": round(variance, 4),
             "YearsCounted": count_years
         }
         
