@@ -5,6 +5,7 @@ from app.utils.getIndicatorInfo import get_indicator_info, get_indicator_list
 from app.utils.translator import Translator
 from app.models.indicators_models import IndicatorsModelSchema
 from app.models.country_models import CountryAllInfosBaseModel
+from app.utils.math_calcs import MathCalcs
 from fastapi import HTTPException, Query
 from fastapi.responses import Response, PlainTextResponse
 from fastapi.exceptions import ResponseValidationError
@@ -288,4 +289,39 @@ def get_data_weighted_average_from_country(
     except Exception:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
-    
+
+@router.get('/infos/calc/{iso_code}/{first_param}/correlation', name='Recebe um dado e retorna o cálculo da correlação entre duas variáveis obtidas com dados até 1975')
+def get_data_correlation(
+    first_param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"],
+    second_param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"],  
+    iso_code: str,
+    year: Annotated[str | None, Query(max_length=5)] = None
+):
+    try:
+        if first_param == second_param:
+            raise HTTPException(status_code=500, detail="O parâmetro padrão de cálculo deve ser diferente do peso.")
+
+        first_data = second_data = []
+        first_data = [get_details_from_country(first_param, country_iso_code=iso_code, year=year)]
+        second_data = [get_details_from_country(second_param, country_iso_code=iso_code, year=year)]
+        
+        if len(first_data) != len(second_data):
+            raise HTTPException(status_code=500, detail="Os dados de entrada não têm possuêm mesmo tamanho.")
+
+        correlation = MathCalcs.correlation_calc(first_data, second_data)
+
+        return {
+            "FirstDataType": first_param,
+            "SecondDataType": second_param,
+            "iso_code": iso_code.upper(),
+            "Correlation": round(correlation, 4),
+        }
+    except TypeError as type_ex:
+        raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
+    except HTTPException as http_ex:
+        raise http_ex
+    except ResponseValidationError as resp_ex:
+        raise HTTPException(detail=resp_ex.__str__(), status_code=500)
+    except Exception:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
