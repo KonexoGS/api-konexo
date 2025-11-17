@@ -1,7 +1,49 @@
 from math import pow, sqrt
 from fastapi import HTTPException
+from datetime import datetime
+
+all_years_counted_default = datetime.now().year - 1975
+
 
 class MathCalcs:
+
+    @staticmethod
+    def average_calc(all_values):
+        count_years = len(all_values)
+        if count_years < 2:
+            raise HTTPException(status_code=400, detail="Não há dados suficientes para calcular a variância.")
+        
+        average = sum(all_values) / count_years
+        sum_pow = 0
+        for val in all_values: # type: ignore
+            sum_pow += pow((val - average), 2)
+            
+        return {"result": sum_pow / (count_years - 1), "countYears": count_years if count_years <= 100 else all_years_counted_default }
+
+    @staticmethod
+    def weighted_average_calc(default_data, weight_data):
+        above = 0.0
+        below = 0.0
+        count_years = 0
+
+        for i in range(len(default_data)):
+            main_values = default_data[i].main_values
+            weight_values = weight_data[i].main_values
+
+            for j in range(min(len(main_values), len(weight_values))):
+                d = main_values[j].value
+                w = weight_values[j].value
+
+                if d is None or w is None:
+                    continue
+                above += d * w
+                below += w
+                count_years += 1
+
+        if below == 0:
+            raise HTTPException(status_code=400, detail="Não há pesos válidos para calcular a média ponderada.")
+
+        return {"result": above / below, "countYears": count_years if count_years <= 100 else all_years_counted_default}
 
     @staticmethod
     def correlation_calc(first_data, second_data):
@@ -33,4 +75,4 @@ class MathCalcs:
         if below_x == 0 or below_y == 0:
             raise HTTPException(status_code=400, detail="Ocorreu uma variância zero. Correlação indefinida.")
 
-        return above / (sqrt(below_x) * sqrt(below_y))
+        return {"result": above / (sqrt(below_x) * sqrt(below_y)), "countYears": length if length <= 100 else all_years_counted_default }

@@ -127,7 +127,7 @@ def get_details_from_all_default_countries(
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
     
-@router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos até 1975', response_model=CalcBaseModel)
+@router.get('/infos/calc/{param}/average', name='Recebe um dado e retorna a média dos valores obtidos até 1975')
 def get_data_average_from_country(
     param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
     iso_code: Annotated[str | None, Query(max_length=3)] = None
@@ -162,7 +162,7 @@ def get_data_average_from_country(
         return {
             "SearchAll": iso_code is None,
             "DefaultDataType": param,
-            "iso_code": iso_code.upper() if iso_c1ode else None,  # type: ignore
+            "iso_code": iso_code.upper() if iso_code else None,  # type: ignore
             "Average": round(average, 4),
             "YearsCounted": count_years
         }
@@ -178,7 +178,7 @@ def get_data_average_from_country(
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado na busca pelo país")
     
-@router.get('/infos/calc/{param}/variance', name='Recebe um dado e retorna a variância dos valores obtidos até 1975', response_model=CalcBaseModel)
+@router.get('/infos/calc/{param}/variance', name='Recebe um dado e retorna a variância dos valores obtidos até 1975')
 def get_data_variance_from_country(
     param: Literal["PIB", "Populacao", "Desigualdade(GINI)", "Trabalhadores Agro", "ForcaTotal Trabalho"], 
     iso_code: Annotated[str | None, Query(max_length=3)] = None
@@ -186,7 +186,6 @@ def get_data_variance_from_country(
     from math import pow
 
     try:
-        variance: float = 0.0
         all_values: List[float] = []
 
         if not iso_code:
@@ -199,23 +198,14 @@ def get_data_variance_from_country(
             countries_data = get_details_from_country(param, iso_code) 
             all_values = [data.value for data in countries_data.main_values if data.value is not None]
         
-        count_years = len(all_values)
-        if count_years < 2:
-            raise HTTPException(status_code=400, detail="Não há dados suficientes para calcular a variância.")
-        
-        average = sum(all_values) / count_years
-        sum_pow = 0
-        for val in all_values: # type: ignore
-            sum_pow += pow((val - average), 2)
-            
-        variance = sum_pow / (count_years - 1)
+        variance_json = MathCalcs.average_calc(all_values)
         
         return {
             "SearchAll": iso_code is None,
             "DefaultDataType": param,
             "iso_code": iso_code.upper() if iso_code else None,
-            "Variance": round(variance, 4),
-            "YearsCounted": count_years
+            "Variance": round(variance_json['result'], 4),
+            "YearsCounted": variance_json['countYears']
         }
         
 
@@ -248,36 +238,15 @@ def get_data_weighted_average_from_country(
             default_data = [get_details_from_country(default_param, country_iso_code=iso_code)]
             weight_data = [get_details_from_country(weight_param, country_iso_code=iso_code)]
         
-        above = 0.0
-        below = 0.0
-        count_years = 0
-
-        for i in range(len(default_data)):
-            main_values = default_data[i].main_values
-            weight_values = weight_data[i].main_values
-
-            for j in range(min(len(main_values), len(weight_values))):
-                d = main_values[j].value
-                w = weight_values[j].value
-
-                if d is None or w is None:
-                    continue
-                above += d * w
-                below += w
-                count_years += 1
-
-        if below == 0:
-            raise HTTPException(status_code=400, detail="Não há pesos válidos para calcular a média ponderada.")
-
-        weighted_average = above / below
+        weighted_average_json = MathCalcs.weighted_average_calc(default_data, weight_data)
 
         return {
             "SearchAll": iso_code is None,
             "DefaultDataType": default_param,
             "WeightedDataType": weight_param,
             "iso_code": iso_code.upper() if iso_code else None,
-            "WeightedAverage": round(weighted_average, 4),
-            "YearsCounted": count_years
+            "WeightedAverage": round(weighted_average_json['result'], 4),
+            "YearsCounted": weighted_average_json['countYears']
         }
 
     except TypeError as type_ex:
@@ -308,13 +277,14 @@ def get_data_correlation(
         if len(first_data) != len(second_data):
             raise HTTPException(status_code=500, detail="Os dados de entrada não têm possuêm mesmo tamanho.")
 
-        correlation = MathCalcs.correlation_calc(first_data, second_data)
+        correlation_json = MathCalcs.correlation_calc(first_data, second_data)
 
         return {
             "FirstDataType": first_param,
             "SecondDataType": second_param,
             "iso_code": iso_code.upper(),
-            "Correlation": round(correlation, 4),
+            "Correlation": round(correlation_json['result'], 4),
+            "YearsCounted": correlation_json['countYears']
         }
     except TypeError as type_ex:
         raise HTTPException(status_code=400, detail=Translator.translatePlainText(type_ex.__str__()))
