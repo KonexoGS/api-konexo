@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from typing import List, Dict, Any
 from app.core.session import Database
+from app.core.local_db import DatabaseLocal
 from app.api.v1.routes import auth, developers, projects, countries
 from json import load
 
@@ -16,21 +17,13 @@ async def lifespan():
     Database().start_session()
 
 @app.get("/default-profiles", name="Retorna usuários padrão do sistema")
-def get_default_profiles(result: Any = '50'):
+def get_default_profiles(result: Any = None):
     try:
-        if not result.isnumeric():
+        db = DatabaseLocal()
+        if result and not result.isnumeric():
             raise HTTPException(status_code=400, detail='Formatação inválida. Informe um número inteiro em resultados')
-        result = int(result)
-
-        with open('app/local/default_profiles.json', 'r') as f:
-            data: Dict[str, Dict[str, str]] = load(f);
-        if result == 50:
-            return data
-        devs: List[Dict[str, str]]  = []
-        keys: List[str] = list(data.keys())
-        for i in range(result):
-            devs.append(data[keys[i]])
-        return devs
+            
+        return db.get_default_users(result)
     except HTTPException:
         raise 
     except Exception:

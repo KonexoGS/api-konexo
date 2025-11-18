@@ -1,214 +1,960 @@
-{
-  "01HAR2ZC7A0QG1XKP9WJ7F1A01": {
-    "username": "dev_sky",
-    "password": "Sky@1234",
-    "email": "dev.sky@example.com",
-    "firstName": "Lucas",
-    "fullname": "Lucas Andrade",
-    "birthtdate": "1998-04-12",
-    "description": "Desenvolvedor fullstack apaixonado por open source.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["javascript", "node", "react"],
-    "badges": ["early-adopter"],
-    "experience": 2
+[
+  {
+    "friendly_code": "DEV001",
+    "email": "dev001@example.com",
+    "username": "dev_user_001",
+    "password": "Str0ngP@ss001!",
+    "full_name": "Alice Almeida",
+    "stacks": [100, 105],
+    "role": ["backend", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1005", "PRJ1006"],
+    "experience_level": 2,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev001"
+    },
+    "created_at": "2024-10-02 10:13:00"
   },
-  "01HAR2ZC7B7SZ8D2HBMF5M2A02": {
-    "username": "ana.codes",
-    "password": "Ana2024!",
-    "email": "ana.codes@example.com",
-    "firstName": "Ana",
-    "fullname": "Ana Moreira",
-    "birthtdate": "1995-06-21",
-    "description": "Frontend focada em UI/UX e produtos acessíveis.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["react", "tailwind", "typescript"],
-    "badges": [],
-    "experience": 3
+  {
+    "friendly_code": "DEV002",
+    "email": "dev002@example.com",
+    "username": "dev_user_002",
+    "password": "Str0ngP@ss002!",
+    "full_name": "Bruno Barbosa",
+    "stacks": [110, 120],
+    "role": ["mobile", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1010", "PRJ1011", "PRJ1012"],
+    "experience_level": 4,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev002",
+      "linkedin": "https://linkedin.com/in/dev002"
+    },
+    "created_at": "2024-10-03 11:26:00"
   },
-  "01HAR2ZC7C6P3YWK34PP22A903": {
-    "username": "carlos.py",
-    "password": "Python#2025",
-    "email": "carlos.py@example.com",
-    "firstName": "Carlos",
-    "fullname": "Carlos Domingues",
-    "birthtdate": "1990-11-02",
-    "description": "Backend engineer especialista em APIs escaláveis.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["python", "flask", "postgresql"],
-    "badges": ["mentor"],
-    "experience": 6
+  {
+    "friendly_code": "DEV003",
+    "email": "dev003@example.com",
+    "username": "dev_user_003",
+    "password": "Str0ngP@ss003!",
+    "full_name": "Carla Cordeiro",
+    "stacks": [130, 135],
+    "role": ["data", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1015", "PRJ1016", "PRJ1017", "PRJ1018"],
+    "experience_level": 6,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev003",
+      "twitter": "https://twitter.com/dev003"
+    },
+    "created_at": "2024-10-04 12:39:00"
   },
-  "01HAR2ZC7D6J7JMW9Y9ZQZN904": {
-    "username": "renata.dev",
-    "password": "Renata_Dev123",
-    "email": "renata.dev@example.com",
-    "firstName": "Renata",
-    "fullname": "Renata Silva",
-    "birthtdate": "1997-09-30",
-    "description": "Mobile developer em constante evolução.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["flutter", "dart"],
-    "badges": [],
-    "experience": 2
+  {
+    "friendly_code": "DEV004",
+    "email": "dev004@example.com",
+    "username": "dev_user_004",
+    "password": "Str0ngP@ss004!",
+    "full_name": "Diego Duarte",
+    "stacks": [140, 145],
+    "role": ["qa", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1020"],
+    "experience_level": 8,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev004",
+      "linkedin": "https://linkedin.com/in/dev004"
+    },
+    "created_at": "2024-10-05 13:52:00"
   },
-  "01HAR2ZC7E3ZX1FQT9B8AFSZ05": {
-    "username": "victor_ai",
-    "password": "AI#Victor2025",
-    "email": "victor.ai@example.com",
-    "firstName": "Victor",
-    "fullname": "Victor Ramos",
-    "birthtdate": "1993-02-14",
-    "description": "Cientista de dados com foco em modelos generativos.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["python", "pytorch", "mlops"],
-    "badges": ["ai-builder"],
-    "experience": 5
+  {
+    "friendly_code": "DEV005",
+    "email": "dev005@example.com",
+    "username": "dev_user_005",
+    "password": "Str0ngP@ss005!",
+    "full_name": "Eduarda Esteves",
+    "stacks": [100, 130, 135],
+    "role": ["game", "mobile"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1025", "PRJ1026"],
+    "experience_level": 10,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev005",
+      "instagram": "https://instagram.com/dev005"
+    },
+    "created_at": "2024-10-06 14:05:00"
   },
-
-  "01HAR2ZC7F4QZCQCS5PKT8QM06": {
-    "username": "maria.front",
-    "password": "MariaFront!2025",
-    "email": "maria.front@example.com",
-    "firstName": "Maria",
-    "fullname": "Maria Ferreira",
-    "birthtdate": "2000-01-12",
-    "description": "Criadora de interfaces bonitas e funcionais.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["vue", "css"],
-    "badges": [],
-    "experience": 1
+  {
+    "friendly_code": "DEV006",
+    "email": "dev006@example.com",
+    "username": "dev_user_006",
+    "password": "Str0ngP@ss006!",
+    "full_name": "Felipe Ferraz",
+    "stacks": [105, 120, 150],
+    "role": ["iot", "data"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1030", "PRJ1031", "PRJ1032"],
+    "experience_level": 1,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev006",
+      "linkedin": "https://linkedin.com/in/dev006",
+      "twitter": "https://twitter.com/dev006"
+    },
+    "created_at": "2024-10-07 15:18:00"
   },
-  "01HAR2ZC7G8CVCN2T8XKA3VZ07": {
-    "username": "joao_api",
-    "password": "JoaoAPI#2025",
-    "email": "joao.api@example.com",
-    "firstName": "João",
-    "fullname": "João Cardoso",
-    "birthtdate": "1988-03-08",
-    "description": "Arquiteto de sistemas distribuídos.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["go", "kubernetes"],
-    "badges": ["system-architect"],
-    "experience": 8
+  {
+    "friendly_code": "DEV007",
+    "email": "dev007@example.com",
+    "username": "dev_user_007",
+    "password": "Str0ngP@ss007!",
+    "full_name": "Gabriela Gomes",
+    "stacks": [115, 135],
+    "role": ["qa", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1035", "PRJ1036", "PRJ1037", "PRJ1038"],
+    "experience_level": 3,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev007",
+      "portfolio": "https://dev007.portfolio.dev"
+    },
+    "created_at": "2024-10-08 09:31:00"
   },
-  "01HAR2ZC7H3NAV3HP4QG6B6N08": {
-    "username": "bia.design",
-    "password": "BiaDesign2025",
-    "email": "bia.design@example.com",
-    "firstName": "Beatriz",
-    "fullname": "Beatriz Cunha",
-    "birthtdate": "1999-08-27",
-    "description": "Product designer e criadora de experiências digitais.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["figma", "uxresearch"],
-    "badges": [],
-    "experience": 2
+  {
+    "friendly_code": "DEV008",
+    "email": "dev008@example.com",
+    "username": "dev_user_008",
+    "password": "Str0ngP@ss008!",
+    "full_name": "Henrique Henrique",
+    "stacks": [120, 140],
+    "role": ["game", "techlead"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1040"],
+    "experience_level": 5,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev008",
+      "linkedin": "https://linkedin.com/in/dev008"
+    },
+    "created_at": "2024-10-09 10:44:00"
   },
-  "01HAR2ZC7J23FPJVH4ZBCQ1A09": {
-    "username": "gustavo.full",
-    "password": "GusDev2025",
-    "email": "gustavo.full@example.com",
-    "firstName": "Gustavo",
-    "fullname": "Gustavo Azevedo",
-    "birthtdate": "1996-10-18",
-    "description": "Fullstack com foco em performance e boas práticas.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["typescript", "node", "react"],
-    "badges": ["pro-user"],
-    "experience": 4
+  {
+    "friendly_code": "DEV009",
+    "email": "dev009@example.com",
+    "username": "dev_user_009",
+    "password": "Str0ngP@ss009!",
+    "full_name": "Isabela Ibrahim",
+    "stacks": [125, 150],
+    "role": ["iot", "architect"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1045", "PRJ1046"],
+    "experience_level": 7,
+    "badges": [3, 6],
+    "is_deleted": true,
+    "social_medias": {
+      "github": "https://github.com/dev009",
+      "twitter": "https://twitter.com/dev009"
+    },
+    "created_at": "2024-10-10 11:57:00"
   },
-  "01HAR2ZC7K4G5AERZ4M77CYH10": {
-    "username": "sofia.data",
-    "password": "DataSofia@2025",
-    "email": "sofia.data@example.com",
-    "firstName": "Sofia",
-    "fullname": "Sofia Lima",
-    "birthtdate": "1994-04-05",
-    "description": "Data engineer especialista em pipelines.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["python", "spark", "aws"],
-    "badges": [],
-    "experience": 5
+  {
+    "friendly_code": "DEV010",
+    "email": "dev010@example.com",
+    "username": "dev_user_010",
+    "password": "Str0ngP@ss010!",
+    "full_name": "João Junqueira",
+    "stacks": [100, 115, 140],
+    "role": ["backend", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1050", "PRJ1051", "PRJ1052"],
+    "experience_level": 9,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev010",
+      "linkedin": "https://linkedin.com/in/dev010",
+      "instagram": "https://instagram.com/dev010"
+    },
+    "created_at": "2024-10-11 12:10:00"
   },
-  "01HAR2ZC7L6Z8CJG3XK4TBZP11": {
-    "username": "alberto.dev",
-    "password": "Alberto123",
-    "email": "alberto@example.com",
-    "firstName": "Alberto",
-    "fullname": "Alberto Nunes",
-    "birthtdate": "1997-07-03",
-    "description": "Backend focado em integração e microsserviços.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["java", "spring"],
-    "badges": [],
-    "experience": 3
+  {
+    "friendly_code": "DEV011",
+    "email": "dev011@example.com",
+    "username": "dev_user_011",
+    "password": "Str0ngP@ss011!",
+    "full_name": "Karen Klein",
+    "stacks": [100, 105],
+    "role": ["techlead", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1055", "PRJ1056", "PRJ1057", "PRJ1058"],
+    "experience_level": 0,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev011"
+    },
+    "created_at": "2024-10-12 13:23:00"
   },
-  "01HAR2ZC7M33BG5K49WPCF8S12": {
-    "username": "juliana.js",
-    "password": "Juliana#JS",
-    "email": "juliana@example.com",
-    "firstName": "Juliana",
-    "fullname": "Juliana Prado",
-    "birthtdate": "1998-02-09",
-    "description": "Frontend apaixonada por animações.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["javascript", "gsap"],
-    "badges": [],
-    "experience": 2
+  {
+    "friendly_code": "DEV012",
+    "email": "dev012@example.com",
+    "username": "dev_user_012",
+    "password": "Str0ngP@ss012!",
+    "full_name": "Lucas Lima",
+    "stacks": [110, 120],
+    "role": ["architect", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1060"],
+    "experience_level": 2,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev012",
+      "linkedin": "https://linkedin.com/in/dev012",
+      "twitter": "https://twitter.com/dev012"
+    },
+    "created_at": "2024-10-13 14:36:00"
   },
-  "01HAR2ZC7N8J5P4VQ5ZP3W1T13": {
-    "username": "felipe.ops",
-    "password": "FelipeOps2025",
-    "email": "felipe@example.com",
-    "firstName": "Felipe",
-    "fullname": "Felipe Araújo",
-    "birthtdate": "1985-05-11",
-    "description": "DevOps engineer especialista em automação total.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["docker", "k8s", "aws"],
-    "badges": ["devops-master"],
-    "experience": 10
+  {
+    "friendly_code": "DEV013",
+    "email": "dev013@example.com",
+    "username": "dev_user_013",
+    "password": "Str0ngP@ss013!",
+    "full_name": "Mariana Marques",
+    "stacks": [130, 135],
+    "role": ["backend", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1065", "PRJ1066"],
+    "experience_level": 4,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev013"
+    },
+    "created_at": "2024-10-14 15:49:00"
   },
-  "01HAR2ZC7P2K9E5CB4KRQ49W14": {
-    "username": "laura.ui",
-    "password": "UiLaura2025",
-    "email": "laura@example.com",
-    "firstName": "Laura",
-    "fullname": "Laura Martins",
-    "birthtdate": "2001-09-12",
-    "description": "Designer UI minimalista.",
-    "profile_photo": "",
-    "isDeleted": false,
-    "domain_stacks": ["figma"],
-    "badges": [],
-    "experience": 1
+  {
+    "friendly_code": "DEV014",
+    "email": "dev014@example.com",
+    "username": "dev_user_014",
+    "password": "Str0ngP@ss014!",
+    "full_name": "Nicolas Nascimento",
+    "stacks": [140, 145],
+    "role": ["mobile", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1070", "PRJ1071", "PRJ1072"],
+    "experience_level": 6,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev014",
+      "linkedin": "https://linkedin.com/in/dev014",
+      "portfolio": "https://dev014.portfolio.dev"
+    },
+    "created_at": "2024-10-15 09:02:00"
   },
-
-  "01HAR2ZC9Z9S8GQF1PAD4TGH50": {
-    "username": "hugo.ml",
-    "password": "HugoML#2025",
-    "email": "hugo.ml@example.com",
-    "firstName": "Hugo",
-    "fullname": "Hugo Monteiro",
-    "birthtdate": "1992-08-24",
-    "description": "Especialista em machine learning aplicado a negócios.",
-    "profile_photo": "1",
-    "isDeleted": false,
-    "domain_stacks": ["python", "tensorflow"],
-    "badges": [],
-    "experience": 6
+  {
+    "friendly_code": "DEV015",
+    "email": "dev015@example.com",
+    "username": "dev_user_015",
+    "password": "Str0ngP@ss015!",
+    "full_name": "Olivia Oliveira",
+    "stacks": [100, 130, 135],
+    "role": ["data", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1075", "PRJ1076", "PRJ1077", "PRJ1078"],
+    "experience_level": 8,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev015",
+      "twitter": "https://twitter.com/dev015",
+      "instagram": "https://instagram.com/dev015"
+    },
+    "created_at": "2024-10-16 10:15:00"
+  },
+  {
+    "friendly_code": "DEV016",
+    "email": "dev016@example.com",
+    "username": "dev_user_016",
+    "password": "Str0ngP@ss016!",
+    "full_name": "Paulo Pereira",
+    "stacks": [105, 120, 150],
+    "role": ["qa", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1080"],
+    "experience_level": 10,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev016",
+      "linkedin": "https://linkedin.com/in/dev016"
+    },
+    "created_at": "2024-10-17 11:28:00"
+  },
+  {
+    "friendly_code": "DEV017",
+    "email": "dev017@example.com",
+    "username": "dev_user_017",
+    "password": "Str0ngP@ss017!",
+    "full_name": "Queila Queiroz",
+    "stacks": [115, 135],
+    "role": ["game", "mobile"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1085", "PRJ1086"],
+    "experience_level": 1,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev017"
+    },
+    "created_at": "2024-10-18 12:41:00"
+  },
+  {
+    "friendly_code": "DEV018",
+    "email": "dev018@example.com",
+    "username": "dev_user_018",
+    "password": "Str0ngP@ss018!",
+    "full_name": "Rafael Ramos",
+    "stacks": [120, 140],
+    "role": ["iot", "data"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1090", "PRJ1091", "PRJ1092"],
+    "experience_level": 3,
+    "badges": [5, 6],
+    "is_deleted": true,
+    "social_medias": {
+      "github": "https://github.com/dev018",
+      "linkedin": "https://linkedin.com/in/dev018",
+      "twitter": "https://twitter.com/dev018"
+    },
+    "created_at": "2024-10-19 13:54:00"
+  },
+  {
+    "friendly_code": "DEV019",
+    "email": "dev019@example.com",
+    "username": "dev_user_019",
+    "password": "Str0ngP@ss019!",
+    "full_name": "Sofia Silva",
+    "stacks": [125, 150],
+    "role": ["qa", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1095", "PRJ1096", "PRJ1097", "PRJ1098"],
+    "experience_level": 5,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev019"
+    },
+    "created_at": "2024-10-20 14:07:00"
+  },
+  {
+    "friendly_code": "DEV020",
+    "email": "dev020@example.com",
+    "username": "dev_user_020",
+    "password": "Str0ngP@ss020!",
+    "full_name": "Thiago Teixeira",
+    "stacks": [100, 115, 140],
+    "role": ["game", "techlead"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1100"],
+    "experience_level": 7,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev020",
+      "linkedin": "https://linkedin.com/in/dev020",
+      "instagram": "https://instagram.com/dev020"
+    },
+    "created_at": "2024-10-21 15:20:00"
+  },
+  {
+    "friendly_code": "DEV021",
+    "email": "dev021@example.com",
+    "username": "dev_user_021",
+    "password": "Str0ngP@ss021!",
+    "full_name": "Ursula Uchoa",
+    "stacks": [100, 105],
+    "role": ["iot", "architect"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1105", "PRJ1106"],
+    "experience_level": 9,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev021",
+      "twitter": "https://twitter.com/dev021",
+      "portfolio": "https://dev021.portfolio.dev"
+    },
+    "created_at": "2024-10-22 09:33:00"
+  },
+  {
+    "friendly_code": "DEV022",
+    "email": "dev022@example.com",
+    "username": "dev_user_022",
+    "password": "Str0ngP@ss022!",
+    "full_name": "Vitor Vieira",
+    "stacks": [110, 120],
+    "role": ["backend", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1110", "PRJ1111", "PRJ1112"],
+    "experience_level": 0,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev022",
+      "linkedin": "https://linkedin.com/in/dev022"
+    },
+    "created_at": "2024-10-23 10:46:00"
+  },
+  {
+    "friendly_code": "DEV023",
+    "email": "dev023@example.com",
+    "username": "dev_user_023",
+    "password": "Str0ngP@ss023!",
+    "full_name": "Wesley Wagner",
+    "stacks": [130, 135],
+    "role": ["techlead", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1115", "PRJ1116", "PRJ1117", "PRJ1118"],
+    "experience_level": 2,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev023"
+    },
+    "created_at": "2024-10-24 11:59:00"
+  },
+  {
+    "friendly_code": "DEV024",
+    "email": "dev024@example.com",
+    "username": "dev_user_024",
+    "password": "Str0ngP@ss024!",
+    "full_name": "Ximena Xavier",
+    "stacks": [140, 145],
+    "role": ["architect", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1120"],
+    "experience_level": 4,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev024",
+      "linkedin": "https://linkedin.com/in/dev024",
+      "twitter": "https://twitter.com/dev024"
+    },
+    "created_at": "2024-10-25 12:12:00"
+  },
+  {
+    "friendly_code": "DEV025",
+    "email": "dev025@example.com",
+    "username": "dev_user_025",
+    "password": "Str0ngP@ss025!",
+    "full_name": "Yuri Yamada",
+    "stacks": [100, 130, 135],
+    "role": ["backend", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1125", "PRJ1126"],
+    "experience_level": 6,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev025",
+      "instagram": "https://instagram.com/dev025"
+    },
+    "created_at": "2024-10-26 13:25:00"
+  },
+  {
+    "friendly_code": "DEV026",
+    "email": "dev026@example.com",
+    "username": "dev_user_026",
+    "password": "Str0ngP@ss026!",
+    "full_name": "Zaira Zanetti",
+    "stacks": [105, 120, 150],
+    "role": ["mobile", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1130", "PRJ1131", "PRJ1132"],
+    "experience_level": 8,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev026",
+      "linkedin": "https://linkedin.com/in/dev026"
+    },
+    "created_at": "2024-10-27 14:38:00"
+  },
+  {
+    "friendly_code": "DEV027",
+    "email": "dev027@example.com",
+    "username": "dev_user_027",
+    "password": "Str0ngP@ss027!",
+    "full_name": "Alice Almeida",
+    "stacks": [115, 135],
+    "role": ["data", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1135", "PRJ1136", "PRJ1137", "PRJ1138"],
+    "experience_level": 10,
+    "badges": [0, 2, 4],
+    "is_deleted": true,
+    "social_medias": {
+      "github": "https://github.com/dev027",
+      "twitter": "https://twitter.com/dev027"
+    },
+    "created_at": "2024-10-28 15:51:00"
+  },
+  {
+    "friendly_code": "DEV028",
+    "email": "dev028@example.com",
+    "username": "dev_user_028",
+    "password": "Str0ngP@ss028!",
+    "full_name": "Bruno Barbosa",
+    "stacks": [120, 140],
+    "role": ["qa", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1140"],
+    "experience_level": 1,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev028",
+      "linkedin": "https://linkedin.com/in/dev028",
+      "portfolio": "https://dev028.portfolio.dev"
+    },
+    "created_at": "2024-10-29 09:04:00"
+  },
+  {
+    "friendly_code": "DEV029",
+    "email": "dev029@example.com",
+    "username": "dev_user_029",
+    "password": "Str0ngP@ss029!",
+    "full_name": "Carla Cordeiro",
+    "stacks": [125, 150],
+    "role": ["game", "mobile"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1145", "PRJ1146"],
+    "experience_level": 3,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev029"
+    },
+    "created_at": "2024-10-30 10:17:00"
+  },
+  {
+    "friendly_code": "DEV030",
+    "email": "dev030@example.com",
+    "username": "dev_user_030",
+    "password": "Str0ngP@ss030!",
+    "full_name": "Diego Duarte",
+    "stacks": [100, 115, 140],
+    "role": ["iot", "data"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1150", "PRJ1151", "PRJ1152"],
+    "experience_level": 5,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev030",
+      "linkedin": "https://linkedin.com/in/dev030",
+      "twitter": "https://twitter.com/dev030",
+      "instagram": "https://instagram.com/dev030"
+    },
+    "created_at": "2024-10-31 11:30:00"
+  },
+  {
+    "friendly_code": "DEV031",
+    "email": "dev031@example.com",
+    "username": "dev_user_031",
+    "password": "Str0ngP@ss031!",
+    "full_name": "Eduarda Esteves",
+    "stacks": [100, 105],
+    "role": ["qa", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1155", "PRJ1156", "PRJ1157", "PRJ1158"],
+    "experience_level": 7,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev031"
+    },
+    "created_at": "2024-11-01 12:43:00"
+  },
+  {
+    "friendly_code": "DEV032",
+    "email": "dev032@example.com",
+    "username": "dev_user_032",
+    "password": "Str0ngP@ss032!",
+    "full_name": "Felipe Ferraz",
+    "stacks": [110, 120],
+    "role": ["game", "techlead"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1160"],
+    "experience_level": 9,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev032",
+      "linkedin": "https://linkedin.com/in/dev032"
+    },
+    "created_at": "2024-11-02 13:56:00"
+  },
+  {
+    "friendly_code": "DEV033",
+    "email": "dev033@example.com",
+    "username": "dev_user_033",
+    "password": "Str0ngP@ss033!",
+    "full_name": "Gabriela Gomes",
+    "stacks": [130, 135],
+    "role": ["iot", "architect"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1165", "PRJ1166"],
+    "experience_level": 0,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev033",
+      "twitter": "https://twitter.com/dev033"
+    },
+    "created_at": "2024-11-03 14:09:00"
+  },
+  {
+    "friendly_code": "DEV034",
+    "email": "dev034@example.com",
+    "username": "dev_user_034",
+    "password": "Str0ngP@ss034!",
+    "full_name": "Henrique Henrique",
+    "stacks": [140, 145],
+    "role": ["backend", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1170", "PRJ1171", "PRJ1172"],
+    "experience_level": 2,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev034",
+      "linkedin": "https://linkedin.com/in/dev034"
+    },
+    "created_at": "2024-11-04 15:22:00"
+  },
+  {
+    "friendly_code": "DEV035",
+    "email": "dev035@example.com",
+    "username": "dev_user_035",
+    "password": "Str0ngP@ss035!",
+    "full_name": "Isabela Ibrahim",
+    "stacks": [100, 130, 135],
+    "role": ["techlead", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1175", "PRJ1176", "PRJ1177", "PRJ1178"],
+    "experience_level": 4,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev035",
+      "instagram": "https://instagram.com/dev035",
+      "portfolio": "https://dev035.portfolio.dev"
+    },
+    "created_at": "2024-11-05 09:35:00"
+  },
+  {
+    "friendly_code": "DEV036",
+    "email": "dev036@example.com",
+    "username": "dev_user_036",
+    "password": "Str0ngP@ss036!",
+    "full_name": "João Junqueira",
+    "stacks": [105, 120, 150],
+    "role": ["architect", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1180"],
+    "experience_level": 6,
+    "badges": [2, 3, 5],
+    "is_deleted": true,
+    "social_medias": {
+      "github": "https://github.com/dev036",
+      "linkedin": "https://linkedin.com/in/dev036",
+      "twitter": "https://twitter.com/dev036"
+    },
+    "created_at": "2024-11-06 10:48:00"
+  },
+  {
+    "friendly_code": "DEV037",
+    "email": "dev037@example.com",
+    "username": "dev_user_037",
+    "password": "Str0ngP@ss037!",
+    "full_name": "Karen Klein",
+    "stacks": [115, 135],
+    "role": ["backend", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1185", "PRJ1186"],
+    "experience_level": 8,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev037"
+    },
+    "created_at": "2024-11-07 11:01:00"
+  },
+  {
+    "friendly_code": "DEV038",
+    "email": "dev038@example.com",
+    "username": "dev_user_038",
+    "password": "Str0ngP@ss038!",
+    "full_name": "Lucas Lima",
+    "stacks": [120, 140],
+    "role": ["mobile", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1190", "PRJ1191", "PRJ1192"],
+    "experience_level": 10,
+    "badges": [1, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev038",
+      "linkedin": "https://linkedin.com/in/dev038"
+    },
+    "created_at": "2024-11-08 12:14:00"
+  },
+  {
+    "friendly_code": "DEV039",
+    "email": "dev039@example.com",
+    "username": "dev_user_039",
+    "password": "Str0ngP@ss039!",
+    "full_name": "Mariana Marques",
+    "stacks": [125, 150],
+    "role": ["data", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1195", "PRJ1196", "PRJ1197", "PRJ1198"],
+    "experience_level": 1,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev039",
+      "twitter": "https://twitter.com/dev039"
+    },
+    "created_at": "2024-11-09 13:27:00"
+  },
+  {
+    "friendly_code": "DEV040",
+    "email": "dev040@example.com",
+    "username": "dev_user_040",
+    "password": "Str0ngP@ss040!",
+    "full_name": "Nicolas Nascimento",
+    "stacks": [100, 115, 140],
+    "role": ["qa", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1200"],
+    "experience_level": 3,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev040",
+      "linkedin": "https://linkedin.com/in/dev040",
+      "instagram": "https://instagram.com/dev040"
+    },
+    "created_at": "2024-11-10 14:40:00"
+  },
+  {
+    "friendly_code": "DEV041",
+    "email": "dev041@example.com",
+    "username": "dev_user_041",
+    "password": "Str0ngP@ss041!",
+    "full_name": "Olivia Oliveira",
+    "stacks": [100, 105],
+    "role": ["game", "mobile"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1205", "PRJ1206"],
+    "experience_level": 5,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev041"
+    },
+    "created_at": "2024-11-11 15:53:00"
+  },
+  {
+    "friendly_code": "DEV042",
+    "email": "dev042@example.com",
+    "username": "dev_user_042",
+    "password": "Str0ngP@ss042!",
+    "full_name": "Paulo Pereira",
+    "stacks": [110, 120],
+    "role": ["iot", "data"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1210", "PRJ1211", "PRJ1212"],
+    "experience_level": 7,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev042",
+      "linkedin": "https://linkedin.com/in/dev042",
+      "twitter": "https://twitter.com/dev042",
+      "portfolio": "https://dev042.portfolio.dev"
+    },
+    "created_at": "2024-11-12 09:06:00"
+  },
+  {
+    "friendly_code": "DEV043",
+    "email": "dev043@example.com",
+    "username": "dev_user_043",
+    "password": "Str0ngP@ss043!",
+    "full_name": "Queila Queiroz",
+    "stacks": [130, 135],
+    "role": ["qa", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1215", "PRJ1216", "PRJ1217", "PRJ1218"],
+    "experience_level": 9,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev043"
+    },
+    "created_at": "2024-11-13 10:19:00"
+  },
+  {
+    "friendly_code": "DEV044",
+    "email": "dev044@example.com",
+    "username": "dev_user_044",
+    "password": "Str0ngP@ss044!",
+    "full_name": "Rafael Ramos",
+    "stacks": [140, 145],
+    "role": ["game", "techlead"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1220"],
+    "experience_level": 0,
+    "badges": [3, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev044",
+      "linkedin": "https://linkedin.com/in/dev044"
+    },
+    "created_at": "2024-11-14 11:32:00"
+  },
+  {
+    "friendly_code": "DEV045",
+    "email": "dev045@example.com",
+    "username": "dev_user_045",
+    "password": "Str0ngP@ss045!",
+    "full_name": "Sofia Silva",
+    "stacks": [100, 130, 135],
+    "role": ["iot", "architect"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1225", "PRJ1226"],
+    "experience_level": 2,
+    "badges": [1, 2, 4],
+    "is_deleted": true,
+    "social_medias": {
+      "github": "https://github.com/dev045",
+      "twitter": "https://twitter.com/dev045",
+      "instagram": "https://instagram.com/dev045"
+    },
+    "created_at": "2024-11-15 12:45:00"
+  },
+  {
+    "friendly_code": "DEV046",
+    "email": "dev046@example.com",
+    "username": "dev_user_046",
+    "password": "Str0ngP@ss046!",
+    "full_name": "Thiago Teixeira",
+    "stacks": [105, 120, 150],
+    "role": ["backend", "ml"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1230", "PRJ1231", "PRJ1232"],
+    "experience_level": 4,
+    "badges": [5, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev046",
+      "linkedin": "https://linkedin.com/in/dev046"
+    },
+    "created_at": "2024-11-16 13:58:00"
+  },
+  {
+    "friendly_code": "DEV047",
+    "email": "dev047@example.com",
+    "username": "dev_user_047",
+    "password": "Str0ngP@ss047!",
+    "full_name": "Ursula Uchoa",
+    "stacks": [115, 135],
+    "role": ["techlead", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1235", "PRJ1236", "PRJ1237", "PRJ1238"],
+    "experience_level": 6,
+    "badges": [1, 4, 6],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev047"
+    },
+    "created_at": "2024-11-17 14:11:00"
+  },
+  {
+    "friendly_code": "DEV048",
+    "email": "dev048@example.com",
+    "username": "dev_user_048",
+    "password": "Str0ngP@ss048!",
+    "full_name": "Vitor Vieira",
+    "stacks": [120, 140],
+    "role": ["architect", "fullstack"],
+    "level": "senior",
+    "projects_subscribed": ["PRJ1240"],
+    "experience_level": 8,
+    "badges": [0, 2, 4],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev048",
+      "linkedin": "https://linkedin.com/in/dev048",
+      "twitter": "https://twitter.com/dev048"
+    },
+    "created_at": "2024-11-18 15:24:00"
+  },
+  {
+    "friendly_code": "DEV049",
+    "email": "dev049@example.com",
+    "username": "dev_user_049",
+    "password": "Str0ngP@ss049!",
+    "full_name": "Wesley Wagner",
+    "stacks": [125, 150],
+    "role": ["backend", "devops"],
+    "level": "junior",
+    "projects_subscribed": ["PRJ1245", "PRJ1246"],
+    "experience_level": 10,
+    "badges": [0, 1],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev049",
+      "portfolio": "https://dev049.portfolio.dev"
+    },
+    "created_at": "2024-11-19 09:37:00"
+  },
+  {
+    "friendly_code": "DEV050",
+    "email": "dev050@example.com",
+    "username": "dev_user_050",
+    "password": "Str0ngP@ss050!",
+    "full_name": "Ximena Xavier",
+    "stacks": [100, 115, 140],
+    "role": ["mobile", "frontend"],
+    "level": "pleno",
+    "projects_subscribed": ["PRJ1250", "PRJ1251", "PRJ1252"],
+    "experience_level": 1,
+    "badges": [2, 3, 5],
+    "is_deleted": false,
+    "social_medias": {
+      "github": "https://github.com/dev050",
+      "linkedin": "https://linkedin.com/in/dev050",
+      "instagram": "https://instagram.com/dev050"
+    },
+    "created_at": "2024-11-20 10:50:00"
   }
-}
+]

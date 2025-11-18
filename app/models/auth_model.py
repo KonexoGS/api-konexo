@@ -1,9 +1,12 @@
 from dataclasses import dataclass
-from pydantic import NaiveDatetime
+from pydantic import NaiveDatetime, BaseModel
 
-@dataclass
-class Auth():
-    dev_id: str
-    token: str
-    created_at: NaiveDatetime
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    user_id: str
+    username: str | None = None
     is_experied: bool

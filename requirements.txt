@@ -5,6 +5,7 @@ requests
 pymongo
 python-ulid
 ujson
-bcrypt
+pwdlib
+pwdlib[argon2]
 pyjwt
 deep-translator
