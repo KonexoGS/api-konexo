@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from typing import List, Dict, Any
-from app.database.session import Database
+from app.core.session import Database
 from app.api.v1.routes import auth, developers, projects, countries
 from json import load
 
