@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, ReturnDocument
 from pymongo.server_api import ServerApi
 from bson import ObjectId
 from app import db_connection, db_password
@@ -27,28 +27,66 @@ class Database():
         result = collection.insert_one(new_data)
         return str(result.inserted_id)
 
-    def delete(self, collection_name: str, data_id: str | ObjectId):
-        if not isinstance(data_id, str) or not isinstance(collection_name, str):
+    def hard_delete(self, collection_name: str, data_id: str | ObjectId):
+        """
+        Método para a exclusão permanente do documento do banco de dados Mongo DB
+        Recomendado apenas em casos especificos.
+
+        Args:
+            collection_name (str): Nome da coleção no banco de dados
+            data_id Optional[str, ObjectId]: ID do conteúdo em que será excluído
+        
+        Returns:
+            Dict: Dicionário de todo o conteúdo em que foi removido no banco.
+        """
+
+
+        if not isinstance(collection_name, str):
             raise ValueError("O valor enviado é incorreto pra sua formatação.")    
         data_id = self.validate_object_id(data_id)
 
         collection = self.get_collection_data(collection_name)
         deleted_data = collection.find_one_and_delete({
-            "_id": ObjectId(data_id)
+            "_id": data_id
         })
+        return deleted_data
+
+    def delete(self, collection_name: str, data_id: str | ObjectId):
+        """
+        Método para a exclusão simples do siste, o conteúdo ainda existe no banco para futuros registros,
+        porém não é mais encontrado pelo usuário
+
+        Args:
+            collection_name (str): Nome da coleção no banco de dados
+            data_id Optional[str, ObjectId]: ID do conteúdo em que será excluído
+        
+        Returns:
+            Dict: Dicionário de todo o conteúdo em que foi ocultado no banco.
+        """
+
+        if not isinstance(collection_name, str):
+            raise ValueError("O valor enviado é incorreto pra sua formatação.")    
+        data_id = self.validate_object_id(data_id)
+
+        collection = self.get_collection_data(collection_name)
+        deleted_data = collection.find_one_and_update(
+            filter={"_id": data_id,
+                    "is_deleted": False}, 
+            update={"$set": {"is_deleted": True} },
+            return_document=ReturnDocument.AFTER)
         return deleted_data
     
     def update(self, collection_name: str, old_data_id: str | ObjectId, new_data: Dict):
-        if not isinstance(collection_name, str) or not isinstance(new_data, dict):
+        if not isinstance(new_data, dict):
             raise ValueError("O valor enviado é incorreto pra sua formatação.")
         old_data_id = self.validate_object_id(old_data_id)
 
         collection = self.get_collection_data(collection_name)
-        new_data = collection.find_one_and_update(
-            filter={"_id": ObjectId(old_data_id) }, 
+        updated_data = collection.find_one_and_update(
+            filter={"_id": old_data_id, "is_deleted": False }, 
             update={"$set": new_data}, 
-            return_document=True)
-        return new_data
+            return_document=ReturnDocument.AFTER)
+        return updated_data
     
     def find_by_id(self, collection_name: str, data_id: str | ObjectId):
         if not isinstance(data_id, str) or not isinstance(collection_name, str):
@@ -57,11 +95,15 @@ class Database():
 
         collection = self.get_collection_data(collection_name)
         result = collection.find_one({
-            "_id": ObjectId(data_id)
+            "_id": data_id,
+            "is_deleted": False
         })
         return result
     
-    def validate_object_id(self, id_str: str):
-        if not ObjectId.is_valid(id_str):
-            raise ValueError(f"ID inválido: {id_str}")
-        return ObjectId(id_str)
+    def validate_object_id(self, id_value: str | ObjectId) -> ObjectId:
+        if isinstance(id_value, ObjectId):
+            return id_value
+        if isinstance(id_value, str) and ObjectId.is_valid(id_value):
+            return ObjectId(id_value)
+        raise ValueError(f"ID inválido: {id_value}")
+
