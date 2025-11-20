@@ -10,7 +10,7 @@ class DatabaseLocal:
 
     def get_default_users(self, results: int | None = None):
         resultsData = []
-        with open('app/local/default_profiles.json', 'r') as f:
+        with open('./local/default_profiles.json', 'r') as f:
             data: Dict = load(f)
         if not results:  
             return data
