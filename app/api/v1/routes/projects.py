@@ -3,10 +3,11 @@ from fastapi import HTTPException
 from app.enums import ProjectsCategoryAlias
 from typing import Literal
 from app.service.project_service import ProjectService
-from app.models.projects_model import ProjectsModel
+from app.models.projects_model import ProjectsResultModel, ProjectResponseModel
 from traceback import format_exc
 from app.utils.gen_friendlycode import GenerateFriendlyCode
 from app.enums import ProjectsCategoryAlias
+from typing import List
 
 router = APIRouter()
 _project_service = ProjectService()
