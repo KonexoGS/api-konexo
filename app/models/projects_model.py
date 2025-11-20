@@ -12,6 +12,6 @@ class Projects():
     full_description: str
     category: List[str]
     has_github: bool
-    developers_ids: List[str]
+    developers_id: List[str]
     banner_photo: Base64Str
     is_deleted: bool

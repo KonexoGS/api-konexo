@@ -6,6 +6,7 @@ from app.api.v1.routes import auth, developers, projects, countries
 from json import load
 
 app = FastAPI(title="Konexo API", version='v1')
+database = Database()
 
 app.include_router(router=auth.router, prefix='/auth', tags=["OAuth"])
 app.include_router(router=developers.router, prefix='/devs', tags=["Desenvolvedores"])
@@ -14,7 +15,7 @@ app.include_router(router=projects.router, prefix='/projects', tags=["Projetos"]
 
 @app.on_event("startup")
 async def lifespan():
-    Database().start_session()
+    database.start_session()
 
 @app.get("/default-profiles", name="Retorna usuários padrão do sistema")
 def get_default_profiles(result: Any = None):

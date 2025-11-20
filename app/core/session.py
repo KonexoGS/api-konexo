@@ -27,12 +27,10 @@ class Database():
         result = collection.insert_one(new_data)
         return str(result.inserted_id)
 
-    def delete(self, collection_name: str, data_id: str):
+    def delete(self, collection_name: str, data_id: str | ObjectId):
         if not isinstance(data_id, str) or not isinstance(collection_name, str):
-            raise ValueError("O valor enviado é incorreto pra sua formatação.")
-
-        if not ObjectId.is_valid(data_id):
-            raise ValueError("ID inválido. Tente novamente")    
+            raise ValueError("O valor enviado é incorreto pra sua formatação.")    
+        data_id = self.validate_object_id(data_id)
 
         collection = self.get_collection_data(collection_name)
         deleted_data = collection.find_one_and_delete({
@@ -40,12 +38,10 @@ class Database():
         })
         return deleted_data
     
-    def update(self, collection_name: str, old_data_id:str, new_data: Dict):
+    def update(self, collection_name: str, old_data_id: str | ObjectId, new_data: Dict):
         if not isinstance(collection_name, str) or not isinstance(new_data, dict):
             raise ValueError("O valor enviado é incorreto pra sua formatação.")
-
-        if not ObjectId.is_valid(data_id):
-            raise ValueError("ID inválido. Tente novamente")
+        old_data_id = self.validate_object_id(old_data_id)
 
         collection = self.get_collection_data(collection_name)
         new_data = collection.find_one_and_update(
@@ -54,12 +50,10 @@ class Database():
             return_document=True)
         return new_data
     
-    def find_by_id(self, collection_name: str, data_id: str):
+    def find_by_id(self, collection_name: str, data_id: str | ObjectId):
         if not isinstance(data_id, str) or not isinstance(collection_name, str):
             raise ValueError("O valor enviado é incorreto pra sua formatação.")
-        
-        if not ObjectId.is_valid(data_id):
-            raise ValueError("ID inválido. Tente novamente")
+        data_id = self.validate_object_id(data_id)
 
         collection = self.get_collection_data(collection_name)
         result = collection.find_one({
@@ -67,3 +61,7 @@ class Database():
         })
         return result
     
+    def validate_object_id(self, id_str: str):
+        if not ObjectId.is_valid(id_str):
+            raise ValueError(f"ID inválido: {id_str}")
+        return ObjectId(id_str)
