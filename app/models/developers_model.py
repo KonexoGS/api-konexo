@@ -5,7 +5,6 @@ from pydantic import NaiveDatetime
 
 @dataclass
 class Developers():
-    friendly_code: str
     email: str
     username: str
     password: str

@@ -1,8 +1,7 @@
 [
   {
-    "friendly_code": "DEV001",
     "email": "dev001@example.com",
-    "username": "dev_user_001",
+    "username": "devuser001",
     "password": "Str0ngP@ss001!",
     "full_name": "Alice Almeida",
     "stacks": [100, 105],
@@ -18,9 +17,8 @@
     "created_at": "2024-10-02 10:13:00"
   },
   {
-    "friendly_code": "DEV002",
     "email": "dev002@example.com",
-    "username": "dev_user_002",
+    "username": "devuser002",
     "password": "Str0ngP@ss002!",
     "full_name": "Bruno Barbosa",
     "stacks": [110, 120],
@@ -37,9 +35,8 @@
     "created_at": "2024-10-03 11:26:00"
   },
   {
-    "friendly_code": "DEV003",
     "email": "dev003@example.com",
-    "username": "dev_user_003",
+    "username": "devuser003",
     "password": "Str0ngP@ss003!",
     "full_name": "Carla Cordeiro",
     "stacks": [130, 135],
@@ -56,9 +53,8 @@
     "created_at": "2024-10-04 12:39:00"
   },
   {
-    "friendly_code": "DEV004",
     "email": "dev004@example.com",
-    "username": "dev_user_004",
+    "username": "devuser004",
     "password": "Str0ngP@ss004!",
     "full_name": "Diego Duarte",
     "stacks": [140, 145],
@@ -75,9 +71,8 @@
     "created_at": "2024-10-05 13:52:00"
   },
   {
-    "friendly_code": "DEV005",
     "email": "dev005@example.com",
-    "username": "dev_user_005",
+    "username": "devuser005",
     "password": "Str0ngP@ss005!",
     "full_name": "Eduarda Esteves",
     "stacks": [100, 130, 135],
@@ -94,9 +89,8 @@
     "created_at": "2024-10-06 14:05:00"
   },
   {
-    "friendly_code": "DEV006",
     "email": "dev006@example.com",
-    "username": "dev_user_006",
+    "username": "devuser006",
     "password": "Str0ngP@ss006!",
     "full_name": "Felipe Ferraz",
     "stacks": [105, 120, 150],
@@ -114,9 +108,8 @@
     "created_at": "2024-10-07 15:18:00"
   },
   {
-    "friendly_code": "DEV007",
     "email": "dev007@example.com",
-    "username": "dev_user_007",
+    "username": "devuser007",
     "password": "Str0ngP@ss007!",
     "full_name": "Gabriela Gomes",
     "stacks": [115, 135],
@@ -133,9 +126,8 @@
     "created_at": "2024-10-08 09:31:00"
   },
   {
-    "friendly_code": "DEV008",
     "email": "dev008@example.com",
-    "username": "dev_user_008",
+    "username": "devuser008",
     "password": "Str0ngP@ss008!",
     "full_name": "Henrique Henrique",
     "stacks": [120, 140],
@@ -152,9 +144,8 @@
     "created_at": "2024-10-09 10:44:00"
   },
   {
-    "friendly_code": "DEV009",
     "email": "dev009@example.com",
-    "username": "dev_user_009",
+    "username": "devuser009",
     "password": "Str0ngP@ss009!",
     "full_name": "Isabela Ibrahim",
     "stacks": [125, 150],
@@ -171,9 +162,8 @@
     "created_at": "2024-10-10 11:57:00"
   },
   {
-    "friendly_code": "DEV010",
     "email": "dev010@example.com",
-    "username": "dev_user_010",
+    "username": "devuser010",
     "password": "Str0ngP@ss010!",
     "full_name": "João Junqueira",
     "stacks": [100, 115, 140],
@@ -191,9 +181,8 @@
     "created_at": "2024-10-11 12:10:00"
   },
   {
-    "friendly_code": "DEV011",
     "email": "dev011@example.com",
-    "username": "dev_user_011",
+    "username": "devuser011",
     "password": "Str0ngP@ss011!",
     "full_name": "Karen Klein",
     "stacks": [100, 105],
@@ -209,9 +198,8 @@
     "created_at": "2024-10-12 13:23:00"
   },
   {
-    "friendly_code": "DEV012",
     "email": "dev012@example.com",
-    "username": "dev_user_012",
+    "username": "devuser012",
     "password": "Str0ngP@ss012!",
     "full_name": "Lucas Lima",
     "stacks": [110, 120],
@@ -229,9 +217,8 @@
     "created_at": "2024-10-13 14:36:00"
   },
   {
-    "friendly_code": "DEV013",
     "email": "dev013@example.com",
-    "username": "dev_user_013",
+    "username": "devuser013",
     "password": "Str0ngP@ss013!",
     "full_name": "Mariana Marques",
     "stacks": [130, 135],
@@ -247,9 +234,8 @@
     "created_at": "2024-10-14 15:49:00"
   },
   {
-    "friendly_code": "DEV014",
     "email": "dev014@example.com",
-    "username": "dev_user_014",
+    "username": "devuser014",
     "password": "Str0ngP@ss014!",
     "full_name": "Nicolas Nascimento",
     "stacks": [140, 145],
@@ -267,9 +253,8 @@
     "created_at": "2024-10-15 09:02:00"
   },
   {
-    "friendly_code": "DEV015",
     "email": "dev015@example.com",
-    "username": "dev_user_015",
+    "username": "devuser015",
     "password": "Str0ngP@ss015!",
     "full_name": "Olivia Oliveira",
     "stacks": [100, 130, 135],
@@ -287,9 +272,8 @@
     "created_at": "2024-10-16 10:15:00"
   },
   {
-    "friendly_code": "DEV016",
     "email": "dev016@example.com",
-    "username": "dev_user_016",
+    "username": "devuser016",
     "password": "Str0ngP@ss016!",
     "full_name": "Paulo Pereira",
     "stacks": [105, 120, 150],
@@ -306,9 +290,8 @@
     "created_at": "2024-10-17 11:28:00"
   },
   {
-    "friendly_code": "DEV017",
     "email": "dev017@example.com",
-    "username": "dev_user_017",
+    "username": "devuser017",
     "password": "Str0ngP@ss017!",
     "full_name": "Queila Queiroz",
     "stacks": [115, 135],
@@ -324,9 +307,8 @@
     "created_at": "2024-10-18 12:41:00"
   },
   {
-    "friendly_code": "DEV018",
     "email": "dev018@example.com",
-    "username": "dev_user_018",
+    "username": "devuser018",
     "password": "Str0ngP@ss018!",
     "full_name": "Rafael Ramos",
     "stacks": [120, 140],
@@ -344,9 +326,8 @@
     "created_at": "2024-10-19 13:54:00"
   },
   {
-    "friendly_code": "DEV019",
     "email": "dev019@example.com",
-    "username": "dev_user_019",
+    "username": "devuser019",
     "password": "Str0ngP@ss019!",
     "full_name": "Sofia Silva",
     "stacks": [125, 150],
@@ -362,9 +343,8 @@
     "created_at": "2024-10-20 14:07:00"
   },
   {
-    "friendly_code": "DEV020",
     "email": "dev020@example.com",
-    "username": "dev_user_020",
+    "username": "devuser020",
     "password": "Str0ngP@ss020!",
     "full_name": "Thiago Teixeira",
     "stacks": [100, 115, 140],
@@ -382,9 +362,8 @@
     "created_at": "2024-10-21 15:20:00"
   },
   {
-    "friendly_code": "DEV021",
     "email": "dev021@example.com",
-    "username": "dev_user_021",
+    "username": "devuser021",
     "password": "Str0ngP@ss021!",
     "full_name": "Ursula Uchoa",
     "stacks": [100, 105],
@@ -402,9 +381,8 @@
     "created_at": "2024-10-22 09:33:00"
   },
   {
-    "friendly_code": "DEV022",
     "email": "dev022@example.com",
-    "username": "dev_user_022",
+    "username": "devuser022",
     "password": "Str0ngP@ss022!",
     "full_name": "Vitor Vieira",
     "stacks": [110, 120],
@@ -421,9 +399,8 @@
     "created_at": "2024-10-23 10:46:00"
   },
   {
-    "friendly_code": "DEV023",
     "email": "dev023@example.com",
-    "username": "dev_user_023",
+    "username": "devuser023",
     "password": "Str0ngP@ss023!",
     "full_name": "Wesley Wagner",
     "stacks": [130, 135],
@@ -439,9 +416,8 @@
     "created_at": "2024-10-24 11:59:00"
   },
   {
-    "friendly_code": "DEV024",
     "email": "dev024@example.com",
-    "username": "dev_user_024",
+    "username": "devuser024",
     "password": "Str0ngP@ss024!",
     "full_name": "Ximena Xavier",
     "stacks": [140, 145],
@@ -459,9 +435,8 @@
     "created_at": "2024-10-25 12:12:00"
   },
   {
-    "friendly_code": "DEV025",
     "email": "dev025@example.com",
-    "username": "dev_user_025",
+    "username": "devuser025",
     "password": "Str0ngP@ss025!",
     "full_name": "Yuri Yamada",
     "stacks": [100, 130, 135],
@@ -478,9 +453,8 @@
     "created_at": "2024-10-26 13:25:00"
   },
   {
-    "friendly_code": "DEV026",
     "email": "dev026@example.com",
-    "username": "dev_user_026",
+    "username": "devuser026",
     "password": "Str0ngP@ss026!",
     "full_name": "Zaira Zanetti",
     "stacks": [105, 120, 150],
@@ -497,9 +471,8 @@
     "created_at": "2024-10-27 14:38:00"
   },
   {
-    "friendly_code": "DEV027",
     "email": "dev027@example.com",
-    "username": "dev_user_027",
+    "username": "devuser027",
     "password": "Str0ngP@ss027!",
     "full_name": "Alice Almeida",
     "stacks": [115, 135],
@@ -516,9 +489,8 @@
     "created_at": "2024-10-28 15:51:00"
   },
   {
-    "friendly_code": "DEV028",
     "email": "dev028@example.com",
-    "username": "dev_user_028",
+    "username": "devuser028",
     "password": "Str0ngP@ss028!",
     "full_name": "Bruno Barbosa",
     "stacks": [120, 140],
@@ -536,9 +508,8 @@
     "created_at": "2024-10-29 09:04:00"
   },
   {
-    "friendly_code": "DEV029",
     "email": "dev029@example.com",
-    "username": "dev_user_029",
+    "username": "devuser029",
     "password": "Str0ngP@ss029!",
     "full_name": "Carla Cordeiro",
     "stacks": [125, 150],
@@ -554,9 +525,8 @@
     "created_at": "2024-10-30 10:17:00"
   },
   {
-    "friendly_code": "DEV030",
     "email": "dev030@example.com",
-    "username": "dev_user_030",
+    "username": "devuser030",
     "password": "Str0ngP@ss030!",
     "full_name": "Diego Duarte",
     "stacks": [100, 115, 140],
@@ -575,9 +545,8 @@
     "created_at": "2024-10-31 11:30:00"
   },
   {
-    "friendly_code": "DEV031",
     "email": "dev031@example.com",
-    "username": "dev_user_031",
+    "username": "devuser031",
     "password": "Str0ngP@ss031!",
     "full_name": "Eduarda Esteves",
     "stacks": [100, 105],
@@ -593,9 +562,8 @@
     "created_at": "2024-11-01 12:43:00"
   },
   {
-    "friendly_code": "DEV032",
     "email": "dev032@example.com",
-    "username": "dev_user_032",
+    "username": "devuser032",
     "password": "Str0ngP@ss032!",
     "full_name": "Felipe Ferraz",
     "stacks": [110, 120],
@@ -612,9 +580,8 @@
     "created_at": "2024-11-02 13:56:00"
   },
   {
-    "friendly_code": "DEV033",
     "email": "dev033@example.com",
-    "username": "dev_user_033",
+    "username": "devuser033",
     "password": "Str0ngP@ss033!",
     "full_name": "Gabriela Gomes",
     "stacks": [130, 135],
@@ -631,9 +598,8 @@
     "created_at": "2024-11-03 14:09:00"
   },
   {
-    "friendly_code": "DEV034",
     "email": "dev034@example.com",
-    "username": "dev_user_034",
+    "username": "devuser034",
     "password": "Str0ngP@ss034!",
     "full_name": "Henrique Henrique",
     "stacks": [140, 145],
@@ -650,9 +616,8 @@
     "created_at": "2024-11-04 15:22:00"
   },
   {
-    "friendly_code": "DEV035",
     "email": "dev035@example.com",
-    "username": "dev_user_035",
+    "username": "devuser035",
     "password": "Str0ngP@ss035!",
     "full_name": "Isabela Ibrahim",
     "stacks": [100, 130, 135],
@@ -670,9 +635,8 @@
     "created_at": "2024-11-05 09:35:00"
   },
   {
-    "friendly_code": "DEV036",
     "email": "dev036@example.com",
-    "username": "dev_user_036",
+    "username": "devuser036",
     "password": "Str0ngP@ss036!",
     "full_name": "João Junqueira",
     "stacks": [105, 120, 150],
@@ -690,9 +654,8 @@
     "created_at": "2024-11-06 10:48:00"
   },
   {
-    "friendly_code": "DEV037",
     "email": "dev037@example.com",
-    "username": "dev_user_037",
+    "username": "devuser037",
     "password": "Str0ngP@ss037!",
     "full_name": "Karen Klein",
     "stacks": [115, 135],
@@ -708,9 +671,8 @@
     "created_at": "2024-11-07 11:01:00"
   },
   {
-    "friendly_code": "DEV038",
     "email": "dev038@example.com",
-    "username": "dev_user_038",
+    "username": "devuser038",
     "password": "Str0ngP@ss038!",
     "full_name": "Lucas Lima",
     "stacks": [120, 140],
@@ -727,9 +689,8 @@
     "created_at": "2024-11-08 12:14:00"
   },
   {
-    "friendly_code": "DEV039",
     "email": "dev039@example.com",
-    "username": "dev_user_039",
+    "username": "devuser039",
     "password": "Str0ngP@ss039!",
     "full_name": "Mariana Marques",
     "stacks": [125, 150],
@@ -746,9 +707,8 @@
     "created_at": "2024-11-09 13:27:00"
   },
   {
-    "friendly_code": "DEV040",
     "email": "dev040@example.com",
-    "username": "dev_user_040",
+    "username": "devuser040",
     "password": "Str0ngP@ss040!",
     "full_name": "Nicolas Nascimento",
     "stacks": [100, 115, 140],
@@ -766,9 +726,8 @@
     "created_at": "2024-11-10 14:40:00"
   },
   {
-    "friendly_code": "DEV041",
     "email": "dev041@example.com",
-    "username": "dev_user_041",
+    "username": "devuser041",
     "password": "Str0ngP@ss041!",
     "full_name": "Olivia Oliveira",
     "stacks": [100, 105],
@@ -784,9 +743,8 @@
     "created_at": "2024-11-11 15:53:00"
   },
   {
-    "friendly_code": "DEV042",
     "email": "dev042@example.com",
-    "username": "dev_user_042",
+    "username": "devuser042",
     "password": "Str0ngP@ss042!",
     "full_name": "Paulo Pereira",
     "stacks": [110, 120],
@@ -805,9 +763,8 @@
     "created_at": "2024-11-12 09:06:00"
   },
   {
-    "friendly_code": "DEV043",
     "email": "dev043@example.com",
-    "username": "dev_user_043",
+    "username": "devuser043",
     "password": "Str0ngP@ss043!",
     "full_name": "Queila Queiroz",
     "stacks": [130, 135],
@@ -823,9 +780,8 @@
     "created_at": "2024-11-13 10:19:00"
   },
   {
-    "friendly_code": "DEV044",
     "email": "dev044@example.com",
-    "username": "dev_user_044",
+    "username": "devuser044",
     "password": "Str0ngP@ss044!",
     "full_name": "Rafael Ramos",
     "stacks": [140, 145],
@@ -842,9 +798,8 @@
     "created_at": "2024-11-14 11:32:00"
   },
   {
-    "friendly_code": "DEV045",
     "email": "dev045@example.com",
-    "username": "dev_user_045",
+    "username": "devuser045",
     "password": "Str0ngP@ss045!",
     "full_name": "Sofia Silva",
     "stacks": [100, 130, 135],
@@ -862,9 +817,8 @@
     "created_at": "2024-11-15 12:45:00"
   },
   {
-    "friendly_code": "DEV046",
     "email": "dev046@example.com",
-    "username": "dev_user_046",
+    "username": "devuser046",
     "password": "Str0ngP@ss046!",
     "full_name": "Thiago Teixeira",
     "stacks": [105, 120, 150],
@@ -881,9 +835,8 @@
     "created_at": "2024-11-16 13:58:00"
   },
   {
-    "friendly_code": "DEV047",
     "email": "dev047@example.com",
-    "username": "dev_user_047",
+    "username": "devuser047",
     "password": "Str0ngP@ss047!",
     "full_name": "Ursula Uchoa",
     "stacks": [115, 135],
@@ -899,9 +852,8 @@
     "created_at": "2024-11-17 14:11:00"
   },
   {
-    "friendly_code": "DEV048",
     "email": "dev048@example.com",
-    "username": "dev_user_048",
+    "username": "devuser048",
     "password": "Str0ngP@ss048!",
     "full_name": "Vitor Vieira",
     "stacks": [120, 140],
@@ -919,9 +871,8 @@
     "created_at": "2024-11-18 15:24:00"
   },
   {
-    "friendly_code": "DEV049",
     "email": "dev049@example.com",
-    "username": "dev_user_049",
+    "username": "devuser049",
     "password": "Str0ngP@ss049!",
     "full_name": "Wesley Wagner",
     "stacks": [125, 150],
@@ -938,9 +889,8 @@
     "created_at": "2024-11-19 09:37:00"
   },
   {
-    "friendly_code": "DEV050",
     "email": "dev050@example.com",
-    "username": "dev_user_050",
+    "username": "devuser050",
     "password": "Str0ngP@ss050!",
     "full_name": "Ximena Xavier",
     "stacks": [100, 115, 140],
