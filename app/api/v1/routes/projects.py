@@ -3,13 +3,14 @@ from fastapi import HTTPException
 from app.enums import ProjectsCategoryAlias
 from typing import Literal
 from app.service.project_service import ProjectService
-from app.models.projects_model import ProjectsModel, ProjectsResultModel
+from app.models.projects_model import *
 from traceback import format_exc
+from app.utils.gen_friendlycode import GenerateFriendlyCode
 
 router = APIRouter()
 _project_service = ProjectService()
 
-@router.get("/search/{project_id}", name="Procure por um projeto especificando o seu tipo", response_model=ProjectsModel)
+@router.get("/search/{project_id}", name="Procure por um projeto especificando o seu tipo", response_model=ProjectsResultModel)
 def get_project_by_id(project_id: str):
     try:
         project = _project_service.find_by_id(collection_name=main_collection_name, data_id=project_id)
@@ -27,7 +28,7 @@ def get_project_by_id(project_id: str):
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
     
 
-@router.get("/search/{project_category}", name="Procura por projetos partindo de sua categoria", response_model=ProjectsModel)
+@router.get("/search/{project_category}", name="Procura por projetos partindo de sua categoria", response_model=ProjectsResultModel)
 def get_projects_by_category(project_category: str):
     try:
         projects = _project_service.find_projects_by_category(category=project_category)
@@ -61,26 +62,31 @@ def find_project_by_name(project_name: str):
 
 # rota temporária, o correto é o usuário possuí-la para adicionar na melhor maneira
 @router.post("/add", name="Adicione um novo evento na plataforma", response_model=ProjectsResultModel)
-def add_new_project(new_project: ProjectsModel):
+def add_new_project(new_project: ProjectResponseModel):
     try:
-        new_project_id = _project_service.insert(
-            collection_name=_project_service.main_collection_name,
-            new_data=new_project.model_dump())
+        generator = GenerateFriendlyCode()
+        project_as_dict = new_project.model_dump()
+
+        project_model = ProjectsResultModel(
+            _id="",
+            friendly_code=generator.generate_project_code(project_as_dict['category']),
+            **project_as_dict
+        )
+
+        new_project_id = _project_service.insert_project(
+            new_data=project_model.model_dump())
 
         if not new_project_id:
             raise HTTPException(status_code=500, detail="Erro ao inserir projeto")
-
-        resolve = ProjectsResultModel(
-            _id=str(new_project_id),
-            **new_project.dict()
-        )
         
-        return resolve
+        project_model._id = new_project_id
+        return project_model
+
     except HTTPException:
         raise
     except ValueError as ex:
         print(format_exc())
-        raise HTTPException(status_code=400, detail=ex)
+        raise HTTPException(status_code=400, detail=str(ex))
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")

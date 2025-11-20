@@ -1,5 +1,6 @@
 from app.core.session import Database
 from bson import ObjectId
+from typing import Dict, List
 
 
 class ProjectService(Database):
@@ -75,3 +76,14 @@ class ProjectService(Database):
         })
 
         return project
+
+    def insert_project(self, new_data: Dict[str, List[str]]):
+        try:
+            dev_object_id = []
+            for dev_id in new_data['developers_id']:
+                dev_object_id.append(super().validate_object_id(dev_id))
+            new_data['owner_id'] = super().validate_object_id(new_data['owner_id'])
+
+            return str(super().insert(self.main_collection_name, new_data))
+        except Exception as e:
+            raise
