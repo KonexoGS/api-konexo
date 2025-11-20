@@ -14,6 +14,20 @@ class ProjectsCategory(str, Enum):
     GAME = '150'
     DATABASE = '155'
 
+class ProjectsCategoryAlias(str, Enum):
+    DEVOPS = 'dvo'
+    FRAMEWORK = 'frw'
+    LIBRARY = 'lib'
+    API = 'api'
+    UIKIT = 'uik'
+    BOT = 'bot'
+    FULLSTACK = 'full'
+    BACKEND = 'bck'
+    FRONTEND = 'frn'
+    SAAS = 'sas'
+    GAME = 'gme'
+    DATABASE = 'data'
+
 class DeveloperLevel(str, Enum):
     PLAIN = '200'
     SENIOR = '205'
@@ -35,3 +49,7 @@ class Indicators(str, Enum):
     GINI = 'SI.POV.GINI' # Desigualdade
     AGRO = 'SL.AGR.EMPL.ZS'
     WORK = 'SL.TLF.TOTL.IN'
+
+class UserType(str, Enum):
+    ADMIN = "admin"
+    DEVELOPER = "developer"

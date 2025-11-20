@@ -5,9 +5,10 @@ from bson import ObjectId
 class ProjectService(Database):
     def __init__(self):
         super().__init__()
-        self.main_collection = super().get_collection_data("projects")
-        self.dev_collection = super().get_collection_data("developers")
-        self.user_collection = super().get_collection_data("users")
+        self.main_collection_name = "projects"
+        self.dev_collection_name = "developers"
+        self.main_collection = super().get_collection_data(self.main_collection_name)
+        self.dev_collection = super().get_collection_data(self.dev_collection_name)
 
     
     def find_by_project_name(self, project_name: str):

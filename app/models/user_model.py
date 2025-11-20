@@ -1,16 +1,11 @@
-from enum import Enum
 from datetime import datetime
-
-class UserType(Enum):
-    ADMIN = "admin"
-    DEVELOPER = "developer"
 
 class User(BaseModel):
     full_name: str
     username: str
     email: str
     password: str
-    user_type: UserType
+    user_type: str # UserType Enum
     level: str
     projects_subscribed: List[str]
     experience_level: int

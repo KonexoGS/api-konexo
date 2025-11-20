@@ -1,10 +1,9 @@
 from dataclasses import dataclass
 from typing import List
-from pydantic import Base64Str
+from pydantic import Base64Str, BaseModel
 
 
-@dataclass
-class Projects():
+class ProjectsModel(BaseModel):
     friendly_code: str
     owner_id: str
     name: str
