@@ -1,6 +1,6 @@
 from enum import Enum
 
-class ProjectsCategoryCode(str, Enum):
+class ProjectsCategory(str, Enum):
     DEVOPS = '100'
     FRAMEWORK = '105'
     LIBRARY = '110'
@@ -15,18 +15,18 @@ class ProjectsCategoryCode(str, Enum):
     DATABASE = '155'
 
 class ProjectsCategoryAlias(str, Enum):
-    DEVOPS = 'devops'
-    FRAMEWORK = 'framework'
-    LIBRARY = 'library'
+    DEVOPS = 'dvo'
+    FRAMEWORK = 'frw'
+    LIBRARY = 'lib'
     API = 'api'
-    UIKIT = 'uikit'
+    UIKIT = 'uik'
     BOT = 'bot'
-    FULLSTACK = 'fullstack'
-    BACKEND = 'backend'
-    FRONTEND = 'frontend'
-    SAAS = 'saas'
-    GAME = 'game'
-    DATABASE = 'database'
+    FULLSTACK = 'full'
+    BACKEND = 'bck'
+    FRONTEND = 'frn'
+    SAAS = 'sas'
+    GAME = 'gme'
+    DATABASE = 'data'
 
 class DeveloperLevel(str, Enum):
     PLAIN = '200'

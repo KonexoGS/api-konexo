@@ -1,6 +1,5 @@
 from app.core.session import Database
 from bson import ObjectId
-from typing import Dict, List
 
 
 class ProjectService(Database):
@@ -66,24 +65,3 @@ class ProjectService(Database):
                 "_id": owner['_id'],
                 "is_deleted": False
             })
-
-    def find_projects_by_category(self, category: str):
-        if not isinstance(category, str):
-            raise ValueError("A categoria deve ser uma string")
-        project = self.main_collection.find({
-            "category": category,
-            "is_deleted": False
-        })
-
-        return project
-
-    def insert_project(self, new_data: Dict[str, List[str]]):
-        try:
-            dev_object_id = []
-            for dev_id in new_data['developers_id']:
-                dev_object_id.append(super().validate_object_id(dev_id))
-            new_data['owner_id'] = super().validate_object_id(new_data['owner_id'])
-
-            return str(super().insert(self.main_collection_name, new_data))
-        except Exception as e:
-            raise
