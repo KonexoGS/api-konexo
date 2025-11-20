@@ -1,21 +1,12 @@
 from dataclasses import dataclass
 from typing import List, Dict
-from pydantic import NaiveDatetime
+from pydantic import BaseModel
+from bson import ObjectId
 
 
-@dataclass
-class Developers():
-    email: str
-    username: str
-    password: str
-    full_name: str
+class Developers(BaseModel):
     stacks: List[int]
-    role: List[str] 
+    speciality: List[str]
     level: str
-    projects_subscribed: List[str]
-    experience_level: int
-    badges: List[int]
-    is_deleted: bool
-    social_medias: Dict[str, str]
-    created_at: NaiveDatetime
+    user_id: ObjectId
 
