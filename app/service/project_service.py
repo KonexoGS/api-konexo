@@ -15,8 +15,13 @@ class ProjectService(Database):
     def find_by_project_name(self, project_name: str):
         if not isinstance(project_name, str):
             raise ValueError("O nome do projeto deve ser string")
-        project = self.main_collection.find({"name": project_name, "is_deleted": False})
+        project = list(self.main_collection.find({"project_name": {"$regex": project_name, "$options": 'i'}, "is_deleted": False}))
         
+        for p in project:
+            p['owner_id'] = str(p['owner_id'])
+            p['_id'] = str(p['_id'])
+            p['developers_id'] = [str(dev) for dev in p.get('developers_id', [])]
+
         return project
     
     def find_by_friendly_code(self, friendly_code: str):
@@ -70,10 +75,12 @@ class ProjectService(Database):
     def find_projects_by_category(self, category: str):
         if not isinstance(category, str):
             raise ValueError("A categoria deve ser uma string")
-        project = self.main_collection.find({
-            "category": category,
-            "is_deleted": False
-        })
+        project = list(self.main_collection.find({"category": category,"is_deleted": False}))
+
+        for p in project:
+            p['owner_id'] = str(p['owner_id'])
+            p['_id'] = str(p['_id'])
+            p['developers_id'] = [str(dev) for dev in p.get('developers_id', [])]
 
         return project
 

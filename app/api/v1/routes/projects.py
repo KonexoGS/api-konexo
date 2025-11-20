@@ -6,72 +6,28 @@ from app.service.project_service import ProjectService
 from app.models.projects_model import ProjectsResultModel, ProjectResponseModel
 from traceback import format_exc
 from app.utils.gen_friendlycode import GenerateFriendlyCode
-from app.enums import ProjectsCategoryAlias
-from typing import List
+from typing import List, Optional
 
 router = APIRouter()
 _project_service = ProjectService()
 
-@router.get("/search/id/{project_id}", name="Procure por um projeto especificando o seu tipo", response_model=ProjectsResultModel)
-def get_project_by_id(project_id: str):
+@router.get("/search", name="Procure por um projeto a partir do seu ID, categoria, ou Nome!", response_model=List[ProjectResponseModel])
+def find_projects_from_db(project_id: Optional[str | None] = None, name: Optional[str | None] = None, category: Optional[ProjectsCategoryAlias | None] = None):
     try:
-        project = _project_service.find_by_id(collection_name=_project_service.main_collection_name, data_id=project_id)
+        if not (project_id or name or category):
+            raise HTTPException(status_code=400, detail="Especifique pelo menos um dos parâmetros")
+        
+        response = None
+        if project_id:
+            response = [_project_service.find_by_id(project_id, _project_service.main_collection_name)]
+        elif name:
+            response = _project_service.find_by_project_name(project_name=name)
+        else:
+            response = _project_service.find_projects_by_category(category)
 
-        if not project:
-            raise HTTPException(status_code=404, detail="Nenhum projeto com esse ID foi encontrado")
-       
-        project["_id"] = str(project["_id"])
-        project["owner_id"] = str(project["owner_id"])
-
-        if "developers_id" in project:
-            project["developers_id"] = [str(dev) for dev in project["developers_id"]]
-
-        return ProjectsResultModel(**project)
-
-    except HTTPException:
-        raise
-    except ValueError as ex:
-        raise HTTPException(status_code=400, detail=format_exc())
-    except Exception as e:
-        print(format_exc())
-        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
-    
-
-@router.get("/search/category/{project_category}", response_model=List[ProjectsResultModel])
-def get_projects_by_category(project_category: ProjectsCategoryAlias):
-    try:
-        projects = _project_service.find_projects_by_category(category=project_category)
-
-        if not projects:
-            raise HTTPException(status_code=404, detail=f"Nenhum projeto com a categoria {project_category.upper()} foi encontrado")
-
-        return [
-            ProjectsResultModel(
-                **{
-                    **p,
-                    "_id": str(p["_id"]),
-                    "owner_id": str(p["owner_id"]),
-                    "developers_id": [str(d) for d in p.get("developers_id", [])]
-                }
-            ) for p in projects
-        ]
-
-    except HTTPException:
-        raise
-    except ValueError:
-        raise HTTPException(status_code=400, detail=format_exc())
-    except Exception:
-        print(format_exc())
-        raise HTTPException(status_code=500, detail="Erro ao buscar projetos por categoria.")
-    
-@router.get("/search/name/{project_name}", name="Procure projetos a partir de seu nome")
-def find_project_by_name(project_name: str):
-    try:
-        projects = _project_service.find_by_project_name(project_name=project_name)
-
-        if not projects:
-            raise HTTPException(status_code=404, detail="Nenhum projeto foi encontrado")
-        return projects
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail="Nenhum projeto foi encontrado")    
+        return response
     except HTTPException:
         raise
     except ValueError as ex:
@@ -80,7 +36,7 @@ def find_project_by_name(project_name: str):
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
-# rota temporária, o correto é o usuário possuí-la para adicionar na melhor maneira
+
 @router.post("/add", name="Adicione um novo evento na plataforma", response_model=ProjectsResultModel)
 def add_new_project(new_project: ProjectResponseModel):
     try:
