@@ -6,11 +6,11 @@ from typing import Dict
 
 class DatabaseLocal:
     def __init__(self):
-        self.defaultusers_path = Path('../local/default_profiles.json')
+        self.defaultusers_path = Path('app/local/default_profiles.json')
 
     def get_default_users(self, results: int | None = None):
         resultsData = []
-        with open('./local/default_profiles.json', 'r') as f:
+        with open('app/local/default_profiles.json', 'r') as f:
             data: Dict = load(f)
         if not results:  
             return data
