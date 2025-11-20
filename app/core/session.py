@@ -88,6 +88,14 @@ class Database():
             return_document=ReturnDocument.AFTER)
         return updated_data
     
+    def get_all_data(self, collection_name: str):
+        if not isinstance(collection_name, str):
+            raise ValueError("O nome da coleção deve ser uma string")
+        collection = self.get_collection_data(collection_name)
+        result = collection.find({})
+
+        return result
+
     def find_by_id(self, collection_name: str, data_id: str | ObjectId):
         if not isinstance(data_id, str) or not isinstance(collection_name, str):
             raise ValueError("O valor enviado é incorreto pra sua formatação.")

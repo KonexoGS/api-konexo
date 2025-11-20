@@ -13,6 +13,24 @@ from typing import List, Optional, Dict, Any
 router = APIRouter()
 _project_service = ProjectService()
 
+@router.get("/", name="Busque por todos os projetos salvos no banco", response_model=List[ProjectResponseModel])
+def get_all_projects():
+    try:
+        projects = list(_project_service.get_all_data(_project_service.main_collection_name))
+        if not projects:
+            raise HTTPException(status_code=404, detail="Nenhum Projeto foi encontrado")
+        projects_normalized = [_project_service.normalize_mongo_document(p) for p in projects]
+
+        return projects_normalized
+
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        raise HTTPException(status_code=400, detail=format_exc())
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+
 @router.get("/search", name="Procure por um projeto a partir do seu ID, categoria, ou Nome!", response_model=List[ProjectResponseModel])
 def find_projects_from_db(project_id: Optional[str | None] = None, name: Optional[str | None] = None, category: Optional[ProjectsCategoryAlias | None] = None):
     try:
