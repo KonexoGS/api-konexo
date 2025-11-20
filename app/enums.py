@@ -15,6 +15,7 @@ class ProjectsCategoryCode(str, Enum):
     DATABASE = '155'
 
 class ProjectsCategoryAlias(str, Enum):
+    NONE = 'none'
     DEVOPS = 'devops'
     FRAMEWORK = 'framework'
     LIBRARY = 'library'

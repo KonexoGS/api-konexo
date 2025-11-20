@@ -4,9 +4,10 @@ from fastapi.responses import JSONResponse
 from app.enums import ProjectsCategoryAlias
 from typing import Literal
 from app.service.project_service import ProjectService
-from app.models.projects_model import ProjectsResultModel, ProjectResponseModel
+from app.models.projects_model import *
 from traceback import format_exc
 from app.utils.gen_friendlycode import GenerateFriendlyCode
+from app.utils.convert_enum import convert_enums_to_values
 from typing import List, Optional, Dict, Any
 
 router = APIRouter()
@@ -38,7 +39,7 @@ def find_projects_from_db(project_id: Optional[str | None] = None, name: Optiona
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
 
-@router.post("/add", name="Adicione um novo evento na plataforma", response_model=ProjectsResultModel, status_code=201)
+@router.post("/add", name="Adicione um novo evento na plataforma", response_model=ProjectsResultModel)
 def add_new_project(new_project: ProjectResponseModel):
     try:
         generator = GenerateFriendlyCode()
@@ -132,3 +133,51 @@ def deactivate_project_by_id(project_id: str):
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
 
+@router.put(
+    path='/{project_id}/update',
+    name="Atualize o conteúdo de um projeto a partir do seu ID",
+    response_model=ProjectsResultModel,
+    description="Informe o ID de um projeto e atualize as suas informações"
+)
+def update_project(project_id: str, new_data: ProjectUpdateModel):
+    try:
+        project_as_dict = new_data.model_dump(exclude_unset=True)
+        project_as_dict = convert_enums_to_values(project_as_dict)
+
+        for key, value in list(project_as_dict.items()):
+            if isinstance(value, bool):
+                continue
+            if value == "string":
+                project_as_dict.pop(key)
+            elif isinstance(value, list) and value and (value[0] in ["string", "none"]):
+                project_as_dict.pop(key)
+
+        if len(project_as_dict) == 0:
+            raise HTTPException(status_code=400, detail="Nenhuma nova informação foi informada.")
+
+        updated_project = _project_service.update(
+            collection_name=_project_service.main_collection_name,
+            old_data_id=project_id,
+            new_data=project_as_dict
+        )
+
+        if not updated_project:
+            raise HTTPException(status_code=404, detail="Projeto não foi encontrado")
+
+        updated_project['_id'] = str(updated_project['_id'])
+        updated_project['owner_id'] = str(updated_project['owner_id'])
+        updated_project['developers_id'] = [str(dev_id) for dev_id in updated_project.get('developers_id', [])]
+
+        updated_project['has_github'] = 'github.com' in updated_project.get('github_link', '')
+        return ProjectsResultModel(
+            **updated_project
+        )
+
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a atualização do projeto.")
