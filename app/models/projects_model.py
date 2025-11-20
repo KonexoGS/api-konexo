@@ -14,3 +14,6 @@ class ProjectsModel(BaseModel):
     developers_id: List[str]
     banner_photo: Base64Str
     is_deleted: bool
+
+class ProjectsResultModel(ProjectsModel):
+    _id: str

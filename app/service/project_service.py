@@ -65,3 +65,13 @@ class ProjectService(Database):
                 "_id": owner['_id'],
                 "is_deleted": False
             })
+
+    def find_projects_by_category(self, category: str):
+        if not isinstance(category, str):
+            raise ValueError("A categoria deve ser uma string")
+        project = self.main_collection.find({
+            "category": category,
+            "is_deleted": False
+        })
+
+        return project
