@@ -66,3 +66,30 @@ def add_new_project(new_project: ProjectResponseModel):
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+
+
+@router.delete('/{project_id}', name="Exclua permanentemente um projeto do sistema a partir do seu ID", response_model=ProjectsResultModel)
+def delete_project_by_id(project_id: str):
+    try:
+        if project_id.isnumeric():
+            raise HTTPException(status_code=400, detail=f"O Id {project_id} informado é inválido.")
+        validated_id = _project_service.validate_object_id(project_id)
+
+        deleted_project = _project_service.hard_delete(
+            collection_name=_project_service.main_collection_name, 
+            data_id=validated_id)
+        
+        if not deleted_project:
+            raise HTTPException(status_code=404, detail=f"Nenhum projeto com o ID {project_id} foi encontrado.")
+
+        deleted_project['_id'] = str(deleted_project['_id'])
+        deleted_project['owner_id'] = str(deleted_project['owner_id'])
+        return ProjectsResultModel(**deleted_project)
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
