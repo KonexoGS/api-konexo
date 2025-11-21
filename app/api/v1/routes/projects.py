@@ -14,7 +14,7 @@ from typing import List, Optional, Dict, Any
 router = APIRouter()
 _project_service = ProjectService()
 
-@router.get("/", name="Busque por todos os projetos salvos no banco", response_model=List[ProjectResponseModel])
+@router.get("/", name="Busque por todos os projetos salvos no banco", response_model=List[ProjectResponseSearchModel])
 def get_all_projects():
     try:
         projects = list(_project_service.get_all_data(_project_service.main_collection_name))
@@ -22,7 +22,15 @@ def get_all_projects():
             raise HTTPException(status_code=404, detail="Nenhum Projeto foi encontrado")
         projects_normalized = [_project_service.normalize_mongo_document(p) for p in projects]
 
-        return projects_normalized
+        projects = []
+        for p in projects_normalized:
+            tmp = ProjectResponseSearchModel(
+                owner_name=_project_service.find_by_id(collection_name="users", data_id=p['owner_id'])['full_name'],
+                **p
+            )
+            projects.append(tmp)
+
+        return projects
 
     except HTTPException:
         raise
