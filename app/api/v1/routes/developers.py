@@ -7,11 +7,17 @@ from app.service.user_service import UserService
 from app.service.project_service import ProjectService
 from app.api.v1.routes.user import get_all_users
 from traceback import format_exc
+from pydantic import Field
+from pathlib import Path
 
 router = APIRouter()
 _dev_service = DeveloperService()
 _user_service = UserService()
 _project_service = ProjectService()
+
+class ProfilePhotoResponse(BaseModel):
+    isValid: bool
+    profile_photo: str | None
 
 @router.get('/', name="Conheça todos os devs do sistema", response_model=List[DeveloperResponseModel])
 def get_all_devs():
@@ -127,9 +133,43 @@ def add_new_user(new_dev: DeveloperResponseModel):
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
 
-@router.put('/{dev_id}/profile_photo', name="Adicione uma nova foto pro seu usuário", response_model=DevelopersModel)
-def add_profile_photo(file: UploadFile | None = File(None)):
-    pass
+@router.put('/{dev_id}/profile_photo', name="Adicione uma nova foto pro seu usuário", response_model=ProfilePhotoResponse)
+def add_profile_photo(dev_id: str, file: UploadFile):
+    from pathlib import Path
+    try:
+        file_name: str = file.filename
+
+        dev = _dev_service.find_by_id(
+            collection_name=_dev_service.dev_colection_name,
+            data_id=dev_id
+        )
+
+        user = _user_service.update(
+            collection_name=_user_service.user_collection_name,
+            old_data_id=dev['user_id'],
+            new_data={"profile_photo": file_name}
+        )
+
+        path = Path('app/local/data')
+        path.mkdir(parents=True, exist_ok=True)
+
+        file_location = path / file_name
+        with open(file_location, "wb") as f:
+            f.write(file.file.read())
+
+        return ProfilePhotoResponse(
+            isValid=len(updated_user["profile_photo"]) > 0,
+            profile_photo=updated_user["profile_photo"]
+        )
+
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a execução da rota")
 
 
 @router.get('/profile/{username}', name="Acesse o perfil do usuário pelo username")
@@ -166,7 +206,7 @@ def find_user_by_username(username: str):
         raise HTTPException(status_code=400, detail=str(ex))
     except Exception as e:
         print(format_exc())
-        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo usuário.")
 
 @router.patch('/recommend', name="Recomende um desenvolvedor para outros usuários")
 def recommend_dev(dev_id: str, is_recommend: bool = True):
