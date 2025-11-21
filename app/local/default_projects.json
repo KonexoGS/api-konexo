@@ -1,2065 +1,2136 @@
 [
   {
     "owner_id": "6920204d83a739949ca359be",
-    "project_name": "Digital Builder 529",
-    "short_description": "Digital Builder 529 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Builder 529 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "project_name": "Workspace Dados Docker",
+    "short_description": "Workspace Dados Docker é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Dados Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como docker, aws, flutter, html, typescript, spring, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "javascript",
+      "docker",
       "aws",
-      "redis",
-      "express",
-      "nodejs",
-      "rust"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/digital_builder_529",
-    "developers_id": [
-      "6920205283a739949ca35a00",
-      "6920205283a739949ca359fe",
-      "6920205183a739949ca359ec"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a02",
-    "project_name": "Future Suite 4757",
-    "short_description": "Future Suite 4757 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Suite 4757 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "csharp",
-      "nodejs",
-      "spring",
-      "python",
-      "docker"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/future_suite_4757",
-    "developers_id": [
-      "6920204c83a739949ca359b0"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fc",
-    "project_name": "Hyper Platform 1509",
-    "short_description": "Hyper Platform 1509 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Platform 1509 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "spring",
-      "rust",
-      "fastapi",
-      "angular",
-      "docker"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/hyper_platform_1509",
-    "developers_id": [
-      "6920205283a739949ca359fe"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359e2",
-    "project_name": "Future System 3725",
-    "short_description": "Future System 3725 is a modern solution designed to enhance productivity.",
-    "full_description": "Future System 3725 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "css",
-      "rust",
-      "tailwind",
-      "bootstrap"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/future_system_3725",
-    "developers_id": [
-      "6920205183a739949ca359f2",
-      "6920205383a739949ca35a08",
-      "6920204d83a739949ca359bc",
-      "6920204c83a739949ca359ae"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359ea",
-    "project_name": "Digital Suite 696",
-    "short_description": "Digital Suite 696 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Suite 696 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "html",
-      "react",
-      "go"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/digital_suite_696",
-    "developers_id": [
-      "6920204f83a739949ca359d2",
-      "6920204d83a739949ca359b6",
-      "6920204e83a739949ca359c4",
-      "6920204d83a739949ca359c0"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359a8",
-    "project_name": "Next Builder 1072",
-    "short_description": "Next Builder 1072 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Builder 1072 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "java",
-      "azure",
-      "csharp",
-      "nodejs",
-      "sass",
-      "spring"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/next_builder_1072",
-    "developers_id": [
-      "6920205183a739949ca359f6",
-      "6920205383a739949ca35a06",
-      "6920205283a739949ca359fa",
-      "6920205083a739949ca359e4"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fa",
-    "project_name": "Next Manager 8484",
-    "short_description": "Next Manager 8484 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Manager 8484 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "azure",
-      "express",
-      "javascript",
-      "go",
-      "python"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/next_manager_8484",
-    "developers_id": [
-      "6920204f83a739949ca359da"
-    ]
-  },
-  {
-    "owner_id": "6920204d83a739949ca359be",
-    "project_name": "Prime Suite 9742",
-    "short_description": "Prime Suite 9742 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Suite 9742 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "aws",
-      "sass",
-      "python",
-      "kubernetes",
-      "docker"
-    ],
-    "category": [
-      "saas"
-    ],
-    "github_link": "https://github.com/example/prime_suite_9742",
-    "developers_id": [
-      "6920204f83a739949ca359dc",
-      "6920204e83a739949ca359c2",
-      "6920205183a739949ca359ee",
-      "6920204f83a739949ca359d0"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f0",
-    "project_name": "Cloud Toolkit 8776",
-    "short_description": "Cloud Toolkit 8776 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Toolkit 8776 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "flask",
-      "bootstrap",
-      "javascript"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/cloud_toolkit_8776",
-    "developers_id": [
-      "6920205183a739949ca359f2",
-      "6920204d83a739949ca359bc",
-      "6920205383a739949ca35a0a",
-      "6920204e83a739949ca359cc",
-      "6920204f83a739949ca359d0"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a04",
-    "project_name": "Smart Builder 4249",
-    "short_description": "Smart Builder 4249 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Builder 4249 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "spring",
-      "rust",
-      "django",
-      "gcp"
-    ],
-    "category": [
-      "saas"
-    ],
-    "github_link": "https://github.com/example/smart_builder_4249",
-    "developers_id": [
-      "6920205183a739949ca359f4",
-      "6920204e83a739949ca359c6",
-      "6920205083a739949ca359e6"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359ca",
-    "project_name": "Ultra System 842",
-    "short_description": "Ultra System 842 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra System 842 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "azure",
-      "mongodb",
-      "flutter"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/ultra_system_842",
-    "developers_id": [
-      "6920205383a739949ca35a06",
-      "6920204e83a739949ca359c6",
-      "6920205283a739949ca35a04",
-      "6920205083a739949ca359e4"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359c6",
-    "project_name": "Smart Suite 4711",
-    "short_description": "Smart Suite 4711 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Suite 4711 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "mongodb",
-      "tailwind",
-      "csharp",
-      "aws",
-      "bootstrap"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/smart_suite_4711",
-    "developers_id": [
-      "6920205083a739949ca359e8",
-      "6920204e83a739949ca359c2",
-      "6920204c83a739949ca359a8"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f2",
-    "project_name": "Smart Hub 5102",
-    "short_description": "Smart Hub 5102 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Hub 5102 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "express",
-      "fastapi",
-      "tailwind"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/smart_hub_5102",
-    "developers_id": [
-      "6920204c83a739949ca359ac",
-      "6920205183a739949ca359f2",
-      "6920205083a739949ca359de"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359ec",
-    "project_name": "Future Hub 2413",
-    "short_description": "Future Hub 2413 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Hub 2413 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "redis",
-      "sass",
-      "fastapi"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/future_hub_2413",
-    "developers_id": [
-      "6920205183a739949ca359f4",
-      "6920204f83a739949ca359d2",
-      "6920204d83a739949ca359c0",
-      "6920204c83a739949ca359ae"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359b2",
-    "project_name": "Ultra Builder 6322",
-    "short_description": "Ultra Builder 6322 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Builder 6322 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "go",
-      "python"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/ultra_builder_6322",
-    "developers_id": [
-      "6920204e83a739949ca359c8"
-    ]
-  },
-  {
-    "owner_id": "6920205383a739949ca35a0a",
-    "project_name": "Cloud Portal 8695",
-    "short_description": "Cloud Portal 8695 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Portal 8695 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "fastapi",
-      "python",
-      "spring",
-      "react",
-      "kubernetes",
-      "azure"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/cloud_portal_8695",
-    "developers_id": [
-      "6920204f83a739949ca359d2"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fa",
-    "project_name": "Dynamic Toolkit 4255",
-    "short_description": "Dynamic Toolkit 4255 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Toolkit 4255 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "python",
-      "spring",
-      "nodejs",
-      "java",
-      "css",
-      "angular"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/dynamic_toolkit_4255",
-    "developers_id": [
-      "6920204c83a739949ca359ae",
-      "6920204f83a739949ca359d0"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f0",
-    "project_name": "Digital Service 7579",
-    "short_description": "Digital Service 7579 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Service 7579 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "gcp",
       "flutter",
-      "go"
+      "html",
+      "typescript",
+      "spring"
     ],
     "category": [
       "database"
     ],
-    "github_link": "https://github.com/example/digital_service_7579",
+    "github_link": "https://github.com/example/workspace_dados_docker",
+    "developers_id": [
+      "6920204e83a739949ca359ce",
+      "6920204f83a739949ca359dc"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e2",
+    "project_name": "Ferramenta Mobilidade Csharp",
+    "short_description": "Ferramenta Mobilidade Csharp é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Mobilidade Csharp foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como csharp, vue, java, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "csharp",
+      "vue",
+      "java",
+      "react"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/ferramenta_mobilidade_csharp",
+    "developers_id": [
+      "6920204f83a739949ca359d8",
+      "6920204e83a739949ca359c8",
+      "6920205283a739949ca359fa",
+      "6920205383a739949ca35a0a"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ac",
+    "project_name": "Service Segurança Docker",
+    "short_description": "Service Segurança Docker é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Service Segurança Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como react, docker, nodejs, css, java, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "react",
+      "docker",
+      "nodejs",
+      "css",
+      "java",
+      "javascript"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/service_segurança_docker",
+    "developers_id": [
+      "6920204d83a739949ca359c0",
+      "6920205283a739949ca359f8",
+      "6920204e83a739949ca359ce",
+      "6920205183a739949ca359f4"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ae",
+    "project_name": "Manager Saúde Bootstrap",
+    "short_description": "Manager Saúde Bootstrap é um projeto desenvolvido para atender demandas reais do setor frontend, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Saúde Bootstrap foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como fastapi, spring, django, javascript, bootstrap, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "fastapi",
+      "spring",
+      "django",
+      "javascript",
+      "bootstrap"
+    ],
+    "category": [
+      "library"
+    ],
+    "github_link": "https://github.com/example/manager_saúde_bootstrap",
+    "developers_id": [
+      "6920204f83a739949ca359d6",
+      "6920204e83a739949ca359c4",
+      "6920205183a739949ca359ee",
+      "6920204c83a739949ca359b2"
+    ]
+  },
+  {
+    "owner_id": "6920205383a739949ca35a0a",
+    "project_name": "Manager Social Rust",
+    "short_description": "Manager Social Rust é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Social Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, typescript, sass, react, rust, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "java",
+      "typescript",
+      "sass",
+      "react",
+      "rust"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/manager_social_rust",
+    "developers_id": [
+      "6920204d83a739949ca359b8",
+      "6920204f83a739949ca359da",
+      "6920204e83a739949ca359ca"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d0",
+    "project_name": "Engine Industrial Css",
+    "short_description": "Engine Industrial Css é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Industrial Css foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como aws, bootstrap, css, javascript, angular, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "aws",
+      "bootstrap",
+      "css",
+      "javascript",
+      "angular"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/engine_industrial_css",
+    "developers_id": [
+      "6920204f83a739949ca359dc",
+      "6920204d83a739949ca359c0",
+      "6920204e83a739949ca359c8",
+      "6920205083a739949ca359e6"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359cc",
+    "project_name": "API Social Html",
+    "short_description": "API Social Html é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "API Social Html foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como bootstrap, mongodb, express, django, html, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "bootstrap",
+      "mongodb",
+      "express",
+      "django",
+      "html"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/api_social_html",
     "developers_id": [
       "6920204c83a739949ca359a8"
     ]
   },
   {
-    "owner_id": "6920205383a739949ca35a0a",
-    "project_name": "Nova Hub 187",
-    "short_description": "Nova Hub 187 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Hub 187 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205183a739949ca359ea",
+    "project_name": "Monitor Backend Python",
+    "short_description": "Monitor Backend Python é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Monitor Backend Python foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como spring, fastapi, html, sass, python, angular, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "angular",
+      "spring",
       "fastapi",
-      "javascript",
-      "aws",
-      "tailwind"
-    ],
-    "category": [
-      "saas"
-    ],
-    "github_link": "https://github.com/example/nova_hub_187",
-    "developers_id": [
-      "6920205283a739949ca359fa",
-      "6920205083a739949ca359e6",
-      "6920204c83a739949ca359ae",
-      "6920205183a739949ca359ea",
-      "6920204e83a739949ca359c4"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d2",
-    "project_name": "Digital Builder 7175",
-    "short_description": "Digital Builder 7175 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Builder 7175 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "gcp",
-      "docker"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/digital_builder_7175",
-    "developers_id": [
-      "6920204c83a739949ca359ae",
-      "6920204c83a739949ca359aa"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a00",
-    "project_name": "Cloud Portal 4024",
-    "short_description": "Cloud Portal 4024 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Portal 4024 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "javascript",
-      "gcp",
       "html",
+      "sass",
+      "python",
+      "angular"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/monitor_backend_python",
+    "developers_id": [
+      "6920205183a739949ca359ee",
+      "6920205183a739949ca359f0",
+      "6920204c83a739949ca359b0"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Workspace Comercial Django",
+    "short_description": "Workspace Comercial Django é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Comercial Django foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como mongodb, css, django, go, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "mongodb",
+      "css",
+      "django",
       "go",
       "aws"
     ],
     "category": [
       "bot"
     ],
-    "github_link": "https://github.com/example/cloud_portal_4024",
+    "github_link": "https://github.com/example/workspace_comercial_django",
+    "developers_id": [
+      "6920205383a739949ca35a08",
+      "6920205183a739949ca359ec",
+      "6920204d83a739949ca359b4",
+      "6920204d83a739949ca359b8"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c2",
+    "project_name": "Aplicação Financeiro Rust",
+    "short_description": "Aplicação Financeiro Rust é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação Financeiro Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como bootstrap, flask, go, rust, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "bootstrap",
+      "flask",
+      "go",
+      "rust",
+      "aws"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/aplicação_financeiro_rust",
+    "developers_id": [
+      "6920205283a739949ca35a04",
+      "6920205283a739949ca359fe",
+      "6920205383a739949ca35a0a"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ac",
+    "project_name": "Aplicação Cloud Tailwind",
+    "short_description": "Aplicação Cloud Tailwind é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação Cloud Tailwind foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como kubernetes, aws, tailwind, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "kubernetes",
+      "aws",
+      "tailwind"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/aplicação_cloud_tailwind",
     "developers_id": [
       "6920205083a739949ca359e8",
-      "6920205383a739949ca35a06",
+      "6920204c83a739949ca359a8",
+      "6920205283a739949ca359fc",
+      "6920204f83a739949ca359d2",
       "6920205083a739949ca359de"
     ]
   },
   {
-    "owner_id": "6920205083a739949ca359e8",
-    "project_name": "Cloud Suite 4372",
-    "short_description": "Cloud Suite 4372 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Suite 4372 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Aplicação Dados Express",
+    "short_description": "Aplicação Dados Express é um projeto desenvolvido para atender demandas reais do setor backend, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação Dados Express foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como nodejs, docker, typescript, bootstrap, express, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "angular",
+      "nodejs",
+      "docker",
+      "typescript",
+      "bootstrap",
+      "express"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/aplicação_dados_express",
+    "developers_id": [
+      "6920205383a739949ca35a08",
+      "6920204d83a739949ca359b4",
+      "6920204d83a739949ca359c0"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ae",
+    "project_name": "Analytics Industrial Azure",
+    "short_description": "Analytics Industrial Azure é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Analytics Industrial Azure foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como go, azure, spring, gcp, vue, tailwind, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
       "go",
+      "azure",
+      "spring",
+      "gcp",
       "vue",
+      "tailwind"
+    ],
+    "category": [
+      "game"
+    ],
+    "github_link": "https://github.com/example/analytics_industrial_azure",
+    "developers_id": [
+      "6920204e83a739949ca359c6",
+      "6920205283a739949ca359f8",
+      "6920204e83a739949ca359c8",
+      "6920204c83a739949ca359aa",
+      "6920204c83a739949ca359ae"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ae",
+    "project_name": "Analytics Educacional Spring",
+    "short_description": "Analytics Educacional Spring é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Analytics Educacional Spring foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como nodejs, docker, aws, spring, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "nodejs",
+      "docker",
+      "aws",
+      "spring"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/analytics_educacional_spring",
+    "developers_id": [
+      "6920205083a739949ca359e2",
+      "6920205283a739949ca35a04"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359dc",
+    "project_name": "Platform Industrial React",
+    "short_description": "Platform Industrial React é um projeto desenvolvido para atender demandas reais do setor financeiro, oferecendo eficiência e integração moderna.",
+    "full_description": "Platform Industrial React foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como react, spring, mongodb, javascript, css, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
       "react",
+      "spring",
+      "mongodb",
+      "javascript",
+      "css"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/platform_industrial_react",
+    "developers_id": [
+      "6920204f83a739949ca359da",
+      "6920205183a739949ca359ec",
+      "6920204f83a739949ca359d0"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d8",
+    "project_name": "Center Saúde Redis",
+    "short_description": "Center Saúde Redis é um projeto desenvolvido para atender demandas reais do setor frontend, oferecendo eficiência e integração moderna.",
+    "full_description": "Center Saúde Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, java, flask, vue, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
       "redis",
+      "java",
+      "flask",
+      "vue",
       "javascript"
     ],
     "category": [
-      "none"
+      "game"
     ],
-    "github_link": "https://github.com/example/cloud_suite_4372",
-    "developers_id": [
-      "6920204d83a739949ca359ba"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359cc",
-    "project_name": "Cloud Builder 8790",
-    "short_description": "Cloud Builder 8790 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Builder 8790 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
-      "aws",
-      "rust",
-      "flask",
-      "postgresql"
-    ],
-    "category": [
-      "framework"
-    ],
-    "github_link": "https://github.com/example/cloud_builder_8790",
-    "developers_id": [
-      "6920205283a739949ca359fa",
-      "6920204f83a739949ca359d4",
-      "6920205283a739949ca359fc",
-      "6920205183a739949ca359f2",
-      "6920204e83a739949ca359c6"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a04",
-    "project_name": "Ultra Suite 4493",
-    "short_description": "Ultra Suite 4493 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Suite 4493 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "kubernetes",
-      "django",
-      "aws",
-      "css",
-      "flutter"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/ultra_suite_4493",
+    "github_link": "https://github.com/example/center_saúde_redis",
     "developers_id": [
       "6920205183a739949ca359ec",
-      "6920204e83a739949ca359c8",
-      "6920204c83a739949ca359b2"
+      "6920205083a739949ca359e6",
+      "6920204d83a739949ca359c0"
     ]
   },
   {
-    "owner_id": "6920204e83a739949ca359c6",
-    "project_name": "Digital Service 9075",
-    "short_description": "Digital Service 9075 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Service 9075 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205283a739949ca359fe",
+    "project_name": "Portal Social Html",
+    "short_description": "Portal Social Html é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal Social Html foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como gcp, html, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "react",
-      "csharp",
-      "spring",
-      "flask"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/digital_service_9075",
-    "developers_id": [
-      "6920204f83a739949ca359d4"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359e2",
-    "project_name": "Future Toolkit 6880",
-    "short_description": "Future Toolkit 6880 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Toolkit 6880 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
-      "docker",
+      "gcp",
       "html"
     ],
     "category": [
-      "library"
+      "backend"
     ],
-    "github_link": "https://github.com/example/future_toolkit_6880",
+    "github_link": "https://github.com/example/portal_social_html",
     "developers_id": [
-      "6920204c83a739949ca359aa"
+      "6920205283a739949ca35a02",
+      "6920204f83a739949ca359d2",
+      "6920205283a739949ca35a04",
+      "6920204e83a739949ca359c4"
     ]
   },
   {
-    "owner_id": "6920205083a739949ca359e2",
-    "project_name": "Smart Manager 7876",
-    "short_description": "Smart Manager 7876 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Manager 7876 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205083a739949ca359e4",
+    "project_name": "Gateway DevOps Sass",
+    "short_description": "Gateway DevOps Sass é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway DevOps Sass foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como spring, nodejs, express, sass, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "rust",
-      "vue",
+      "spring",
+      "nodejs",
+      "express",
+      "sass",
       "javascript"
     ],
     "category": [
       "devops"
     ],
-    "github_link": "https://github.com/example/smart_manager_7876",
+    "github_link": "https://github.com/example/gateway_devops_sass",
     "developers_id": [
-      "6920205083a739949ca359e4",
-      "6920205183a739949ca359ec",
-      "6920204c83a739949ca359ac",
-      "6920205183a739949ca359ee",
-      "6920205383a739949ca35a08"
+      "6920204d83a739949ca359bc",
+      "6920204c83a739949ca359ac"
     ]
   },
   {
-    "owner_id": "6920205183a739949ca359f4",
-    "project_name": "Ultra System 2633",
-    "short_description": "Ultra System 2633 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra System 2633 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204c83a739949ca359ac",
+    "project_name": "Gateway Financeiro Flask",
+    "short_description": "Gateway Financeiro Flask é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Financeiro Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como mongodb, nodejs, fastapi, flask, html, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "bootstrap",
-      "flutter",
-      "typescript",
-      "fastapi",
-      "azure"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/ultra_system_2633",
-    "developers_id": [
-      "6920204f83a739949ca359d0",
-      "6920204c83a739949ca359b2"
-    ]
-  },
-  {
-    "owner_id": "6920204d83a739949ca359b4",
-    "project_name": "Nova Builder 250",
-    "short_description": "Nova Builder 250 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Builder 250 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "css",
-      "bootstrap",
-      "csharp",
-      "nodejs",
-      "html"
-    ],
-    "category": [
-      "framework"
-    ],
-    "github_link": "https://github.com/example/nova_builder_250",
-    "developers_id": [
-      "6920204c83a739949ca359a8",
-      "6920204e83a739949ca359c6",
-      "6920204f83a739949ca359d4",
-      "6920204e83a739949ca359c8"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359c2",
-    "project_name": "Future Hub 6277",
-    "short_description": "Future Hub 6277 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Hub 6277 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "angular"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/future_hub_6277",
-    "developers_id": [
-      "6920205083a739949ca359e0"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359b0",
-    "project_name": "Next Engine 8370",
-    "short_description": "Next Engine 8370 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Engine 8370 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "nodejs",
-      "flutter",
-      "fastapi"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/next_engine_8370",
-    "developers_id": [
-      "6920205283a739949ca359f8",
-      "6920204c83a739949ca359b0",
-      "6920205083a739949ca359e2"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359ca",
-    "project_name": "Ultra Service 6227",
-    "short_description": "Ultra Service 6227 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Service 6227 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "docker",
-      "css"
-    ],
-    "category": [
-      "framework"
-    ],
-    "github_link": "https://github.com/example/ultra_service_6227",
-    "developers_id": [
-      "6920205283a739949ca359f8",
-      "6920205183a739949ca359ec",
-      "6920205183a739949ca359ea",
-      "6920205083a739949ca359e2",
-      "6920204f83a739949ca359d2"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a00",
-    "project_name": "Future Engine 9638",
-    "short_description": "Future Engine 9638 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Engine 9638 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "express",
-      "django"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/future_engine_9638",
-    "developers_id": [
-      "6920204c83a739949ca359aa",
-      "6920205083a739949ca359e0",
-      "6920204c83a739949ca359ae",
-      "6920205083a739949ca359de"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d4",
-    "project_name": "Next System 6117",
-    "short_description": "Next System 6117 is a modern solution designed to enhance productivity.",
-    "full_description": "Next System 6117 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "postgresql",
-      "vue",
-      "kubernetes",
-      "sass"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/next_system_6117",
-    "developers_id": [
-      "6920205083a739949ca359e6",
-      "6920205383a739949ca35a0a"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f6",
-    "project_name": "Hyper Suite 3426",
-    "short_description": "Hyper Suite 3426 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Suite 3426 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "vue",
-      "rust",
-      "gcp",
-      "kubernetes",
-      "tailwind"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/hyper_suite_3426",
-    "developers_id": [
-      "6920204d83a739949ca359c0",
-      "6920204d83a739949ca359bc"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f4",
-    "project_name": "Hyper Suite 8771",
-    "short_description": "Hyper Suite 8771 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Suite 8771 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "docker",
-      "css",
-      "spring"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/hyper_suite_8771",
-    "developers_id": [
-      "6920205283a739949ca35a02",
-      "6920205283a739949ca35a04"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Nova Toolkit 1131",
-    "short_description": "Nova Toolkit 1131 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Toolkit 1131 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
-      "csharp",
-      "go"
-    ],
-    "category": [
-      "api"
-    ],
-    "github_link": "https://github.com/example/nova_toolkit_1131",
-    "developers_id": [
-      "6920204d83a739949ca359c0"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359e6",
-    "project_name": "Next Platform 2982",
-    "short_description": "Next Platform 2982 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Platform 2982 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
       "mongodb",
-      "flask"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/next_platform_2982",
-    "developers_id": [
-      "6920204c83a739949ca359ae",
-      "6920205183a739949ca359f0",
-      "6920204d83a739949ca359c0"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359cc",
-    "project_name": "Cloud Builder 1502",
-    "short_description": "Cloud Builder 1502 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Builder 1502 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "vue",
-      "rust"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/cloud_builder_1502",
-    "developers_id": [
-      "6920205283a739949ca359fa"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca35a00",
-    "project_name": "Hyper Engine 7792",
-    "short_description": "Hyper Engine 7792 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Engine 7792 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "html",
-      "typescript",
-      "aws",
-      "javascript",
-      "csharp"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/hyper_engine_7792",
-    "developers_id": [
-      "6920204d83a739949ca359b6",
-      "6920204c83a739949ca359b2"
-    ]
-  },
-  {
-    "owner_id": "6920205383a739949ca35a06",
-    "project_name": "Hyper Platform 7735",
-    "short_description": "Hyper Platform 7735 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Platform 7735 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
-      "sass",
-      "docker",
-      "flutter",
-      "go",
-      "express"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/hyper_platform_7735",
-    "developers_id": [
-      "6920204c83a739949ca359b2",
-      "6920204f83a739949ca359d0",
-      "6920204f83a739949ca359d8",
-      "6920204f83a739949ca359dc",
-      "6920204c83a739949ca359a8"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359f2",
-    "project_name": "Digital Builder 1619",
-    "short_description": "Digital Builder 1619 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Builder 1619 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
+      "nodejs",
       "fastapi",
-      "redis",
-      "javascript"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/digital_builder_1619",
-    "developers_id": [
-      "6920205183a739949ca359ee"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359f8",
-    "project_name": "Future Hub 2063",
-    "short_description": "Future Hub 2063 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Hub 2063 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "aws",
-      "tailwind",
-      "mongodb"
+      "flask",
+      "html"
     ],
     "category": [
       "saas"
     ],
-    "github_link": "https://github.com/example/future_hub_2063",
+    "github_link": "https://github.com/example/gateway_financeiro_flask",
     "developers_id": [
-      "6920204e83a739949ca359c8",
-      "6920204f83a739949ca359d0",
-      "6920204c83a739949ca359a8"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359c2",
-    "project_name": "Dynamic Platform 2646",
-    "short_description": "Dynamic Platform 2646 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Platform 2646 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "nodejs",
-      "java",
-      "rust"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/dynamic_platform_2646",
-    "developers_id": [
-      "6920204d83a739949ca359ba",
-      "6920205283a739949ca359fa",
-      "6920204f83a739949ca359d4",
-      "6920204f83a739949ca359d8"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Nova Suite 2390",
-    "short_description": "Nova Suite 2390 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Suite 2390 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "typescript",
-      "angular",
-      "bootstrap",
-      "docker",
-      "azure",
-      "spring"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/nova_suite_2390",
-    "developers_id": [
-      "6920204f83a739949ca359d8",
-      "6920205083a739949ca359e0",
-      "6920205283a739949ca359f8",
-      "6920205383a739949ca35a08"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Hyper Suite 8534",
-    "short_description": "Hyper Suite 8534 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Suite 8534 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "go",
-      "django",
-      "aws",
-      "azure",
-      "flask"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/hyper_suite_8534",
-    "developers_id": [
-      "6920204d83a739949ca359b4",
       "6920205183a739949ca359f0",
-      "6920204e83a739949ca359c6",
-      "6920204c83a739949ca359aa",
+      "6920204c83a739949ca359b2",
+      "6920205183a739949ca359f4",
+      "6920205283a739949ca359fa",
       "6920204e83a739949ca359c8"
     ]
   },
   {
-    "owner_id": "6920204c83a739949ca359aa",
-    "project_name": "Future System 4598",
-    "short_description": "Future System 4598 is a modern solution designed to enhance productivity.",
-    "full_description": "Future System 4598 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205083a739949ca359e6",
+    "project_name": "Gateway DevOps Java",
+    "short_description": "Gateway DevOps Java é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway DevOps Java foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como vue, java, azure, django, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "fastapi",
-      "aws",
-      "rust"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/future_system_4598",
-    "developers_id": [
-      "6920204e83a739949ca359c6",
-      "6920205083a739949ca359e2"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d6",
-    "project_name": "Ultra Engine 7205",
-    "short_description": "Ultra Engine 7205 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Engine 7205 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "spring",
       "vue",
-      "bootstrap",
-      "postgresql"
+      "java",
+      "azure",
+      "django",
+      "fastapi"
     ],
     "category": [
-      "fullstack"
+      "devops"
     ],
-    "github_link": "https://github.com/example/ultra_engine_7205",
+    "github_link": "https://github.com/example/gateway_devops_java",
     "developers_id": [
-      "6920204d83a739949ca359ba",
-      "6920205183a739949ca359f2"
+      "6920204c83a739949ca359b2"
     ]
   },
   {
-    "owner_id": "6920205083a739949ca359e0",
-    "project_name": "Ultra Engine 6204",
-    "short_description": "Ultra Engine 6204 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Engine 6204 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205183a739949ca359f6",
+    "project_name": "Monitor Industrial Gcp",
+    "short_description": "Monitor Industrial Gcp é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Monitor Industrial Gcp foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como gcp, spring, fastapi, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "javascript",
-      "nodejs"
+      "gcp",
+      "spring",
+      "fastapi",
+      "javascript"
     ],
     "category": [
-      "fullstack"
+      "library"
     ],
-    "github_link": "https://github.com/example/ultra_engine_6204",
+    "github_link": "https://github.com/example/monitor_industrial_gcp",
     "developers_id": [
+      "6920205283a739949ca359fe",
       "6920204f83a739949ca359d0",
-      "6920204c83a739949ca359b2",
-      "6920204d83a739949ca359bc",
-      "6920205183a739949ca359f4",
-      "6920205083a739949ca359e0"
+      "6920204f83a739949ca359d4"
     ]
   },
   {
-    "owner_id": "6920204d83a739949ca359b8",
-    "project_name": "Next Manager 1808",
-    "short_description": "Next Manager 1808 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Manager 1808 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205283a739949ca359fa",
+    "project_name": "Gateway Logístico Docker",
+    "short_description": "Gateway Logístico Docker é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Logístico Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como vue, postgresql, docker, flutter, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "css",
-      "docker"
+      "vue",
+      "postgresql",
+      "docker",
+      "flutter"
     ],
     "category": [
-      "api"
+      "database"
     ],
-    "github_link": "https://github.com/example/next_manager_1808",
+    "github_link": "https://github.com/example/gateway_logístico_docker",
+    "developers_id": [
+      "6920205283a739949ca35a00",
+      "6920204f83a739949ca359d2",
+      "6920204c83a739949ca359aa"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359dc",
+    "project_name": "Manager DevOps Vue",
+    "short_description": "Manager DevOps Vue é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager DevOps Vue foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como html, vue, angular, typescript, gcp, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "html",
+      "vue",
+      "angular",
+      "typescript",
+      "gcp"
+    ],
+    "category": [
+      "framework"
+    ],
+    "github_link": "https://github.com/example/manager_devops_vue",
     "developers_id": [
       "6920204f83a739949ca359dc"
     ]
   },
   {
-    "owner_id": "6920205183a739949ca359f6",
-    "project_name": "Nova Manager 8237",
-    "short_description": "Nova Manager 8237 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Manager 8237 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204c83a739949ca359b0",
+    "project_name": "Dashboard Comercial Python",
+    "short_description": "Dashboard Comercial Python é um projeto desenvolvido para atender demandas reais do setor financeiro, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Comercial Python foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como vue, python, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "react",
-      "html",
-      "sass"
+      "vue",
+      "python",
+      "django"
     ],
     "category": [
       "bot"
     ],
-    "github_link": "https://github.com/example/nova_manager_8237",
+    "github_link": "https://github.com/example/dashboard_comercial_python",
     "developers_id": [
-      "6920204d83a739949ca359b4",
-      "6920204c83a739949ca359ae"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359de",
-    "project_name": "Smart System 2737",
-    "short_description": "Smart System 2737 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart System 2737 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "angular",
-      "python"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/smart_system_2737",
-    "developers_id": [
-      "6920205183a739949ca359ea",
-      "6920204f83a739949ca359d2"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359ae",
-    "project_name": "Next Engine 1904",
-    "short_description": "Next Engine 1904 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Engine 1904 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "mongodb",
-      "azure"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/next_engine_1904",
-    "developers_id": [
-      "6920204c83a739949ca359b0",
+      "6920205183a739949ca359f0",
       "6920204e83a739949ca359c6",
-      "6920205083a739949ca359e0",
-      "6920204d83a739949ca359be"
+      "6920204c83a739949ca359a8"
     ]
   },
   {
     "owner_id": "6920205183a739949ca359f0",
-    "project_name": "Hyper Platform 3233",
-    "short_description": "Hyper Platform 3233 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Platform 3233 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "project_name": "Service Financeiro Javascript",
+    "short_description": "Service Financeiro Javascript é um projeto desenvolvido para atender demandas reais do setor frontend, oferecendo eficiência e integração moderna.",
+    "full_description": "Service Financeiro Javascript foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, docker, angular, go, javascript, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "nodejs",
-      "java",
+      "redis",
       "docker",
-      "html"
+      "angular",
+      "go",
+      "javascript",
+      "react"
     ],
     "category": [
-      "backend"
+      "devops"
     ],
-    "github_link": "https://github.com/example/hyper_platform_3233",
+    "github_link": "https://github.com/example/service_financeiro_javascript",
     "developers_id": [
-      "6920204f83a739949ca359d2",
-      "6920205183a739949ca359ec",
-      "6920204d83a739949ca359b6",
-      "6920205183a739949ca359f0"
+      "6920204e83a739949ca359c8"
     ]
   },
   {
-    "owner_id": "6920204d83a739949ca359ba",
-    "project_name": "Hyper Service 1063",
-    "short_description": "Hyper Service 1063 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Service 1063 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204c83a739949ca359b2",
+    "project_name": "Dashboard Mobilidade Mongodb",
+    "short_description": "Dashboard Mobilidade Mongodb é um projeto desenvolvido para atender demandas reais do setor imobiliário, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Mobilidade Mongodb foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como mongodb, java, fastapi, tailwind, typescript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "fastapi",
-      "csharp",
+      "mongodb",
       "java",
-      "go"
+      "fastapi",
+      "tailwind",
+      "typescript"
     ],
     "category": [
-      "frontend"
+      "devops"
     ],
-    "github_link": "https://github.com/example/hyper_service_1063",
+    "github_link": "https://github.com/example/dashboard_mobilidade_mongodb",
     "developers_id": [
-      "6920204d83a739949ca359b4",
+      "6920204c83a739949ca359a8",
       "6920205083a739949ca359e0"
     ]
   },
   {
-    "owner_id": "6920205383a739949ca35a06",
-    "project_name": "Cloud Portal 1332",
-    "short_description": "Cloud Portal 1332 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Portal 1332 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359c2",
+    "project_name": "Aplicação E-commerce Nodejs",
+    "short_description": "Aplicação E-commerce Nodejs é um projeto desenvolvido para atender demandas reais do setor backend, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação E-commerce Nodejs foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flutter, redis, nodejs, gcp, javascript, tailwind, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flutter",
+      "redis",
+      "nodejs",
+      "gcp",
+      "javascript",
+      "tailwind"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/aplicação_e-commerce_nodejs",
+    "developers_id": [
+      "6920204f83a739949ca359d2",
+      "6920205283a739949ca359fc",
+      "6920205283a739949ca35a02",
+      "6920205183a739949ca359f2"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c8",
+    "project_name": "Portal Esportivo Kubernetes",
+    "short_description": "Portal Esportivo Kubernetes é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal Esportivo Kubernetes foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como kubernetes, aws, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "kubernetes",
+      "aws",
+      "django"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/portal_esportivo_kubernetes",
+    "developers_id": [
+      "6920205283a739949ca359f8",
+      "6920205283a739949ca359fc",
+      "6920204c83a739949ca359aa",
+      "6920205183a739949ca359f4"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c4",
+    "project_name": "Ferramenta Mobilidade Flutter",
+    "short_description": "Ferramenta Mobilidade Flutter é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Mobilidade Flutter foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, flutter, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "java",
+      "flutter"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/ferramenta_mobilidade_flutter",
+    "developers_id": [
+      "6920204d83a739949ca359ba",
+      "6920205383a739949ca35a08"
+    ]
+  },
+  {
+    "owner_id": "6920205383a739949ca35a08",
+    "project_name": "Gateway Industrial React",
+    "short_description": "Gateway Industrial React é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Industrial React foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como spring, bootstrap, java, rust, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "spring",
+      "bootstrap",
+      "java",
+      "rust",
+      "react"
+    ],
+    "category": [
+      "framework"
+    ],
+    "github_link": "https://github.com/example/gateway_industrial_react",
+    "developers_id": [
+      "6920205183a739949ca359f6",
+      "6920204c83a739949ca359b2",
+      "6920205083a739949ca359e6",
+      "6920204c83a739949ca359b0"
+    ]
+  },
+  {
+    "owner_id": "6920204d83a739949ca359b8",
+    "project_name": "Engine DevOps Mongodb",
+    "short_description": "Engine DevOps Mongodb é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine DevOps Mongodb foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como mongodb, java, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
       "mongodb",
+      "java"
+    ],
+    "category": [
+      "saas"
+    ],
+    "github_link": "https://github.com/example/engine_devops_mongodb",
+    "developers_id": [
+      "6920204c83a739949ca359aa",
+      "6920204c83a739949ca359ac",
+      "6920204f83a739949ca359dc"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359b2",
+    "project_name": "Platform Backend Vue",
+    "short_description": "Platform Backend Vue é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Platform Backend Vue foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flutter, vue, angular, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flutter",
+      "vue",
+      "angular"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/platform_backend_vue",
+    "developers_id": [
+      "6920204f83a739949ca359d4",
+      "6920204d83a739949ca359c0",
+      "6920205183a739949ca359f6",
+      "6920204e83a739949ca359c6",
+      "6920204f83a739949ca359da"
+    ]
+  },
+  {
+    "owner_id": "6920204d83a739949ca359be",
+    "project_name": "Ferramenta Educacional Java",
+    "short_description": "Ferramenta Educacional Java é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Educacional Java foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, tailwind, javascript, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "java",
+      "tailwind",
+      "javascript",
+      "react"
+    ],
+    "category": [
+      "framework"
+    ],
+    "github_link": "https://github.com/example/ferramenta_educacional_java",
+    "developers_id": [
+      "6920205283a739949ca35a02",
+      "6920205383a739949ca35a08",
+      "6920204e83a739949ca359ca",
+      "6920205183a739949ca359f0"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d6",
+    "project_name": "Portal DevOps Postgresql",
+    "short_description": "Portal DevOps Postgresql é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal DevOps Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como postgresql, vue, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "postgresql",
+      "vue"
+    ],
+    "category": [
+      "saas"
+    ],
+    "github_link": "https://github.com/example/portal_devops_postgresql",
+    "developers_id": [
+      "6920204e83a739949ca359c6",
+      "6920205383a739949ca35a08",
+      "6920204f83a739949ca359d2"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e2",
+    "project_name": "Ferramenta Educacional Aws",
+    "short_description": "Ferramenta Educacional Aws é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Educacional Aws foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, flutter, aws, react, azure, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "java",
+      "flutter",
+      "aws",
+      "react",
+      "azure"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/ferramenta_educacional_aws",
+    "developers_id": [
+      "6920204d83a739949ca359b4",
+      "6920204c83a739949ca359b2",
+      "6920205283a739949ca35a04",
+      "6920204e83a739949ca359ce",
+      "6920205383a739949ca35a08"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca359fa",
+    "project_name": "Center DevOps Flutter",
+    "short_description": "Center DevOps Flutter é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Center DevOps Flutter foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flutter, kubernetes, sass, docker, react, angular, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flutter",
+      "kubernetes",
+      "sass",
+      "docker",
+      "react",
+      "angular"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/center_devops_flutter",
+    "developers_id": [
+      "6920205183a739949ca359ea",
+      "6920204d83a739949ca359b6",
+      "6920204c83a739949ca359ae",
+      "6920205283a739949ca359fe"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c4",
+    "project_name": "Portal Segurança Flask",
+    "short_description": "Portal Segurança Flask é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal Segurança Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como vue, docker, react, tailwind, flask, gcp, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "vue",
+      "docker",
+      "react",
+      "tailwind",
+      "flask",
+      "gcp"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/portal_segurança_flask",
+    "developers_id": [
+      "6920205183a739949ca359f0",
+      "6920204d83a739949ca359b8",
+      "6920204e83a739949ca359cc",
+      "6920204c83a739949ca359ac",
+      "6920205283a739949ca359fe"
+    ]
+  },
+  {
+    "owner_id": "6920204d83a739949ca359b4",
+    "project_name": "Portal Frontend Redis",
+    "short_description": "Portal Frontend Redis é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal Frontend Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, gcp, aws, bootstrap, sass, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "redis",
+      "gcp",
+      "aws",
+      "bootstrap",
+      "sass"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/portal_frontend_redis",
+    "developers_id": [
+      "6920205183a739949ca359f6"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d2",
+    "project_name": "Center Esportivo Fastapi",
+    "short_description": "Center Esportivo Fastapi é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Center Esportivo Fastapi foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como docker, express, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "docker",
+      "express",
+      "fastapi"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/center_esportivo_fastapi",
+    "developers_id": [
+      "6920205283a739949ca359fa",
+      "6920205183a739949ca359f2",
+      "6920204e83a739949ca359c2",
+      "6920204f83a739949ca359d8"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359f2",
+    "project_name": "Workspace Segurança Mongodb",
+    "short_description": "Workspace Segurança Mongodb é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Segurança Mongodb foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como docker, tailwind, java, mongodb, csharp, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "docker",
+      "tailwind",
+      "java",
+      "mongodb",
+      "csharp"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/workspace_segurança_mongodb",
+    "developers_id": [
+      "6920204d83a739949ca359c0",
+      "6920204f83a739949ca359d8",
+      "6920205183a739949ca359ee",
+      "6920204f83a739949ca359d2",
+      "6920204e83a739949ca359c4"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c4",
+    "project_name": "Workspace Saúde Tailwind",
+    "short_description": "Workspace Saúde Tailwind é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Saúde Tailwind foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como csharp, typescript, tailwind, azure, html, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "csharp",
+      "typescript",
+      "tailwind",
+      "azure",
+      "html"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/workspace_saúde_tailwind",
+    "developers_id": [
+      "6920204c83a739949ca359a8",
+      "6920205083a739949ca359e6",
+      "6920205083a739949ca359e4",
+      "6920205183a739949ca359ea",
+      "6920204f83a739949ca359d0"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c6",
+    "project_name": "Center Frontend Go",
+    "short_description": "Center Frontend Go é um projeto desenvolvido para atender demandas reais do setor imobiliário, oferecendo eficiência e integração moderna.",
+    "full_description": "Center Frontend Go foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como javascript, go, django, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "javascript",
+      "go",
+      "django",
+      "aws"
+    ],
+    "category": [
+      "saas"
+    ],
+    "github_link": "https://github.com/example/center_frontend_go",
+    "developers_id": [
+      "6920204d83a739949ca359c0"
+    ]
+  },
+  {
+    "owner_id": "6920204d83a739949ca359bc",
+    "project_name": "Engine Segurança Html",
+    "short_description": "Engine Segurança Html é um projeto desenvolvido para atender demandas reais do setor financeiro, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Segurança Html foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flutter, bootstrap, html, sass, typescript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flutter",
+      "bootstrap",
+      "html",
+      "sass",
+      "typescript"
+    ],
+    "category": [
+      "library"
+    ],
+    "github_link": "https://github.com/example/engine_segurança_html",
+    "developers_id": [
+      "6920204e83a739949ca359c6"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c2",
+    "project_name": "Hub Imobiliário React",
+    "short_description": "Hub Imobiliário React é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "Hub Imobiliário React foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como react, flask, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "react",
+      "flask"
+    ],
+    "category": [
+      "game"
+    ],
+    "github_link": "https://github.com/example/hub_imobiliário_react",
+    "developers_id": [
+      "6920204d83a739949ca359b8",
+      "6920205083a739949ca359e8",
+      "6920204e83a739949ca359ce"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d4",
+    "project_name": "Workspace Backend Mongodb",
+    "short_description": "Workspace Backend Mongodb é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Backend Mongodb foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como django, flask, kubernetes, mongodb, vue, bootstrap, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "django",
+      "flask",
+      "kubernetes",
+      "mongodb",
+      "vue",
+      "bootstrap"
+    ],
+    "category": [
+      "backend"
+    ],
+    "github_link": "https://github.com/example/workspace_backend_mongodb",
+    "developers_id": [
+      "6920204e83a739949ca359c4",
+      "6920205383a739949ca35a0a",
+      "6920204d83a739949ca359be",
+      "6920204f83a739949ca359d6"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca359fa",
+    "project_name": "Dashboard Backend Redis",
+    "short_description": "Dashboard Backend Redis é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Backend Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como express, postgresql, redis, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "express",
+      "postgresql",
       "redis"
     ],
     "category": [
       "api"
     ],
-    "github_link": "https://github.com/example/cloud_portal_1332",
+    "github_link": "https://github.com/example/dashboard_backend_redis",
     "developers_id": [
-      "6920204c83a739949ca359a8"
+      "6920204d83a739949ca359bc",
+      "6920204e83a739949ca359ca",
+      "6920205383a739949ca35a08",
+      "6920205383a739949ca35a0a",
+      "6920205383a739949ca35a06"
     ]
   },
   {
-    "owner_id": "6920204d83a739949ca359b4",
-    "project_name": "Hyper Builder 3705",
-    "short_description": "Hyper Builder 3705 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Builder 3705 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205083a739949ca359e4",
+    "project_name": "Monitor Educacional Typescript",
+    "short_description": "Monitor Educacional Typescript é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Monitor Educacional Typescript foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, typescript, rust, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "azure",
-      "django",
-      "postgresql",
-      "express",
-      "html",
-      "csharp"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/hyper_builder_3705",
-    "developers_id": [
-      "6920205183a739949ca359f2",
-      "6920204e83a739949ca359cc"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359ac",
-    "project_name": "Ultra Hub 5891",
-    "short_description": "Ultra Hub 5891 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Hub 5891 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "docker",
-      "sass",
+      "java",
+      "typescript",
       "rust"
     ],
     "category": [
-      "library"
+      "backend"
     ],
-    "github_link": "https://github.com/example/ultra_hub_5891",
+    "github_link": "https://github.com/example/monitor_educacional_typescript",
     "developers_id": [
-      "6920204d83a739949ca359c0",
-      "6920205183a739949ca359f4",
-      "6920204c83a739949ca359ae"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359ec",
-    "project_name": "Cloud Portal 1631",
-    "short_description": "Cloud Portal 1631 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Portal 1631 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "express",
-      "vue"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/cloud_portal_1631",
-    "developers_id": [
-      "6920204d83a739949ca359c0",
-      "6920205183a739949ca359f4",
-      "6920204c83a739949ca359b0"
+      "6920204c83a739949ca359ae",
+      "6920205283a739949ca35a04"
     ]
   },
   {
     "owner_id": "6920204e83a739949ca359ce",
-    "project_name": "Digital Suite 5047",
-    "short_description": "Digital Suite 5047 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Suite 5047 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "project_name": "Engine Comercial Vue",
+    "short_description": "Engine Comercial Vue é um projeto desenvolvido para atender demandas reais do setor backend, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Comercial Vue foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como vue, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "go",
-      "tailwind",
-      "spring"
+      "vue",
+      "aws"
     ],
     "category": [
-      "bot"
+      "saas"
     ],
-    "github_link": "https://github.com/example/digital_suite_5047",
+    "github_link": "https://github.com/example/engine_comercial_vue",
     "developers_id": [
-      "6920205183a739949ca359f2",
-      "6920205183a739949ca359f4",
-      "6920204d83a739949ca359b6",
-      "6920205283a739949ca359fc"
+      "6920205283a739949ca359f8",
+      "6920204e83a739949ca359ca",
+      "6920205183a739949ca359f2"
     ]
   },
   {
-    "owner_id": "6920204f83a739949ca359d4",
-    "project_name": "Cloud Suite 4801",
-    "short_description": "Cloud Suite 4801 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Suite 4801 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359c6",
+    "project_name": "Workspace Industrial Rust",
+    "short_description": "Workspace Industrial Rust é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Industrial Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como kubernetes, rust, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "azure",
-      "python"
+      "kubernetes",
+      "rust"
     ],
     "category": [
-      "devops"
+      "database"
     ],
-    "github_link": "https://github.com/example/cloud_suite_4801",
+    "github_link": "https://github.com/example/workspace_industrial_rust",
     "developers_id": [
-      "6920204f83a739949ca359d0",
-      "6920204f83a739949ca359d8"
+      "6920204c83a739949ca359ac",
+      "6920204c83a739949ca359b2"
     ]
   },
   {
-    "owner_id": "6920204d83a739949ca359b4",
-    "project_name": "Dynamic Service 5202",
-    "short_description": "Dynamic Service 5202 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Service 5202 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204f83a739949ca359d0",
+    "project_name": "Sistema E-commerce Java",
+    "short_description": "Sistema E-commerce Java é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Sistema E-commerce Java foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, bootstrap, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "express",
+      "java",
+      "bootstrap"
+    ],
+    "category": [
+      "frontend"
+    ],
+    "github_link": "https://github.com/example/sistema_e-commerce_java",
+    "developers_id": [
+      "6920205183a739949ca359f0",
+      "6920204d83a739949ca359b8",
+      "6920204d83a739949ca359c0",
+      "6920204f83a739949ca359dc",
+      "6920204f83a739949ca359d6"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359cc",
+    "project_name": "Gateway Cloud Mongodb",
+    "short_description": "Gateway Cloud Mongodb é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Cloud Mongodb foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como css, mongodb, bootstrap, aws, azure, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
       "css",
+      "mongodb",
       "bootstrap",
-      "gcp",
-      "kubernetes"
+      "aws",
+      "azure"
     ],
     "category": [
-      "framework"
+      "api"
     ],
-    "github_link": "https://github.com/example/dynamic_service_5202",
+    "github_link": "https://github.com/example/gateway_cloud_mongodb",
     "developers_id": [
-      "6920204f83a739949ca359d0",
-      "6920205283a739949ca359fa",
-      "6920204f83a739949ca359d2"
-    ]
-  },
-  {
-    "owner_id": "6920204d83a739949ca359c0",
-    "project_name": "Ultra Suite 6610",
-    "short_description": "Ultra Suite 6610 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Suite 6610 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "nodejs",
-      "sass"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/ultra_suite_6610",
-    "developers_id": [
-      "6920204c83a739949ca359b0",
-      "6920205383a739949ca35a08",
+      "6920205083a739949ca359e0",
+      "6920204f83a739949ca359d8",
       "6920204e83a739949ca359c6"
     ]
   },
   {
-    "owner_id": "6920204e83a739949ca359c4",
-    "project_name": "Hyper Toolkit 4782",
-    "short_description": "Hyper Toolkit 4782 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Toolkit 4782 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359cc",
+    "project_name": "Hub Cloud Java",
+    "short_description": "Hub Cloud Java é um projeto desenvolvido para atender demandas reais do setor backend, oferecendo eficiência e integração moderna.",
+    "full_description": "Hub Cloud Java foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como rust, flutter, java, nodejs, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "rust",
+      "flutter",
+      "java",
+      "nodejs"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/hub_cloud_java",
+    "developers_id": [
+      "6920204d83a739949ca359c0",
+      "6920204e83a739949ca359c4",
+      "6920204e83a739949ca359ca",
+      "6920204d83a739949ca359b6",
+      "6920204f83a739949ca359d8"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Platform Backend Kubernetes",
+    "short_description": "Platform Backend Kubernetes é um projeto desenvolvido para atender demandas reais do setor social, oferecendo eficiência e integração moderna.",
+    "full_description": "Platform Backend Kubernetes foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, tailwind, sass, vue, rust, kubernetes, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
       "redis",
+      "tailwind",
+      "sass",
+      "vue",
+      "rust",
+      "kubernetes"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/platform_backend_kubernetes",
+    "developers_id": [
+      "6920204d83a739949ca359be"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359f0",
+    "project_name": "Center Mobilidade Redis",
+    "short_description": "Center Mobilidade Redis é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Center Mobilidade Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como nodejs, java, redis, rust, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "nodejs",
+      "java",
+      "redis",
+      "rust"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/center_mobilidade_redis",
+    "developers_id": [
+      "6920205383a739949ca35a0a"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c6",
+    "project_name": "Manager Cloud Postgresql",
+    "short_description": "Manager Cloud Postgresql é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Cloud Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como rust, postgresql, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "rust",
+      "postgresql"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/manager_cloud_postgresql",
+    "developers_id": [
+      "6920205183a739949ca359ee",
+      "6920204f83a739949ca359d6",
+      "6920205183a739949ca359ec"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359de",
+    "project_name": "Ferramenta Social Express",
+    "short_description": "Ferramenta Social Express é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Social Express foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como html, tailwind, flutter, nodejs, express, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "html",
+      "tailwind",
+      "flutter",
+      "nodejs",
+      "express",
+      "fastapi"
+    ],
+    "category": [
+      "api"
+    ],
+    "github_link": "https://github.com/example/ferramenta_social_express",
+    "developers_id": [
+      "6920205083a739949ca359e6",
+      "6920205083a739949ca359e0",
+      "6920204d83a739949ca359be",
+      "6920204d83a739949ca359b4"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359ee",
+    "project_name": "Dashboard Educacional Gcp",
+    "short_description": "Dashboard Educacional Gcp é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Educacional Gcp foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como express, javascript, mongodb, gcp, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "express",
+      "javascript",
+      "mongodb",
+      "gcp",
+      "aws"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/dashboard_educacional_gcp",
+    "developers_id": [
+      "6920204f83a739949ca359d0",
+      "6920204e83a739949ca359c2",
+      "6920205383a739949ca35a08"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca359fc",
+    "project_name": "Tracker Backend Flask",
+    "short_description": "Tracker Backend Flask é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Tracker Backend Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flask, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flask",
+      "aws"
+    ],
+    "category": [
+      "game"
+    ],
+    "github_link": "https://github.com/example/tracker_backend_flask",
+    "developers_id": [
+      "6920205183a739949ca359f6"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ac",
+    "project_name": "Gateway Educacional Docker",
+    "short_description": "Gateway Educacional Docker é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Educacional Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como csharp, html, docker, rust, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "csharp",
+      "html",
+      "docker",
       "rust",
       "django"
     ],
     "category": [
       "frontend"
     ],
-    "github_link": "https://github.com/example/hyper_toolkit_4782",
+    "github_link": "https://github.com/example/gateway_educacional_docker",
     "developers_id": [
-      "6920205083a739949ca359de",
-      "6920204c83a739949ca359ae",
-      "6920205183a739949ca359ec"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359b0",
-    "project_name": "Dynamic Service 2357",
-    "short_description": "Dynamic Service 2357 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Service 2357 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "html",
-      "mongodb",
-      "vue",
-      "sass"
-    ],
-    "category": [
-      "api"
-    ],
-    "github_link": "https://github.com/example/dynamic_service_2357",
-    "developers_id": [
-      "6920204d83a739949ca359be",
-      "6920205083a739949ca359e8",
-      "6920205183a739949ca359f6"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359e2",
-    "project_name": "Prime Manager 5593",
-    "short_description": "Prime Manager 5593 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Manager 5593 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "javascript",
-      "csharp",
-      "docker"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/prime_manager_5593",
-    "developers_id": [
-      "6920205283a739949ca359fe",
-      "6920205083a739949ca359e2",
-      "6920205383a739949ca35a06",
-      "6920205183a739949ca359ec",
-      "6920204d83a739949ca359ba"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359c6",
-    "project_name": "Ultra Toolkit 2401",
-    "short_description": "Ultra Toolkit 2401 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Toolkit 2401 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "react",
-      "django",
-      "bootstrap"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/ultra_toolkit_2401",
-    "developers_id": [
-      "6920204d83a739949ca359b8"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d2",
-    "project_name": "Nova Engine 9846",
-    "short_description": "Nova Engine 9846 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova Engine 9846 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "express",
-      "redis",
-      "tailwind",
-      "flask"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/nova_engine_9846",
-    "developers_id": [
-      "6920205383a739949ca35a06",
-      "6920205283a739949ca359fc",
-      "6920204f83a739949ca359d0"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d6",
-    "project_name": "Cloud Toolkit 3679",
-    "short_description": "Cloud Toolkit 3679 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Toolkit 3679 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "java",
-      "tailwind"
-    ],
-    "category": [
-      "database"
-    ],
-    "github_link": "https://github.com/example/cloud_toolkit_3679",
-    "developers_id": [
-      "6920205183a739949ca359ee"
-    ]
-  },
-  {
-    "owner_id": "6920204e83a739949ca359c8",
-    "project_name": "Ultra System 7732",
-    "short_description": "Ultra System 7732 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra System 7732 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "spring",
-      "javascript",
-      "java"
-    ],
-    "category": [
-      "database"
-    ],
-    "github_link": "https://github.com/example/ultra_system_7732",
-    "developers_id": [
-      "6920205083a739949ca359e8",
-      "6920204d83a739949ca359b8",
-      "6920205083a739949ca359e0",
-      "6920205183a739949ca359ea",
-      "6920204e83a739949ca359c8"
-    ]
-  },
-  {
-    "owner_id": "6920204d83a739949ca359b6",
-    "project_name": "Cloud Portal 2716",
-    "short_description": "Cloud Portal 2716 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Portal 2716 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "gcp",
-      "docker",
-      "redis"
-    ],
-    "category": [
-      "database"
-    ],
-    "github_link": "https://github.com/example/cloud_portal_2716",
-    "developers_id": [
-      "6920205283a739949ca35a02",
       "6920205083a739949ca359e4",
-      "6920205283a739949ca359f8",
-      "6920204d83a739949ca359c0"
-    ]
-  },
-  {
-    "owner_id": "6920204d83a739949ca359ba",
-    "project_name": "Future System 9331",
-    "short_description": "Future System 9331 is a modern solution designed to enhance productivity.",
-    "full_description": "Future System 9331 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "angular",
-      "typescript",
-      "bootstrap"
-    ],
-    "category": [
-      "framework"
-    ],
-    "github_link": "https://github.com/example/future_system_9331",
-    "developers_id": [
-      "6920205183a739949ca359ea",
-      "6920205083a739949ca359de",
-      "6920204d83a739949ca359bc",
-      "6920204f83a739949ca359d4",
-      "6920204d83a739949ca359b8"
-    ]
-  },
-  {
-    "owner_id": "6920205183a739949ca359ea",
-    "project_name": "Next System 3050",
-    "short_description": "Next System 3050 is a modern solution designed to enhance productivity.",
-    "full_description": "Next System 3050 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "postgresql",
-      "gcp",
-      "vue",
-      "rust",
-      "typescript",
-      "sass"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/next_system_3050",
-    "developers_id": [
-      "6920204c83a739949ca359b0",
-      "6920205283a739949ca359fc",
-      "6920204f83a739949ca359d0",
-      "6920205183a739949ca359f2",
-      "6920204c83a739949ca359ae"
-    ]
-  },
-  {
-    "owner_id": "6920205383a739949ca35a06",
-    "project_name": "Digital Builder 3720",
-    "short_description": "Digital Builder 3720 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Builder 3720 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "angular",
-      "java",
-      "rust",
-      "csharp"
-    ],
-    "category": [
-      "library"
-    ],
-    "github_link": "https://github.com/example/digital_builder_3720",
-    "developers_id": [
-      "6920204c83a739949ca359ae",
-      "6920205383a739949ca35a0a"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359aa",
-    "project_name": "Prime System 6499",
-    "short_description": "Prime System 6499 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime System 6499 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "angular",
-      "flask",
-      "csharp",
-      "flutter",
-      "java",
-      "python"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/prime_system_6499",
-    "developers_id": [
-      "6920204c83a739949ca359aa",
-      "6920204f83a739949ca359d6"
-    ]
-  },
-  {
-    "owner_id": "6920205383a739949ca35a08",
-    "project_name": "Smart System 8535",
-    "short_description": "Smart System 8535 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart System 8535 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "docker",
-      "gcp",
-      "fastapi",
-      "rust",
-      "vue"
-    ],
-    "category": [
-      "database"
-    ],
-    "github_link": "https://github.com/example/smart_system_8535",
-    "developers_id": [
-      "6920205083a739949ca359e8",
-      "6920204d83a739949ca359c0",
-      "6920205283a739949ca35a00",
-      "6920205183a739949ca359ea"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359dc",
-    "project_name": "Next Toolkit 6986",
-    "short_description": "Next Toolkit 6986 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Toolkit 6986 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "flutter",
-      "angular"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/next_toolkit_6986",
-    "developers_id": [
-      "6920204f83a739949ca359dc",
-      "6920204d83a739949ca359c0",
-      "6920204c83a739949ca359a8",
-      "6920204e83a739949ca359c8"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359dc",
-    "project_name": "Prime Builder 6978",
-    "short_description": "Prime Builder 6978 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Builder 6978 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "python",
-      "css",
-      "go",
-      "aws",
-      "sass"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/prime_builder_6978",
-    "developers_id": [
-      "6920205183a739949ca359f6",
       "6920205283a739949ca359fa",
-      "6920205383a739949ca35a06",
-      "6920204c83a739949ca359ae",
+      "6920204c83a739949ca359a8",
       "6920204c83a739949ca359aa"
     ]
   },
   {
-    "owner_id": "6920205283a739949ca359fe",
-    "project_name": "Cloud Hub 4521",
-    "short_description": "Cloud Hub 4521 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Hub 4521 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205383a739949ca35a0a",
+    "project_name": "Tracker Dados Java",
+    "short_description": "Tracker Dados Java é um projeto desenvolvido para atender demandas reais do setor comercial, oferecendo eficiência e integração moderna.",
+    "full_description": "Tracker Dados Java foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, docker, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "html",
+      "java",
       "docker"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/cloud_hub_4521",
-    "developers_id": [
-      "6920205183a739949ca359ee"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359ac",
-    "project_name": "Dynamic Manager 9453",
-    "short_description": "Dynamic Manager 9453 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Manager 9453 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "javascript",
-      "rust"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/dynamic_manager_9453",
-    "developers_id": [
-      "6920204e83a739949ca359ca"
-    ]
-  },
-  {
-    "owner_id": "6920204c83a739949ca359ae",
-    "project_name": "Hyper Suite 6268",
-    "short_description": "Hyper Suite 6268 is a modern solution designed to enhance productivity.",
-    "full_description": "Hyper Suite 6268 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "mongodb",
-      "docker",
-      "angular",
-      "flutter"
-    ],
-    "category": [
-      "bot"
-    ],
-    "github_link": "https://github.com/example/hyper_suite_6268",
-    "developers_id": [
-      "6920205083a739949ca359e4",
-      "6920205183a739949ca359f0",
-      "6920205383a739949ca35a06",
-      "6920204e83a739949ca359c8",
-      "6920204f83a739949ca359d6"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fe",
-    "project_name": "Ultra System 2217",
-    "short_description": "Ultra System 2217 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra System 2217 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "css",
-      "azure",
-      "nodejs",
-      "html",
-      "mongodb",
-      "docker"
-    ],
-    "category": [
-      "devops"
-    ],
-    "github_link": "https://github.com/example/ultra_system_2217",
-    "developers_id": [
-      "6920205183a739949ca359f2",
-      "6920204d83a739949ca359bc"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fa",
-    "project_name": "Ultra Builder 1770",
-    "short_description": "Ultra Builder 1770 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Builder 1770 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "fastapi",
-      "aws",
-      "go",
-      "angular",
-      "docker",
-      "flask"
     ],
     "category": [
       "saas"
     ],
-    "github_link": "https://github.com/example/ultra_builder_1770",
+    "github_link": "https://github.com/example/tracker_dados_java",
     "developers_id": [
-      "6920205283a739949ca35a02",
-      "6920204e83a739949ca359c6",
-      "6920205383a739949ca35a08",
-      "6920204d83a739949ca359c0",
-      "6920204c83a739949ca359b2"
+      "6920205183a739949ca359f0",
+      "6920204f83a739949ca359da",
+      "6920204c83a739949ca359b2",
+      "6920205183a739949ca359ee",
+      "6920205383a739949ca35a06"
     ]
   },
   {
-    "owner_id": "6920205083a739949ca359e0",
-    "project_name": "Prime Hub 9954",
-    "short_description": "Prime Hub 9954 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Hub 9954 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359ca",
+    "project_name": "Engine Frontend Django",
+    "short_description": "Engine Frontend Django é um projeto desenvolvido para atender demandas reais do setor frontend, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Frontend Django foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como fastapi, redis, tailwind, django, aws, csharp, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
       "fastapi",
-      "vue",
-      "kubernetes",
+      "redis",
+      "tailwind",
+      "django",
+      "aws",
       "csharp"
     ],
     "category": [
       "bot"
     ],
-    "github_link": "https://github.com/example/prime_hub_9954",
+    "github_link": "https://github.com/example/engine_frontend_django",
     "developers_id": [
-      "6920205183a739949ca359f4",
-      "6920204c83a739949ca359b2",
-      "6920205183a739949ca359f2"
+      "6920204c83a739949ca359b0"
     ]
   },
   {
-    "owner_id": "6920204c83a739949ca359a8",
-    "project_name": "Dynamic Suite 1176",
-    "short_description": "Dynamic Suite 1176 is a modern solution designed to enhance productivity.",
-    "full_description": "Dynamic Suite 1176 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204d83a739949ca359be",
+    "project_name": "Aplicação DevOps Redis",
+    "short_description": "Aplicação DevOps Redis é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação DevOps Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como bootstrap, angular, redis, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "sass",
-      "html",
-      "express"
+      "bootstrap",
+      "angular",
+      "redis"
+    ],
+    "category": [
+      "api"
+    ],
+    "github_link": "https://github.com/example/aplicação_devops_redis",
+    "developers_id": [
+      "6920204d83a739949ca359be"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca35a02",
+    "project_name": "Dashboard DevOps Html",
+    "short_description": "Dashboard DevOps Html é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard DevOps Html foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como go, html, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "go",
+      "html"
+    ],
+    "category": [
+      "frontend"
+    ],
+    "github_link": "https://github.com/example/dashboard_devops_html",
+    "developers_id": [
+      "6920205183a739949ca359f4",
+      "6920205383a739949ca35a06",
+      "6920204c83a739949ca359ae",
+      "6920204d83a739949ca359b6"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d2",
+    "project_name": "Analytics Esportivo Docker",
+    "short_description": "Analytics Esportivo Docker é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Analytics Esportivo Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como docker, tailwind, vue, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "docker",
+      "tailwind",
+      "vue"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/analytics_esportivo_docker",
+    "developers_id": [
+      "6920205183a739949ca359f2",
+      "6920204f83a739949ca359d6",
+      "6920205383a739949ca35a0a",
+      "6920204d83a739949ca359c0",
+      "6920205183a739949ca359f0"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e4",
+    "project_name": "Monitor DevOps Go",
+    "short_description": "Monitor DevOps Go é um projeto desenvolvido para atender demandas reais do setor logístico, oferecendo eficiência e integração moderna.",
+    "full_description": "Monitor DevOps Go foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, vue, gcp, go, react, sass, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "redis",
+      "vue",
+      "gcp",
+      "go",
+      "react",
+      "sass"
     ],
     "category": [
       "bot"
     ],
-    "github_link": "https://github.com/example/dynamic_suite_1176",
+    "github_link": "https://github.com/example/monitor_devops_go",
     "developers_id": [
-      "6920204f83a739949ca359d8",
-      "6920205283a739949ca359fa"
-    ]
-  },
-  {
-    "owner_id": "6920205083a739949ca359e8",
-    "project_name": "Ultra Portal 3400",
-    "short_description": "Ultra Portal 3400 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Portal 3400 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "fastapi",
-      "vue",
-      "javascript",
-      "flutter",
-      "angular",
-      "typescript"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/ultra_portal_3400",
-    "developers_id": [
-      "6920204c83a739949ca359ae"
+      "6920204f83a739949ca359d2",
+      "6920205183a739949ca359f4"
     ]
   },
   {
     "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Future Hub 9945",
-    "short_description": "Future Hub 9945 is a modern solution designed to enhance productivity.",
-    "full_description": "Future Hub 9945 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "project_name": "Monitor Financeiro Azure",
+    "short_description": "Monitor Financeiro Azure é um projeto desenvolvido para atender demandas reais do setor devops, oferecendo eficiência e integração moderna.",
+    "full_description": "Monitor Financeiro Azure foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como aws, rust, azure, gcp, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "postgresql",
+      "aws",
+      "rust",
       "azure",
       "gcp"
     ],
     "category": [
-      "none"
+      "database"
     ],
-    "github_link": "https://github.com/example/future_hub_9945",
+    "github_link": "https://github.com/example/monitor_financeiro_azure",
     "developers_id": [
-      "6920205183a739949ca359f2"
+      "6920204e83a739949ca359c6",
+      "6920205083a739949ca359e8",
+      "6920204e83a739949ca359c2"
     ]
   },
   {
-    "owner_id": "6920205183a739949ca359f2",
-    "project_name": "Smart Builder 7993",
-    "short_description": "Smart Builder 7993 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Builder 7993 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359ca",
+    "project_name": "Gateway Financeiro Python",
+    "short_description": "Gateway Financeiro Python é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Financeiro Python foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como python, flutter, csharp, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "redis",
+      "python",
+      "flutter",
+      "csharp",
       "react"
     ],
     "category": [
-      "backend"
+      "bot"
     ],
-    "github_link": "https://github.com/example/smart_builder_7993",
+    "github_link": "https://github.com/example/gateway_financeiro_python",
+    "developers_id": [
+      "6920204e83a739949ca359ce",
+      "6920204c83a739949ca359ae",
+      "6920204d83a739949ca359b4",
+      "6920204d83a739949ca359be"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359cc",
+    "project_name": "Dashboard Segurança Kubernetes",
+    "short_description": "Dashboard Segurança Kubernetes é um projeto desenvolvido para atender demandas reais do setor segurança, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Segurança Kubernetes foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como fastapi, bootstrap, kubernetes, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "fastapi",
+      "bootstrap",
+      "kubernetes"
+    ],
+    "category": [
+      "game"
+    ],
+    "github_link": "https://github.com/example/dashboard_segurança_kubernetes",
+    "developers_id": [
+      "6920204d83a739949ca359c0",
+      "6920204d83a739949ca359be",
+      "6920205283a739949ca359fa"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ac",
+    "project_name": "Service Educacional Gcp",
+    "short_description": "Service Educacional Gcp é um projeto desenvolvido para atender demandas reais do setor social, oferecendo eficiência e integração moderna.",
+    "full_description": "Service Educacional Gcp foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como mongodb, gcp, csharp, kubernetes, angular, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "mongodb",
+      "gcp",
+      "csharp",
+      "kubernetes",
+      "angular",
+      "javascript"
+    ],
+    "category": [
+      "frontend"
+    ],
+    "github_link": "https://github.com/example/service_educacional_gcp",
+    "developers_id": [
+      "6920204e83a739949ca359c8",
+      "6920205383a739949ca35a06",
+      "6920205283a739949ca35a02",
+      "6920204e83a739949ca359ca"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359f6",
+    "project_name": "Aplicação Logístico Postgresql",
+    "short_description": "Aplicação Logístico Postgresql é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Aplicação Logístico Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como django, spring, postgresql, flask, gcp, azure, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "django",
+      "spring",
+      "postgresql",
+      "flask",
+      "gcp",
+      "azure"
+    ],
+    "category": [
+      "saas"
+    ],
+    "github_link": "https://github.com/example/aplicação_logístico_postgresql",
     "developers_id": [
       "6920204c83a739949ca359ae",
-      "6920205183a739949ca359f6",
+      "6920205083a739949ca359e0",
+      "6920205183a739949ca359ee",
+      "6920204f83a739949ca359d0",
+      "6920204e83a739949ca359c4"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359ec",
+    "project_name": "Hub Backend Rust",
+    "short_description": "Hub Backend Rust é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Hub Backend Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como rust, vue, python, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "rust",
+      "vue",
+      "python"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/hub_backend_rust",
+    "developers_id": [
+      "6920204f83a739949ca359d8",
+      "6920205283a739949ca359f8",
+      "6920204f83a739949ca359dc",
+      "6920205383a739949ca35a08"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca35a00",
+    "project_name": "Sistema DevOps Nodejs",
+    "short_description": "Sistema DevOps Nodejs é um projeto desenvolvido para atender demandas reais do setor comercial, oferecendo eficiência e integração moderna.",
+    "full_description": "Sistema DevOps Nodejs foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como angular, bootstrap, nodejs, java, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "angular",
+      "bootstrap",
+      "nodejs",
+      "java",
+      "javascript"
+    ],
+    "category": [
+      "bot"
+    ],
+    "github_link": "https://github.com/example/sistema_devops_nodejs",
+    "developers_id": [
+      "6920205283a739949ca359fc"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d8",
+    "project_name": "Engine Educacional Aws",
+    "short_description": "Engine Educacional Aws é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Educacional Aws foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como go, spring, gcp, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "go",
+      "spring",
+      "gcp",
+      "aws"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/engine_educacional_aws",
+    "developers_id": [
+      "6920204f83a739949ca359d4",
+      "6920205083a739949ca359e4",
+      "6920204e83a739949ca359ca"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca359fe",
+    "project_name": "Sistema E-commerce Rust",
+    "short_description": "Sistema E-commerce Rust é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Sistema E-commerce Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como rust, nodejs, docker, azure, bootstrap, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "rust",
+      "nodejs",
+      "docker",
+      "azure",
+      "bootstrap"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/sistema_e-commerce_rust",
+    "developers_id": [
+      "6920204f83a739949ca359d4"
+    ]
+  },
+  {
+    "owner_id": "6920205383a739949ca35a06",
+    "project_name": "Workspace Esportivo Flutter",
+    "short_description": "Workspace Esportivo Flutter é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Esportivo Flutter foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como aws, typescript, flutter, bootstrap, redis, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "aws",
+      "typescript",
+      "flutter",
+      "bootstrap",
+      "redis"
+    ],
+    "category": [
+      "api"
+    ],
+    "github_link": "https://github.com/example/workspace_esportivo_flutter",
+    "developers_id": [
+      "6920205383a739949ca35a08",
+      "6920205283a739949ca35a00",
+      "6920204e83a739949ca359ce",
+      "6920204f83a739949ca359d4"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Portal Mobilidade Flask",
+    "short_description": "Portal Mobilidade Flask é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Portal Mobilidade Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como nodejs, kubernetes, flask, javascript, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "nodejs",
+      "kubernetes",
+      "flask",
+      "javascript"
+    ],
+    "category": [
+      "framework"
+    ],
+    "github_link": "https://github.com/example/portal_mobilidade_flask",
+    "developers_id": [
+      "6920205283a739949ca359fa",
+      "6920204e83a739949ca359c6"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca35a02",
+    "project_name": "Service Logístico Javascript",
+    "short_description": "Service Logístico Javascript é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Service Logístico Javascript foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como java, javascript, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "java",
+      "javascript",
+      "django"
+    ],
+    "category": [
+      "game"
+    ],
+    "github_link": "https://github.com/example/service_logístico_javascript",
+    "developers_id": [
+      "6920205183a739949ca359ea",
+      "6920204c83a739949ca359ae",
+      "6920204d83a739949ca359b8",
+      "6920204e83a739949ca359c2"
+    ]
+  },
+  {
+    "owner_id": "6920204e83a739949ca359c6",
+    "project_name": "Studio Segurança Azure",
+    "short_description": "Studio Segurança Azure é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Studio Segurança Azure foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como rust, spring, azure, nodejs, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "rust",
+      "spring",
+      "azure",
+      "nodejs"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/studio_segurança_azure",
+    "developers_id": [
+      "6920204e83a739949ca359c2",
+      "6920205183a739949ca359ec",
+      "6920204c83a739949ca359aa",
+      "6920205283a739949ca359fc"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359ee",
+    "project_name": "Sistema E-commerce Postgresql",
+    "short_description": "Sistema E-commerce Postgresql é um projeto desenvolvido para atender demandas reais do setor esportivo, oferecendo eficiência e integração moderna.",
+    "full_description": "Sistema E-commerce Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como postgresql, angular, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "postgresql",
+      "angular"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/sistema_e-commerce_postgresql",
+    "developers_id": [
+      "6920205283a739949ca359fe",
+      "6920204d83a739949ca359b8",
+      "6920204f83a739949ca359d0"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359f6",
+    "project_name": "Gateway DevOps Redis",
+    "short_description": "Gateway DevOps Redis é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway DevOps Redis foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, spring, azure, postgresql, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "redis",
+      "spring",
+      "azure",
+      "postgresql"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/gateway_devops_redis",
+    "developers_id": [
+      "6920205083a739949ca359de"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359ae",
+    "project_name": "Analytics Saúde Bootstrap",
+    "short_description": "Analytics Saúde Bootstrap é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "Analytics Saúde Bootstrap foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como docker, gcp, bootstrap, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "docker",
+      "gcp",
+      "bootstrap"
+    ],
+    "category": [
+      "library"
+    ],
+    "github_link": "https://github.com/example/analytics_saúde_bootstrap",
+    "developers_id": [
+      "6920204c83a739949ca359a8"
+    ]
+  },
+  {
+    "owner_id": "6920205283a739949ca359fe",
+    "project_name": "Gateway Dados Fastapi",
+    "short_description": "Gateway Dados Fastapi é um projeto desenvolvido para atender demandas reais do setor segurança, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Dados Fastapi foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como tailwind, postgresql, kubernetes, angular, fastapi, nodejs, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "tailwind",
+      "postgresql",
+      "kubernetes",
+      "angular",
+      "fastapi",
+      "nodejs"
+    ],
+    "category": [
+      "api"
+    ],
+    "github_link": "https://github.com/example/gateway_dados_fastapi",
+    "developers_id": [
+      "6920204c83a739949ca359b0",
+      "6920205083a739949ca359e2",
+      "6920205083a739949ca359e8",
+      "6920204d83a739949ca359be"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359da",
+    "project_name": "Manager Saúde Postgresql",
+    "short_description": "Manager Saúde Postgresql é um projeto desenvolvido para atender demandas reais do setor comercial, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Saúde Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como flutter, csharp, postgresql, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "flutter",
+      "csharp",
+      "postgresql"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/manager_saúde_postgresql",
+    "developers_id": [
+      "6920204e83a739949ca359c6",
+      "6920204c83a739949ca359b0",
+      "6920204d83a739949ca359c0"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d4",
+    "project_name": "Workspace Segurança Nodejs",
+    "short_description": "Workspace Segurança Nodejs é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Segurança Nodejs foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como tailwind, nodejs, rust, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "tailwind",
+      "nodejs",
+      "rust"
+    ],
+    "category": [
+      "uikit"
+    ],
+    "github_link": "https://github.com/example/workspace_segurança_nodejs",
+    "developers_id": [
+      "6920204e83a739949ca359c8",
+      "6920204c83a739949ca359b2",
+      "6920205183a739949ca359f2",
+      "6920205383a739949ca35a06",
+      "6920204c83a739949ca359ae"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e6",
+    "project_name": "Engine Educacional Aws",
+    "short_description": "Engine Educacional Aws é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Educacional Aws foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como aws, sass, kubernetes, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "aws",
+      "sass",
+      "kubernetes"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/engine_educacional_aws",
+    "developers_id": [
+      "6920204e83a739949ca359c8",
+      "6920205383a739949ca35a08",
+      "6920205183a739949ca359f4"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359a8",
+    "project_name": "Studio Saúde Rust",
+    "short_description": "Studio Saúde Rust é um projeto desenvolvido para atender demandas reais do setor backend, oferecendo eficiência e integração moderna.",
+    "full_description": "Studio Saúde Rust foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como redis, angular, rust, mongodb, vue, nodejs, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "redis",
+      "angular",
+      "rust",
+      "mongodb",
+      "vue",
+      "nodejs"
+    ],
+    "category": [
+      "none"
+    ],
+    "github_link": "https://github.com/example/studio_saúde_rust",
+    "developers_id": [
+      "6920204e83a739949ca359c2",
+      "6920204d83a739949ca359b4",
+      "6920205083a739949ca359e6",
+      "6920205083a739949ca359de"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d4",
+    "project_name": "Engine DevOps Flask",
+    "short_description": "Engine DevOps Flask é um projeto desenvolvido para atender demandas reais do setor cloud, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine DevOps Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como html, aws, nodejs, django, flask, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "html",
+      "aws",
+      "nodejs",
+      "django",
+      "flask"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/engine_devops_flask",
+    "developers_id": [
+      "6920204d83a739949ca359b6",
+      "6920205283a739949ca359f8",
       "6920205183a739949ca359f4"
     ]
   },
   {
     "owner_id": "6920204d83a739949ca359ba",
-    "project_name": "Prime Service 7905",
-    "short_description": "Prime Service 7905 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Service 7905 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "project_name": "Manager Esportivo Docker",
+    "short_description": "Manager Esportivo Docker é um projeto desenvolvido para atender demandas reais do setor comercial, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Esportivo Docker foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como javascript, typescript, docker, nodejs, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "sass",
       "javascript",
-      "flask",
-      "java"
+      "typescript",
+      "docker",
+      "nodejs"
     ],
     "category": [
-      "api"
+      "framework"
     ],
-    "github_link": "https://github.com/example/prime_service_7905",
-    "developers_id": [
-      "6920205183a739949ca359ee",
-      "6920204d83a739949ca359b8",
-      "6920205183a739949ca359f4",
-      "6920204f83a739949ca359d2"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359da",
-    "project_name": "Smart Portal 8533",
-    "short_description": "Smart Portal 8533 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Portal 8533 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "flutter",
-      "tailwind"
-    ],
-    "category": [
-      "none"
-    ],
-    "github_link": "https://github.com/example/smart_portal_8533",
-    "developers_id": [
-      "6920204f83a739949ca359dc",
-      "6920205383a739949ca35a0a",
-      "6920204e83a739949ca359ce",
-      "6920204d83a739949ca359c0"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Next Toolkit 5834",
-    "short_description": "Next Toolkit 5834 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Toolkit 5834 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "react",
-      "css",
-      "rust",
-      "django",
-      "java"
-    ],
-    "category": [
-      "game"
-    ],
-    "github_link": "https://github.com/example/next_toolkit_5834",
+    "github_link": "https://github.com/example/manager_esportivo_docker",
     "developers_id": [
       "6920205083a739949ca359e2",
-      "6920204e83a739949ca359c4"
+      "6920204c83a739949ca359ac",
+      "6920205283a739949ca359fe"
     ]
   },
   {
-    "owner_id": "6920204f83a739949ca359d8",
-    "project_name": "Smart Hub 8056",
-    "short_description": "Smart Hub 8056 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Hub 8056 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204f83a739949ca359d0",
+    "project_name": "Engine Esportivo Fastapi",
+    "short_description": "Engine Esportivo Fastapi é um projeto desenvolvido para atender demandas reais do setor e-commerce, oferecendo eficiência e integração moderna.",
+    "full_description": "Engine Esportivo Fastapi foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como html, spring, fastapi, postgresql, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "javascript",
-      "express",
-      "python"
+      "html",
+      "spring",
+      "fastapi",
+      "postgresql"
     ],
     "category": [
-      "none"
+      "framework"
     ],
-    "github_link": "https://github.com/example/smart_hub_8056",
+    "github_link": "https://github.com/example/engine_esportivo_fastapi",
     "developers_id": [
       "6920204d83a739949ca359c0",
-      "6920204c83a739949ca359b2"
-    ]
-  },
-  {
-    "owner_id": "6920205283a739949ca359fa",
-    "project_name": "Digital Manager 1209",
-    "short_description": "Digital Manager 1209 is a modern solution designed to enhance productivity.",
-    "full_description": "Digital Manager 1209 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "azure",
-      "html",
-      "flutter",
-      "javascript",
-      "css",
-      "docker"
-    ],
-    "category": [
-      "fullstack"
-    ],
-    "github_link": "https://github.com/example/digital_manager_1209",
-    "developers_id": [
-      "6920204d83a739949ca359b8"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359da",
-    "project_name": "Next Manager 2819",
-    "short_description": "Next Manager 2819 is a modern solution designed to enhance productivity.",
-    "full_description": "Next Manager 2819 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "python",
-      "flask",
-      "typescript",
-      "gcp",
-      "go"
-    ],
-    "category": [
-      "backend"
-    ],
-    "github_link": "https://github.com/example/next_manager_2819",
-    "developers_id": [
-      "6920204f83a739949ca359da",
-      "6920205083a739949ca359e0"
-    ]
-  },
-  {
-    "owner_id": "6920204f83a739949ca359da",
-    "project_name": "Ultra Manager 2540",
-    "short_description": "Ultra Manager 2540 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra Manager 2540 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
-    "stacks": [
-      "tailwind",
-      "flutter",
-      "redis",
-      "css"
-    ],
-    "category": [
-      "uikit"
-    ],
-    "github_link": "https://github.com/example/ultra_manager_2540",
-    "developers_id": [
+      "6920204d83a739949ca359b6",
       "6920204f83a739949ca359d0"
     ]
   },
   {
-    "owner_id": "6920205183a739949ca359f0",
-    "project_name": "Ultra System 8606",
-    "short_description": "Ultra System 8606 is a modern solution designed to enhance productivity.",
-    "full_description": "Ultra System 8606 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205383a739949ca35a06",
+    "project_name": "Ferramenta Saúde Aws",
+    "short_description": "Ferramenta Saúde Aws é um projeto desenvolvido para atender demandas reais do setor comercial, oferecendo eficiência e integração moderna.",
+    "full_description": "Ferramenta Saúde Aws foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como django, aws, kubernetes, azure, vue, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
       "django",
-      "typescript",
-      "kubernetes"
+      "aws",
+      "kubernetes",
+      "azure",
+      "vue"
     ],
     "category": [
-      "backend"
+      "bot"
     ],
-    "github_link": "https://github.com/example/ultra_system_8606",
+    "github_link": "https://github.com/example/ferramenta_saúde_aws",
     "developers_id": [
-      "6920204e83a739949ca359c6"
+      "6920205283a739949ca35a04",
+      "6920204f83a739949ca359d4",
+      "6920204e83a739949ca359ca",
+      "6920205183a739949ca359f0",
+      "6920205183a739949ca359f4"
     ]
   },
   {
-    "owner_id": "6920205383a739949ca35a0a",
-    "project_name": "Cloud Engine 5605",
-    "short_description": "Cloud Engine 5605 is a modern solution designed to enhance productivity.",
-    "full_description": "Cloud Engine 5605 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204d83a739949ca359b8",
+    "project_name": "Studio Social Postgresql",
+    "short_description": "Studio Social Postgresql é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Studio Social Postgresql foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como csharp, postgresql, vue, nodejs, css, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
+      "csharp",
       "postgresql",
-      "html",
+      "vue",
       "nodejs",
-      "sass",
-      "express",
-      "typescript"
+      "css"
     ],
     "category": [
       "game"
     ],
-    "github_link": "https://github.com/example/cloud_engine_5605",
+    "github_link": "https://github.com/example/studio_social_postgresql",
     "developers_id": [
-      "6920204f83a739949ca359d4",
-      "6920204c83a739949ca359ae",
-      "6920204e83a739949ca359ca",
-      "6920204d83a739949ca359b6"
+      "6920205283a739949ca359f8",
+      "6920204d83a739949ca359c0"
     ]
   },
   {
-    "owner_id": "6920205083a739949ca359e2",
-    "project_name": "Smart Builder 1882",
-    "short_description": "Smart Builder 1882 is a modern solution designed to enhance productivity.",
-    "full_description": "Smart Builder 1882 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204e83a739949ca359c6",
+    "project_name": "Center Logístico Fastapi",
+    "short_description": "Center Logístico Fastapi é um projeto desenvolvido para atender demandas reais do setor educacional, oferecendo eficiência e integração moderna.",
+    "full_description": "Center Logístico Fastapi foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como react, gcp, flask, docker, css, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "nodejs",
-      "redis",
-      "sass"
+      "react",
+      "gcp",
+      "flask",
+      "docker",
+      "css",
+      "fastapi"
     ],
     "category": [
-      "api"
+      "framework"
     ],
-    "github_link": "https://github.com/example/smart_builder_1882",
+    "github_link": "https://github.com/example/center_logístico_fastapi",
     "developers_id": [
-      "6920205383a739949ca35a0a",
+      "6920204e83a739949ca359c6",
+      "6920204d83a739949ca359be"
+    ]
+  },
+  {
+    "owner_id": "6920204c83a739949ca359b2",
+    "project_name": "Gateway Industrial Django",
+    "short_description": "Gateway Industrial Django é um projeto desenvolvido para atender demandas reais do setor imobiliário, oferecendo eficiência e integração moderna.",
+    "full_description": "Gateway Industrial Django foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como gcp, bootstrap, html, go, react, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "gcp",
+      "bootstrap",
+      "html",
+      "go",
+      "react",
+      "django"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/gateway_industrial_django",
+    "developers_id": [
       "6920204f83a739949ca359d8",
+      "6920205083a739949ca359e2",
+      "6920205083a739949ca359e8",
+      "6920204c83a739949ca359a8"
+    ]
+  },
+  {
+    "owner_id": "6920205183a739949ca359f0",
+    "project_name": "Automação Cloud Nodejs",
+    "short_description": "Automação Cloud Nodejs é um projeto desenvolvido para atender demandas reais do setor mobilidade, oferecendo eficiência e integração moderna.",
+    "full_description": "Automação Cloud Nodejs foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como nodejs, docker, kubernetes, fastapi, react, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "nodejs",
+      "docker",
+      "kubernetes",
+      "fastapi",
+      "react"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/automação_cloud_nodejs",
+    "developers_id": [
+      "6920205283a739949ca359fe"
+    ]
+  },
+  {
+    "owner_id": "6920205383a739949ca35a06",
+    "project_name": "Studio Social Fastapi",
+    "short_description": "Studio Social Fastapi é um projeto desenvolvido para atender demandas reais do setor financeiro, oferecendo eficiência e integração moderna.",
+    "full_description": "Studio Social Fastapi foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como typescript, redis, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "typescript",
+      "redis",
+      "fastapi"
+    ],
+    "category": [
+      "fullstack"
+    ],
+    "github_link": "https://github.com/example/studio_social_fastapi",
+    "developers_id": [
+      "6920204f83a739949ca359d8",
+      "6920205383a739949ca35a0a",
+      "6920205283a739949ca359f8",
       "6920205183a739949ca359ee"
     ]
   },
   {
-    "owner_id": "6920204e83a739949ca359cc",
-    "project_name": "Prime Platform 3115",
-    "short_description": "Prime Platform 3115 is a modern solution designed to enhance productivity.",
-    "full_description": "Prime Platform 3115 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920204d83a739949ca359be",
+    "project_name": "Dashboard Mobilidade Flask",
+    "short_description": "Dashboard Mobilidade Flask é um projeto desenvolvido para atender demandas reais do setor industrial, oferecendo eficiência e integração moderna.",
+    "full_description": "Dashboard Mobilidade Flask foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como react, postgresql, flutter, flask, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "gcp",
-      "spring",
-      "express"
+      "react",
+      "postgresql",
+      "flutter",
+      "flask"
     ],
     "category": [
-      "none"
+      "framework"
     ],
-    "github_link": "https://github.com/example/prime_platform_3115",
+    "github_link": "https://github.com/example/dashboard_mobilidade_flask",
     "developers_id": [
-      "6920204c83a739949ca359aa",
-      "6920205183a739949ca359f4",
-      "6920204e83a739949ca359cc",
-      "6920205083a739949ca359e2",
-      "6920204e83a739949ca359c6"
+      "6920204f83a739949ca359d6",
+      "6920204e83a739949ca359c6",
+      "6920205283a739949ca35a02",
+      "6920204c83a739949ca359ae"
     ]
   },
   {
-    "owner_id": "6920205183a739949ca359ea",
-    "project_name": "Nova System 5535",
-    "short_description": "Nova System 5535 is a modern solution designed to enhance productivity.",
-    "full_description": "Nova System 5535 aims to deliver a robust and scalable architecture for diverse use cases, integrating multiple technologies in an efficient manner.",
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Workspace Esportivo Spring",
+    "short_description": "Workspace Esportivo Spring é um projeto desenvolvido para atender demandas reais do setor imobiliário, oferecendo eficiência e integração moderna.",
+    "full_description": "Workspace Esportivo Spring foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como tailwind, kubernetes, spring, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
     "stacks": [
-      "spring",
-      "sass",
-      "vue"
+      "tailwind",
+      "kubernetes",
+      "spring"
     ],
     "category": [
-      "none"
+      "devops"
     ],
-    "github_link": "https://github.com/example/nova_system_5535",
+    "github_link": "https://github.com/example/workspace_esportivo_spring",
+    "developers_id": [
+      "6920204f83a739949ca359d6",
+      "6920205083a739949ca359e0"
+    ]
+  },
+  {
+    "owner_id": "6920204d83a739949ca359c0",
+    "project_name": "Manager Mobilidade Django",
+    "short_description": "Manager Mobilidade Django é um projeto desenvolvido para atender demandas reais do setor dados, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Mobilidade Django foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como spring, django, postgresql, fastapi, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "spring",
+      "django",
+      "postgresql",
+      "fastapi"
+    ],
+    "category": [
+      "library"
+    ],
+    "github_link": "https://github.com/example/manager_mobilidade_django",
     "developers_id": [
       "6920204d83a739949ca359be",
-      "6920204f83a739949ca359d2",
-      "6920204c83a739949ca359b2"
+      "6920204e83a739949ca359ce"
+    ]
+  },
+  {
+    "owner_id": "6920205083a739949ca359e0",
+    "project_name": "Service Social Kubernetes",
+    "short_description": "Service Social Kubernetes é um projeto desenvolvido para atender demandas reais do setor saúde, oferecendo eficiência e integração moderna.",
+    "full_description": "Service Social Kubernetes foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como bootstrap, kubernetes, tailwind, django, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "bootstrap",
+      "kubernetes",
+      "tailwind",
+      "django"
+    ],
+    "category": [
+      "database"
+    ],
+    "github_link": "https://github.com/example/service_social_kubernetes",
+    "developers_id": [
+      "6920204c83a739949ca359aa",
+      "6920204f83a739949ca359d0",
+      "6920205183a739949ca359f6"
+    ]
+  },
+  {
+    "owner_id": "6920204f83a739949ca359d6",
+    "project_name": "Manager Imobiliário Angular",
+    "short_description": "Manager Imobiliário Angular é um projeto desenvolvido para atender demandas reais do setor segurança, oferecendo eficiência e integração moderna.",
+    "full_description": "Manager Imobiliário Angular foi projetado com foco em escalabilidade, performance e boas práticas. Utilizando tecnologias como fastapi, angular, postgresql, aws, o sistema resolve problemas complexos do setor de forma intuitiva e robusta. A solução integra múltiplos serviços, automatiza processos críticos e fornece base sólida para evolução contínua.",
+    "stacks": [
+      "fastapi",
+      "angular",
+      "postgresql",
+      "aws"
+    ],
+    "category": [
+      "devops"
+    ],
+    "github_link": "https://github.com/example/manager_imobiliário_angular",
+    "developers_id": [
+      "6920204d83a739949ca359c0"
     ]
   }
 ]
