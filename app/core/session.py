@@ -82,8 +82,11 @@ class Database():
         old_data_id = self.validate_object_id(old_data_id)
 
         collection = self.get_collection_data(collection_name)
+        filter_query = {"_id": old_data_id}
+        if collection_name in ['users', 'projects']:
+            filter_query['is_deleted'] = False 
         updated_data = collection.find_one_and_update(
-            filter={"_id": old_data_id, "is_deleted": False }, 
+            filter=filter_query, 
             update={"$set": new_data}, 
             return_document=ReturnDocument.AFTER)
         return updated_data
@@ -102,10 +105,10 @@ class Database():
         data_id = self.validate_object_id(data_id)
 
         collection = self.get_collection_data(collection_name)
-        result = collection.find_one({
-            "_id": data_id,
-            "is_deleted": False
-        })
+        filter_query = {"_id": data_id}
+        if collection_name in ['users', 'projects']:
+            filter_query['is_deleted'] = False
+        result = collection.find_one(filter_query)
         return result
 
     def find_data_by_key(self, collection_name: str, key: str, key_data: Any):

@@ -165,3 +165,42 @@ def find_user_by_username(username: str):
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+
+@router.patch('/recommend', name="Recomende um desenvolvedor para outros usuários")
+def recommend_dev(dev_id: str, is_recommend: bool = True):
+    try:
+        if not isinstance(is_recommend, bool):
+            raise ValueError("is_recommend deve ser um booleano")
+
+        dev = _dev_service.find_by_id(
+            collection_name=_dev_service.dev_colection_name,
+            data_id=dev_id
+        )
+
+        if not dev:
+            raise HTTPException(status_code=404, detail="Desenvolvedor não encontrado no banco")
+        
+        dev['is_recommend'] = is_recommend
+
+        updated = _dev_service.update(
+            collection_name=_dev_service.dev_colection_name,
+            old_data_id=dev['_id'],
+            new_data=dev
+        )
+
+        if not updated:
+            raise HTTPException(status_code=404, detail="Desenvolvedor não adicionado no banco")
+
+        dev.pop('_id')
+
+        return dev
+
+    except HTTPException:
+        print(format_exc())
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
