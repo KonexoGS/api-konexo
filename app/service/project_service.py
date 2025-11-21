@@ -8,9 +8,10 @@ class ProjectService(Database):
         super().__init__()
         self.main_collection_name = "projects"
         self.dev_collection_name = "developers"
+        self.user_collection_name = "users"
         self.main_collection = super().get_collection_data(self.main_collection_name)
         self.dev_collection = super().get_collection_data(self.dev_collection_name)
-
+        self.user_collection = super().get_collection_data(self.user_collection_name)
     
     def find_by_project_name(self, project_name: str):
         if not isinstance(project_name, str):
@@ -67,10 +68,10 @@ class ProjectService(Database):
             raise ValueError(f"Usuário com ID '{owner_id}' não existe no sistema.")
         
         
-        return self.main_collection.find({
-                "_id": owner['_id'],
-                "is_deleted": False
-            })
+        return list(self.main_collection.find({
+            "owner_id": owner_id,
+            "is_deleted": False
+        }))
 
     def find_projects_by_category(self, category: str):
         if not isinstance(category, str):

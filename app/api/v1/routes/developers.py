@@ -4,12 +4,14 @@ from app.models.user_model import *
 from app.models.developers_model import *
 from app.service.developer_service import DeveloperService
 from app.service.user_service import UserService
+from app.service.project_service import ProjectService
 from app.api.v1.routes.user import get_all_users
 from traceback import format_exc
 
 router = APIRouter()
 _dev_service = DeveloperService()
 _user_service = UserService()
+_project_service = ProjectService()
 
 @router.get('/', name="Conheça todos os devs do sistema", response_model=List[DeveloperResponseModel])
 def get_all_devs():
@@ -204,3 +206,26 @@ def recommend_dev(dev_id: str, is_recommend: bool = True):
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+
+@router.get(
+    "/projects/{owner_id}",
+    name="Buscar todos os projetos de um proprietário",
+)
+def get_projects_by_owner(owner_id: str):
+    try:
+        projects = _project_service.find_projects_by_owner(owner_id)
+
+        if not projects:
+            raise HTTPException(status_code=404, detail="Nenhum projeto encontrado para esse owner_id")
+
+        projects = [_project_service.normalize_mongo_document(p) for p in projects]
+
+        return projects
+
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Erro interno ao buscar projetos do owner")
