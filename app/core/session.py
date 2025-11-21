@@ -141,3 +141,10 @@ class Database():
             return ObjectId(id_value)
         raise ValueError(f"ID inválido: {id_value}")
 
+    def normalize_mongo_document(self, doc: dict):
+        doc['_id'] = str(doc['_id'])
+        if 'owner_id' in doc:
+            doc['owner_id'] = str(doc['owner_id'])
+        if 'developers_id' in doc:
+            doc['developers_id'] = [str(d) for d in doc['developers_id']]
+        return doc

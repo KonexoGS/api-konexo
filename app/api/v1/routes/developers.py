@@ -3,6 +3,7 @@ from fastapi import HTTPException, UploadFile, File
 from app.models.user_model import *
 from app.models.developers_model import *
 from app.service.developer_service import DeveloperService
+from app.api.v1.routes.user import get_all_users
 from traceback import format_exc
 
 router = APIRouter()
@@ -10,8 +11,44 @@ _dev_service = DeveloperService()
 
 
 @router.get('/', name="Conheça todos os devs do sistema", response_model=List[DeveloperResponseModel])
-def get_all_users():
-    pass
+def get_all_dev():
+    try:
+        raw_devs = list(_dev_service.get_all_data(_dev_service.dev_colection_name))
+        if not raw_devs:
+            raise HTTPException(status_code=404, detail="Nenhum usuário foi encontrado.")
+        raw_users = get_all_users()
+
+        devs = [_dev_service.normalize_mongo_document(dev) for dev in raw_devs]
+
+        users_dict = {str(user["_id"]): user for user in raw_users}
+
+        results = []
+
+        for dev in devs:
+            user_id = str(dev.get("user_id"))
+
+            db_user = users_dict.get(user_id)
+            if not db_user:
+                continue 
+
+            dev_id = dev.pop("_id")
+            merged = DeveloperUserModel(
+                dev_id=dev_id,
+                **db_user,
+                **dev
+            )
+
+            results.append(merged)
+
+        return results
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
 @router.get('/search', name='Procure os devs a patir do username ou name2', response_model=List[DevelopersModel])
 def get_users_by_filter(username: str | None = None, name: str | None = None): 

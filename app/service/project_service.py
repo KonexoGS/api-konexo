@@ -94,11 +94,3 @@ class ProjectService(Database):
             return str(super().insert(self.main_collection_name, new_data))
         except Exception as e:
             raise
-    
-    def normalize_mongo_document(self, doc: dict):
-        doc['_id'] = str(doc['_id'])
-        if 'owner_id' in doc:
-            doc['owner_id'] = str(doc['owner_id'])
-        if 'developers_id' in doc:
-            doc['developers_id'] = [str(d) for d in doc['developers_id']]
-        return doc
