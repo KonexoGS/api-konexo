@@ -25,6 +25,19 @@ class DevelopersModel(BaseModel):
     is_recommend: bool = False
 
 
+class DeveloperUserModel(UserModel):
+    dev_id: str | None = None
+    tech_skills: List[str]
+    user_id: str
+    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER.value
+    soft_skills: List[str] = []
+    languages: List[LanguageModel] = [LanguageModel(name="Português", level=LanguageLevel.FLUENT.value)]
+    total_experience: int = 0
+    projects_id: List[str] = []
+    badges_id: List[BadgesModel] = []
+    is_recommend: bool = False
+
+
 class DeveloperResponseModel(UserResponseModel):
     tech_skills: List[str]
     soft_skills: List[str] = []

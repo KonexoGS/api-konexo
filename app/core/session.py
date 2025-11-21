@@ -2,7 +2,7 @@ from pymongo import MongoClient, ReturnDocument
 from pymongo.server_api import ServerApi
 from bson import ObjectId
 from app import db_connection, db_password
-from typing import Dict
+from typing import Dict, Any
 
 class Database():
     def __init__(self):
@@ -107,7 +107,20 @@ class Database():
             "is_deleted": False
         })
         return result
-    
+
+    def find_data_by_key(self, collection_name: str, key: str, key_data: Any):
+        if not isinstance(key, str) or not isinstance(collection_name, str):
+            raise ValueError("O valor enviado é incorreto pra sua formatação.")
+
+        collection = self.get_collection_data(collection_name)
+        
+        filter_query = {key: key_data}
+        if collection_name in ['users', 'projects']:
+            filter_query['is_deleted'] = False
+        result = collection.find_one(filter_query)
+
+        return result
+
     def validate_object_id(self, id_value: str | ObjectId) -> ObjectId:
         if isinstance(id_value, ObjectId):
             return id_value

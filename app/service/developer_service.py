@@ -9,9 +9,9 @@ from fastapi import HTTPException, UploadFile, File
 class DeveloperService(UserService):
     def __init__(self):
         super().__init__()
-        self.main_collection_name = "developers"
+        self.dev_colection_name = "developers"
         self.project_collection_name = "projects"
-        self.main_collection = super().get_collection_data(self.main_collection_name)
+        self.dev_collection = super().get_collection_data(self.dev_colection_name)
         self.project_collection = super().get_collection_data(self.project_collection_name)
         self._auth_service = AuthService()
 

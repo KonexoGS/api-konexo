@@ -38,3 +38,40 @@ def add_new_user(new_dev: DeveloperResponseModel):
 @router.put('/{dev_id}/profile_photo', name="Adicione uma nova foto pro seu usuário", response_model=DevelopersModel)
 def add_profile_photo(file: UploadFile | None = File(None)):
     pass
+
+
+@router.get('/profile/{username}', name="Acesse o perfil do usuário pelo username")
+def find_user_by_username(username: str):
+    try:
+        db_user = _dev_service.find_data_by_key(
+            collection_name=_dev_service.user_collection_name, 
+            key="username",
+            key_data=username)
+        
+        if not db_user:
+            raise HTTPException(status_code=404, detail="Nenhum usuário encontrado")
+        
+        db_dev = _dev_service.find_data_by_key(
+            collection_name="developers",
+            key="user_id",
+            key_data=str(db_user['_id'])
+        )
+
+        if not db_dev:
+            raise HTTPException(status_code=404, detail="Nenhum desenvolvedor encontrado")
+
+        dev_id = db_dev.pop('_id')
+
+        return DeveloperUserModel(
+            dev_id=str(dev_id),
+            **db_user, 
+            **db_dev)
+    except HTTPException:
+        print(format_exc())
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
