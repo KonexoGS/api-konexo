@@ -13,7 +13,7 @@ _dev_service = DeveloperService()
 def get_all_users():
     pass
 
-@router.get('/search', name='Procure os usuários a patir do username ou name2', response_model=DeveloperModel)
+@router.get('/search', name='Procure os usuários a patir do username ou name2', response_model=DevelopersModel)
 def get_users_by_filter(username: str | None = None, name: str | None = None): 
     pass
 

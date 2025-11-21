@@ -12,24 +12,23 @@ from pwdlib import PasswordHash
 
 
 class AuthService(Database):
-    def __init__():
+    def __init__(self):
         super().__init__()
         self.password_hash = PasswordHash.recommended()
         self.oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
         self.user_service = UserService()
 
-
     def verify_password(self, plain_password: str, hashed_password: str):
-        return password_hash.verify(plain_password, hashed_password)
+        return self.password_hash.verify(plain_password, hashed_password)
     
     def hash_password(self, password: str):
-        return password_hash.hash(password)
+        return self.password_hash.hash(password)
 
     def authenticate_user(self, password: str, username: str | None = None, email: str | None = None):
         user = self.user
         if not user:
             return False
-        if not verify_password(password, user.hashed_password):
+        if not self.verify_password(password, user.hashed_password):
             return False
         return user
 

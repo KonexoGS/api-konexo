@@ -8,18 +8,19 @@ class UserModel(BaseModel):
     username: str
     email: str
     password: str
+    headline: str
+    address: str
     user_type: str # UserType Enum
     is_deleted: bool = False
     social_medias: Dict[str, str] = {}
+    profile_photo: str
     created_at: datetime = datetime.now()
 
 
 class UserResponseModel(BaseModel):
     full_name: str
     username: str
+    headline: str
+    address: str
     email: str
-    password: str
     social_medias: Dict[str, str] = {}
-
-class UserInDB(UserModel):
-    hashed_password: str

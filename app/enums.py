@@ -30,19 +30,19 @@ class ProjectsCategoryAlias(str, Enum):
     DATABASE = 'database'
 
 class DeveloperLevel(str, Enum):
-    PLAIN = '200'
-    SENIOR = '205'
-    JUNIOR = '210'
-    INTERNSHIP = '215'
-    BEGINNER = '220'
+    PLAIN = 'pleno'
+    SENIOR = 'senior'
+    JUNIOR = 'junior'
+    INTERNSHIP = 'estagiário'
+    BEGINNER = 'iniciante'
 
 class Roles(str, Enum):
-    FRONT = '300'
-    BACK = '305'
-    CYBER = '310'
-    ENGINEER = '315'
-    IOT = '320'
-    DATA = '325'
+    FRONT = 'front'
+    BACK = 'back'
+    CYBER = 'cyber'
+    ENGINEER = 'engineer'
+    IOT = 'iot'
+    DATA = 'database'
     
 class Indicators(str, Enum):
     PIB = 'NY.GDP.PCAP.CD'
@@ -55,3 +55,10 @@ class UserType(str, Enum):
     ADMIN = "admin"
     DEVELOPER = "developer"
     MARKETING = "marketing"
+
+class LanguageLevel(str, Enum):
+    BEGINNER = 'iniciante'
+    INTERMEDIATE = 'intermediário'
+    ADVANCED_INTERMEDIATE = 'intermediário-avançado'
+    ADVANCED = 'avançado'
+    FLUENT = 'fluente'
