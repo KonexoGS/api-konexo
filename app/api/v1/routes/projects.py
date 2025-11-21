@@ -59,8 +59,8 @@ def find_projects_from_db(project_id: Optional[str | None] = None, name: Optiona
                 owner_name=_project_service.find_by_id(collection_name="users", data_id=p['owner_id'])['full_name'],
                 **p
             )
-            tmp.short_description = translator.translatePlainText(p['short_description']),
-            tmp.full_description = translator.translatePlainText(p['full_description']),
+            # tmp.short_description = translator.translatePlainText(p['short_description']),
+            # tmp.full_description = translator.translatePlainText(p['full_description']),
             projects.append(tmp)
 
         return projects
