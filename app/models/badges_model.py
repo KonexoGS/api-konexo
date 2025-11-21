@@ -1,7 +1,7 @@
 from dataclasses import dataclass
+from pydantic import BaseModel
 
-@dataclass
-class Badges:
+class BadgesModel(BaseModel):
     friendly_code: str
     name: str
     description: str

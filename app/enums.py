@@ -54,3 +54,4 @@ class Indicators(str, Enum):
 class UserType(str, Enum):
     ADMIN = "admin"
     DEVELOPER = "developer"
+    MARKETING = "marketing"

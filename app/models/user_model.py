@@ -1,19 +1,25 @@
 from datetime import datetime
+from pydantic import BaseModel
+from typing import Dict
 
-class User(BaseModel):
+class UserModel(BaseModel):
+    user_id: str = ""
     full_name: str
     username: str
     email: str
     password: str
     user_type: str # UserType Enum
-    level: str
-    projects_subscribed: List[str]
-    experience_level: int
-    badges: List[int]
-    is_deleted: bool
-    social_medias: Dict[str, str]
-    created_at: datetime
+    is_deleted: bool = False
+    social_medias: Dict[str, str] = {}
+    created_at: datetime = datetime.now()
 
 
-class UserInDB(User):
+class UserResponseModel(BaseModel):
+    full_name: str
+    username: str
+    email: str
+    password: str
+    social_medias: Dict[str, str] = {}
+
+class UserInDB(UserModel):
     hashed_password: str
