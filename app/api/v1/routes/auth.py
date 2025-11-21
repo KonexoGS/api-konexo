@@ -8,7 +8,6 @@ from typing import Annotated
 from datetime import timedelta
 
 router = APIRouter()
-db = DatabaseLocal()
 
 _auth_service = AuthService()
 
