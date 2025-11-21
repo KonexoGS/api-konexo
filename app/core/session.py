@@ -127,7 +127,7 @@ class Database():
 
         collection = self.get_collection_data(collection_name)
         
-        filter_query = {key: {"$in": key_data}}
+        filter_query = {key: {"$regex": key_data, "$options": 'i'}}
         if collection_name in ['users', 'projects']:
             filter_query['is_deleted'] = False
         result = collection.find(filter_query)

@@ -3,15 +3,16 @@ from fastapi import HTTPException, UploadFile, File
 from app.models.user_model import *
 from app.models.developers_model import *
 from app.service.developer_service import DeveloperService
+from app.service.user_service import UserService
 from app.api.v1.routes.user import get_all_users
 from traceback import format_exc
 
 router = APIRouter()
 _dev_service = DeveloperService()
-
+_user_service = UserService()
 
 @router.get('/', name="Conheça todos os devs do sistema", response_model=List[DeveloperResponseModel])
-def get_all_dev():
+def get_all_devs():
     try:
         raw_devs = list(_dev_service.get_all_data(_dev_service.dev_colection_name))
         if not raw_devs:
@@ -50,42 +51,53 @@ def get_all_dev():
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
-@router.get('/search', name='Procure os devs a patir do username ou name2', response_model=List[DevelopersModel])
+@router.get('/search', name='Procure os devs a patir do username ou name2', response_model=List[DeveloperUserModel])
 def get_users_by_filter(username: str | None = None, name: str | None = None): 
     try:
         if not username and not name:
             raise HTTPException(status_code=400, detail="Ao menos um dos parâmetros devem conter valor")
 
-        results = []
-        print(_dev_service.user_collection_name)
+        filtered_data = []
         if username:
-            results = _dev_service.find_many_data_by_key(
-                collection_name=_dev_service.user_collection_name,
+            filtered_data = _user_service.find_many_data_by_key(
+                collection_name=_user_service.user_collection_name,
                 key="username",
-                key_data=username)
+                key_data=username
+            )
         else:
-            results = _dev_service.find_many_data_by_key(
-                collection_name=_dev_service.user_collection_name,
+            filtered_data = _user_service.find_many_data_by_key(
+                collection_name=_user_service.user_collection_name,
                 key="full_name",
-                key_data=name)
+                key_data=name
+            )
 
+        
+        users_dict = {str(user["_id"]): user for user in filtered_data}
 
-        # results = []
-        # if username:
-        #     for user in default_users:
-        #         if username.strip().lower() in user['username'].strip().lower():
-        #             results.append(user)
-        # else:
-        #     if name.isnumeric():
-        #         return None
-        #     for user in default_users:
-        #         if name.strip().lower() in user['full_name'].strip().lower():
-        #             results.append(user)
-                
-        return DeveloperUserModel(
-            dev_id=str(dev_id),
-            **db_user, 
-            **db_dev)
+        raw_devs = list(_dev_service.get_all_data(_dev_service.dev_colection_name))
+        devs = [_dev_service.normalize_mongo_document(dev) for dev in raw_devs]
+
+        results = []
+        for dev in devs:
+            user_id = str(dev.get("user_id"))
+            db_user = users_dict.get(user_id)
+
+            if not db_user:
+                continue
+            dev_id = dev.pop('_id')
+            db_user.pop('_id')
+            merged = DeveloperUserModel(
+                dev_id=dev_id,
+                **db_user,
+                **dev
+            )
+            results.append(merged)
+
+        if not results:
+            raise HTTPException(status_code=404, detail="Usuários encontrados não estão registrados como desenvolvedores.")
+
+        return results
+
     except HTTPException: 
         raise
     except KeyError:
