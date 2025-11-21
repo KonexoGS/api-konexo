@@ -29,6 +29,9 @@ class ProjectResponseModel(BaseModel):
     github_link: str | None = None
     developers_id: List[str]
 
+class ProjectResponseSearchModel(ProjectResponseModel):
+    owner_name: str
+
 class ProjectUpdateModel(BaseModel):
     project_name: Optional[str] = None
     short_description: Optional[str] = None

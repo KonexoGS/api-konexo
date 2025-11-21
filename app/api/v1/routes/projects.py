@@ -7,6 +7,7 @@ from app.service.project_service import ProjectService
 from app.models.projects_model import *
 from traceback import format_exc
 from app.utils.gen_friendlycode import GenerateFriendlyCode
+from app.utils.translator import Translator
 from app.utils.convert_enum import convert_enums_to_values
 from typing import List, Optional, Dict, Any
 
@@ -31,15 +32,19 @@ def get_all_projects():
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
 
-@router.get("/search", name="Procure por um projeto a partir do seu ID, categoria, ou Nome!", response_model=List[ProjectResponseModel])
+@router.get("/search", name="Procure por um projeto a partir do seu ID, categoria, ou Nome!", response_model=List[ProjectResponseSearchModel])
 def find_projects_from_db(project_id: Optional[str | None] = None, name: Optional[str | None] = None, category: Optional[ProjectsCategoryAlias | None] = None):
     try:
         if not (project_id or name or category):
             raise HTTPException(status_code=400, detail="Especifique pelo menos um dos parâmetros")
         
+        translator = Translator()
+
         response = None
         if project_id:
-            response = [_project_service.find_by_id(project_id, _project_service.main_collection_name)]
+            response = [_project_service.find_by_id(data_id=project_id, collection_name=_project_service.main_collection_name)]
+            response[0]['_id'] = str(response[0]['_id'])
+            response[0]['owner_id'] = str(response[0]['owner_id'])
         elif name:
             response = _project_service.find_by_project_name(project_name=name)
         else:
@@ -47,11 +52,23 @@ def find_projects_from_db(project_id: Optional[str | None] = None, name: Optiona
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail="Nenhum projeto foi encontrado")    
-        return response
+
+        projects = []
+        for p in response:
+            tmp = ProjectResponseSearchModel(
+                owner_name=_project_service.find_by_id(collection_name="users", data_id=p['owner_id'])['full_name'],
+                **p
+            )
+            tmp.short_description = translator.translatePlainText(p['short_description']),
+            tmp.full_description = translator.translatePlainText(p['full_description']),
+            projects.append(tmp)
+
+        return projects
     except HTTPException:
         raise
     except ValueError as ex:
-        raise HTTPException(status_code=400, detail=format_exc())
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
