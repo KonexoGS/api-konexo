@@ -8,6 +8,15 @@ from traceback import format_exc
 router = APIRouter()
 _dev_service = DeveloperService()
 
+
+@router.get('/', name="Conheça todos os usuários do sistema", response_model=List[DeveloperResponseModel])
+def get_all_users():
+    pass
+
+@router.get('/search', name='Procure os usuários a patir do username ou name2', response_model=DeveloperModel)
+def get_users_by_filter(username: str | None = None, name: str | None = None): 
+    pass
+
 @router.post('/add', name='Adicione um novo desenvolvedor no sistema', response_model=DevelopersModel)
 def add_new_user(new_dev: DeveloperResponseModel):
     try:
