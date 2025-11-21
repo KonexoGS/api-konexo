@@ -24,7 +24,9 @@ class DeveloperService(UserService):
             headline=user_response.headline,
             address=user_response.address,
             user_type=UserType.DEVELOPER.value,
-            social_medias=user_response.social_medias
+            social_medias=user_response.social_medias,
+            experience=user_response.experience,
+            formation=user_response.formation
         )
         new_user_id = super().insert_user(new_user)
         if not new_user_id:
