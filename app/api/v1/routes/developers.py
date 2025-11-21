@@ -9,15 +9,56 @@ router = APIRouter()
 _dev_service = DeveloperService()
 
 
-@router.get('/', name="Conheça todos os usuários do sistema", response_model=List[DeveloperResponseModel])
+@router.get('/', name="Conheça todos os devs do sistema", response_model=List[DeveloperResponseModel])
 def get_all_users():
     pass
 
-@router.get('/search', name='Procure os usuários a patir do username ou name2', response_model=DevelopersModel)
+@router.get('/search', name='Procure os devs a patir do username ou name2', response_model=List[DevelopersModel])
 def get_users_by_filter(username: str | None = None, name: str | None = None): 
-    pass
+    try:
+        if not username and not name:
+            raise HTTPException(status_code=400, detail="Ao menos um dos parâmetros devem conter valor")
 
-@router.post('/add', name='Adicione um novo desenvolvedor no sistema', response_model=DevelopersModel)
+        results = []
+        print(_dev_service.user_collection_name)
+        if username:
+            results = _dev_service.find_many_data_by_key(
+                collection_name=_dev_service.user_collection_name,
+                key="username",
+                key_data=username)
+        else:
+            results = _dev_service.find_many_data_by_key(
+                collection_name=_dev_service.user_collection_name,
+                key="full_name",
+                key_data=name)
+
+
+        # results = []
+        # if username:
+        #     for user in default_users:
+        #         if username.strip().lower() in user['username'].strip().lower():
+        #             results.append(user)
+        # else:
+        #     if name.isnumeric():
+        #         return None
+        #     for user in default_users:
+        #         if name.strip().lower() in user['full_name'].strip().lower():
+        #             results.append(user)
+                
+        return DeveloperUserModel(
+            dev_id=str(dev_id),
+            **db_user, 
+            **db_dev)
+    except HTTPException: 
+        raise
+    except KeyError:
+        print(format_exc())
+        raise HTTPException(status_code=404, detail="Parâmeto de busca incorreto.") 
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado no sistema")
+
+@router.post('/add', name='Adicione um dev desenvolvedor no sistema', response_model=DevelopersModel)
 def add_new_user(new_dev: DeveloperResponseModel):
     try:
         new_dev = _dev_service.insert_developer(new_dev)

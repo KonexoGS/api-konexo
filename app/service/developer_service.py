@@ -43,7 +43,7 @@ class DeveloperService(UserService):
 
         new_dev_dict = new_dev.model_dump()
         new_dev_dict.pop('dev_id')
-        new_dev_id = super().insert(self.main_collection_name, new_dev_dict)
+        new_dev_id = super().insert(self.dev_colection_name, new_dev_dict)
         new_dev.dev_id = str(new_dev_id)
 
         return new_dev
