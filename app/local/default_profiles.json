@@ -1,910 +1,2652 @@
 [
   {
-    "email": "dev001@example.com",
-    "username": "devuser001",
-    "password": "Str0ngP@ss001!",
-    "full_name": "Alice Almeida",
-    "stacks": [100, 105],
-    "role": ["backend", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1005", "PRJ1006"],
-    "experience_level": 2,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Elaine Ramos",
+    "username": "elaine.ramos0",
+    "headline": "Programador DevOps",
+    "address": "Belo Horizonte, MG",
+    "email": "elaine.ramos0@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "PUC",
+        "completed_year": 2017,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev001"
+      "linkedin": "https://linkedin.com/in/elaine.ramos0",
+      "github": "https://github.com/elaine.ramos0"
     },
-    "created_at": "2024-10-02 10:13:00"
+    "tech_skills": [
+      "SQL",
+      "PostgreSQL",
+      "Django",
+      "JavaScript",
+      "TypeScript",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Trabalho em equipe",
+      "Resolução de problemas"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Drifter@92Mirage"
   },
   {
-    "email": "dev002@example.com",
-    "username": "devuser002",
-    "password": "Str0ngP@ss002!",
-    "full_name": "Bruno Barbosa",
-    "stacks": [110, 120],
-    "role": ["mobile", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1010", "PRJ1011", "PRJ1012"],
-    "experience_level": 4,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Vinícius Pires",
+    "username": "vinicius.pires1",
+    "headline": "Engenheiro Fullstack",
+    "address": "Curitiba, PR",
+    "email": "vinicius.pires1@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "FATEC",
+        "completed_year": 2016,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev002",
-      "linkedin": "https://linkedin.com/in/dev002"
+      "linkedin": "https://linkedin.com/in/vinicius.pires1",
+      "github": "https://github.com/vinicius.pires1"
     },
-    "created_at": "2024-10-03 11:26:00"
+    "tech_skills": [
+      "Java",
+      "C#",
+      "CSS",
+      "HTML",
+      "TypeScript",
+      "Next.js"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Resolução de problemas",
+      "Criatividade"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Eclipse!63Phoenix"
   },
   {
-    "email": "dev003@example.com",
-    "username": "devuser003",
-    "password": "Str0ngP@ss003!",
-    "full_name": "Carla Cordeiro",
-    "stacks": [130, 135],
-    "role": ["data", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1015", "PRJ1016", "PRJ1017", "PRJ1018"],
-    "experience_level": 6,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Daniel Souza",
+    "username": "daniel.souza2",
+    "headline": "Desenvolvedor DevOps",
+    "address": "Curitiba, PR",
+    "email": "daniel.souza2@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "USP",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev003",
-      "twitter": "https://twitter.com/dev003"
+      "linkedin": "https://linkedin.com/in/daniel.souza2",
+      "github": "https://github.com/daniel.souza2"
     },
-    "created_at": "2024-10-04 12:39:00"
+    "tech_skills": [
+      "Django",
+      "React",
+      "CSS",
+      "Kubernetes",
+      "Next.js",
+      "Python"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Comunicação",
+      "Criatividade"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Solstice!41Vortex"
   },
   {
-    "email": "dev004@example.com",
-    "username": "devuser004",
-    "password": "Str0ngP@ss004!",
-    "full_name": "Diego Duarte",
-    "stacks": [140, 145],
-    "role": ["qa", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1020"],
-    "experience_level": 8,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Fábio Ramos",
+    "username": "fabio.ramos3",
+    "headline": "Programador DevOps",
+    "address": "Curitiba, PR",
+    "email": "fabio.ramos3@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "Unip",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev004",
-      "linkedin": "https://linkedin.com/in/dev004"
+      "linkedin": "https://linkedin.com/in/fabio.ramos3",
+      "github": "https://github.com/fabio.ramos3"
     },
-    "created_at": "2024-10-05 13:52:00"
+    "tech_skills": [
+      "HTML",
+      "C#",
+      "SQL",
+      "MongoDB",
+      "Java",
+      "React"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Organização",
+      "Resolução de problemas"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Pulse@79Velocity"
   },
   {
-    "email": "dev005@example.com",
-    "username": "devuser005",
-    "password": "Str0ngP@ss005!",
-    "full_name": "Eduarda Esteves",
-    "stacks": [100, 130, 135],
-    "role": ["game", "mobile"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1025", "PRJ1026"],
-    "experience_level": 10,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Helena Batista",
+    "username": "helena.batista4",
+    "headline": "Analista Backend",
+    "address": "Salvador, BA",
+    "email": "helena.batista4@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unicamp",
+        "completed_year": 2019,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev005",
-      "instagram": "https://instagram.com/dev005"
+      "linkedin": "https://linkedin.com/in/helena.batista4",
+      "github": "https://github.com/helena.batista4"
     },
-    "created_at": "2024-10-06 14:05:00"
+    "tech_skills": [
+      "Java",
+      "HTML",
+      "Next.js",
+      "C#",
+      "Django",
+      "Python"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Proatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Velocity@51Hydra"
   },
   {
-    "email": "dev006@example.com",
-    "username": "devuser006",
-    "password": "Str0ngP@ss006!",
-    "full_name": "Felipe Ferraz",
-    "stacks": [105, 120, 150],
-    "role": ["iot", "data"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1030", "PRJ1031", "PRJ1032"],
-    "experience_level": 1,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "Cecília Costa",
+    "username": "cecilia.costa5",
+    "headline": "Desenvolvedor Fullstack",
+    "address": "Belém, PA",
+    "email": "cecilia.costa5@example.com",
+    "formation": [
+      {
+        "name": "Análise e Desenvolvimento de Sistemas",
+        "institution": "UFPR",
+        "completed_year": 2023,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "BrightWeb",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev006",
-      "linkedin": "https://linkedin.com/in/dev006",
-      "twitter": "https://twitter.com/dev006"
+      "linkedin": "https://linkedin.com/in/cecilia.costa5",
+      "github": "https://github.com/cecilia.costa5"
     },
-    "created_at": "2024-10-07 15:18:00"
+    "tech_skills": [
+      "HTML",
+      "PostgreSQL",
+      "React",
+      "Java",
+      "MongoDB",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Proatividade",
+      "Criatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Mirage@50Aurora"
   },
   {
-    "email": "dev007@example.com",
-    "username": "devuser007",
-    "password": "Str0ngP@ss007!",
-    "full_name": "Gabriela Gomes",
-    "stacks": [115, 135],
-    "role": ["qa", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1035", "PRJ1036", "PRJ1037", "PRJ1038"],
-    "experience_level": 3,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Aline Rocha",
+    "username": "aline.rocha6",
+    "headline": "Analista Frontend",
+    "address": "Belém, PA",
+    "email": "aline.rocha6@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "PUC",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev007",
-      "portfolio": "https://dev007.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/aline.rocha6",
+      "github": "https://github.com/aline.rocha6"
     },
-    "created_at": "2024-10-08 09:31:00"
+    "tech_skills": [
+      "CSS",
+      "Redis",
+      "AWS",
+      "MongoDB",
+      "Python",
+      "React"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Organização"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Phoenix(41Solstice"
   },
   {
-    "email": "dev008@example.com",
-    "username": "devuser008",
-    "password": "Str0ngP@ss008!",
-    "full_name": "Henrique Henrique",
-    "stacks": [120, 140],
-    "role": ["game", "techlead"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1040"],
-    "experience_level": 5,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "João Souza",
+    "username": "joao.souza7",
+    "headline": "Engenheiro Backend",
+    "address": "São Paulo, SP",
+    "email": "joao.souza7@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFSC",
+        "completed_year": 2023,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev008",
-      "linkedin": "https://linkedin.com/in/dev008"
+      "linkedin": "https://linkedin.com/in/joao.souza7",
+      "github": "https://github.com/joao.souza7"
     },
-    "created_at": "2024-10-09 10:44:00"
+    "tech_skills": [
+      "Django",
+      "Docker",
+      "Next.js",
+      "Java",
+      "AWS",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Comunicação",
+      "Resolução de problemas"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Vortex&67Specter"
   },
   {
-    "email": "dev009@example.com",
-    "username": "devuser009",
-    "password": "Str0ngP@ss009!",
-    "full_name": "Isabela Ibrahim",
-    "stacks": [125, 150],
-    "role": ["iot", "architect"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1045", "PRJ1046"],
-    "experience_level": 7,
-    "badges": [3, 6],
-    "is_deleted": true,
+    "full_name": "Renan Barbosa",
+    "username": "renan.barbosa8",
+    "headline": "Analista DevOps",
+    "address": "Belém, PA",
+    "email": "renan.barbosa8@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "USP",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev009",
-      "twitter": "https://twitter.com/dev009"
+      "linkedin": "https://linkedin.com/in/renan.barbosa8",
+      "github": "https://github.com/renan.barbosa8"
     },
-    "created_at": "2024-10-10 11:57:00"
+    "tech_skills": [
+      "JavaScript",
+      "Next.js",
+      "C#",
+      "AWS",
+      "React",
+      "Django"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Comunicação",
+      "Criatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Nebula#55Obsidian"
   },
   {
-    "email": "dev010@example.com",
-    "username": "devuser010",
-    "password": "Str0ngP@ss010!",
-    "full_name": "João Junqueira",
-    "stacks": [100, 115, 140],
-    "role": ["backend", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1050", "PRJ1051", "PRJ1052"],
-    "experience_level": 9,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Sofia Almeida",
+    "username": "sofia.almeida9",
+    "headline": "Programador DevOps",
+    "address": "Salvador, BA",
+    "email": "sofia.almeida9@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "FATEC",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev010",
-      "linkedin": "https://linkedin.com/in/dev010",
-      "instagram": "https://instagram.com/dev010"
+      "linkedin": "https://linkedin.com/in/sofia.almeida9",
+      "github": "https://github.com/sofia.almeida9"
     },
-    "created_at": "2024-10-11 12:10:00"
+    "tech_skills": [
+      "Node.js",
+      "AWS",
+      "Python",
+      "Tailwind",
+      "Flask",
+      "TypeScript"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Proatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Quantum!34Genesis"
   },
   {
-    "email": "dev011@example.com",
-    "username": "devuser011",
-    "password": "Str0ngP@ss011!",
-    "full_name": "Karen Klein",
-    "stacks": [100, 105],
-    "role": ["techlead", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1055", "PRJ1056", "PRJ1057", "PRJ1058"],
-    "experience_level": 0,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Henrique Santos",
+    "username": "henrique.santos10",
+    "headline": "Engenheiro DevOps",
+    "address": "Fortaleza, CE",
+    "email": "henrique.santos10@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "USP",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev011"
+      "linkedin": "https://linkedin.com/in/henrique.santos10",
+      "github": "https://github.com/henrique.santos10"
     },
-    "created_at": "2024-10-12 13:23:00"
+    "tech_skills": [
+      "Python",
+      "Docker",
+      "CSS",
+      "Node.js",
+      "Tailwind",
+      "React"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Criatividade",
+      "Proatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Quantum@52Nimbus"
   },
   {
-    "email": "dev012@example.com",
-    "username": "devuser012",
-    "password": "Str0ngP@ss012!",
-    "full_name": "Lucas Lima",
-    "stacks": [110, 120],
-    "role": ["architect", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1060"],
-    "experience_level": 2,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Renan Nogueira",
+    "username": "renan.nogueira11",
+    "headline": "Engenheiro Backend",
+    "address": "Fortaleza, CE",
+    "email": "renan.nogueira11@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "UFSC",
+        "completed_year": 2022,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev012",
-      "linkedin": "https://linkedin.com/in/dev012",
-      "twitter": "https://twitter.com/dev012"
+      "linkedin": "https://linkedin.com/in/renan.nogueira11",
+      "github": "https://github.com/renan.nogueira11"
     },
-    "created_at": "2024-10-13 14:36:00"
+    "tech_skills": [
+      "HTML",
+      "Java",
+      "AWS",
+      "TypeScript",
+      "JavaScript",
+      "Redis"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Trabalho em equipe",
+      "Organização"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "avançado"
+      }
+    ],
+    "password": "Astro%11Velocity"
   },
   {
-    "email": "dev013@example.com",
-    "username": "devuser013",
-    "password": "Str0ngP@ss013!",
-    "full_name": "Mariana Marques",
-    "stacks": [130, 135],
-    "role": ["backend", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1065", "PRJ1066"],
-    "experience_level": 4,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "Natália Teixeira",
+    "username": "natalia.teixeira12",
+    "headline": "Engenheiro DevOps",
+    "address": "Salvador, BA",
+    "email": "natalia.teixeira12@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFRJ",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev013"
+      "linkedin": "https://linkedin.com/in/natalia.teixeira12",
+      "github": "https://github.com/natalia.teixeira12"
     },
-    "created_at": "2024-10-14 15:49:00"
+    "tech_skills": [
+      "Python",
+      "Redis",
+      "Tailwind",
+      "PostgreSQL",
+      "Java",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Criatividade",
+      "Proatividade"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Hydra%40Specter"
   },
   {
-    "email": "dev014@example.com",
-    "username": "devuser014",
-    "password": "Str0ngP@ss014!",
-    "full_name": "Nicolas Nascimento",
-    "stacks": [140, 145],
-    "role": ["mobile", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1070", "PRJ1071", "PRJ1072"],
-    "experience_level": 6,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Luan Lopes",
+    "username": "luan.lopes13",
+    "headline": "Programador Frontend",
+    "address": "Salvador, BA",
+    "email": "luan.lopes13@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "Unicamp",
+        "completed_year": 2017,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev014",
-      "linkedin": "https://linkedin.com/in/dev014",
-      "portfolio": "https://dev014.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/luan.lopes13",
+      "github": "https://github.com/luan.lopes13"
     },
-    "created_at": "2024-10-15 09:02:00"
+    "tech_skills": [
+      "Next.js",
+      "PostgreSQL",
+      "CSS",
+      "Django",
+      "Kubernetes",
+      "Python"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Resolução de problemas",
+      "Trabalho em equipe"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Crimson#47Vertex"
   },
   {
-    "email": "dev015@example.com",
-    "username": "devuser015",
-    "password": "Str0ngP@ss015!",
-    "full_name": "Olivia Oliveira",
-    "stacks": [100, 130, 135],
-    "role": ["data", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1075", "PRJ1076", "PRJ1077", "PRJ1078"],
-    "experience_level": 8,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Letícia Martins",
+    "username": "leticia.martins14",
+    "headline": "Analista Frontend",
+    "address": "Manaus, AM",
+    "email": "leticia.martins14@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unicamp",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "BrightWeb",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev015",
-      "twitter": "https://twitter.com/dev015",
-      "instagram": "https://instagram.com/dev015"
+      "linkedin": "https://linkedin.com/in/leticia.martins14",
+      "github": "https://github.com/leticia.martins14"
     },
-    "created_at": "2024-10-16 10:15:00"
+    "tech_skills": [
+      "React",
+      "Java",
+      "TypeScript",
+      "Kubernetes",
+      "PostgreSQL",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Organização"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Eclipse-74Catalyst"
   },
   {
-    "email": "dev016@example.com",
-    "username": "devuser016",
-    "password": "Str0ngP@ss016!",
-    "full_name": "Paulo Pereira",
-    "stacks": [105, 120, 150],
-    "role": ["qa", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1080"],
-    "experience_level": 10,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Isabela Costa",
+    "username": "isabela.costa15",
+    "headline": "Analista DevOps",
+    "address": "São Paulo, SP",
+    "email": "isabela.costa15@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "Unip",
+        "completed_year": 2019,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev016",
-      "linkedin": "https://linkedin.com/in/dev016"
+      "linkedin": "https://linkedin.com/in/isabela.costa15",
+      "github": "https://github.com/isabela.costa15"
     },
-    "created_at": "2024-10-17 11:28:00"
+    "tech_skills": [
+      "MongoDB",
+      "Next.js",
+      "Tailwind",
+      "AWS",
+      "Flask",
+      "Django"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Celestial$35Nebula"
   },
   {
-    "email": "dev017@example.com",
-    "username": "devuser017",
-    "password": "Str0ngP@ss017!",
-    "full_name": "Queila Queiroz",
-    "stacks": [115, 135],
-    "role": ["game", "mobile"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1085", "PRJ1086"],
-    "experience_level": 1,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Daniel Lopes",
+    "username": "daniel.lopes16",
+    "headline": "Desenvolvedor Backend",
+    "address": "Recife, PE",
+    "email": "daniel.lopes16@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "UFSC",
+        "completed_year": 2019,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev017"
+      "linkedin": "https://linkedin.com/in/daniel.lopes16",
+      "github": "https://github.com/daniel.lopes16"
     },
-    "created_at": "2024-10-18 12:41:00"
+    "tech_skills": [
+      "HTML",
+      "Django",
+      "Flask",
+      "Redis",
+      "Java",
+      "MongoDB"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Trabalho em equipe",
+      "Criatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Cosmos-80Solstice"
   },
   {
-    "email": "dev018@example.com",
-    "username": "devuser018",
-    "password": "Str0ngP@ss018!",
-    "full_name": "Rafael Ramos",
-    "stacks": [120, 140],
-    "role": ["iot", "data"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1090", "PRJ1091", "PRJ1092"],
-    "experience_level": 3,
-    "badges": [5, 6],
-    "is_deleted": true,
+    "full_name": "Carolina Mendes",
+    "username": "carolina.mendes17",
+    "headline": "Desenvolvedor Frontend",
+    "address": "Belo Horizonte, MG",
+    "email": "carolina.mendes17@example.com",
+    "formation": [
+      {
+        "name": "Análise e Desenvolvimento de Sistemas",
+        "institution": "UFSC",
+        "completed_year": 2022,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev018",
-      "linkedin": "https://linkedin.com/in/dev018",
-      "twitter": "https://twitter.com/dev018"
+      "linkedin": "https://linkedin.com/in/carolina.mendes17",
+      "github": "https://github.com/carolina.mendes17"
     },
-    "created_at": "2024-10-19 13:54:00"
+    "tech_skills": [
+      "Next.js",
+      "Redis",
+      "SQL",
+      "Docker",
+      "PostgreSQL",
+      "Python"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Comunicação",
+      "Resolução de problemas"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Pulse%53Titan"
   },
   {
-    "email": "dev019@example.com",
-    "username": "devuser019",
-    "password": "Str0ngP@ss019!",
-    "full_name": "Sofia Silva",
-    "stacks": [125, 150],
-    "role": ["qa", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1095", "PRJ1096", "PRJ1097", "PRJ1098"],
-    "experience_level": 5,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Patrícia Souza",
+    "username": "patricia.souza18",
+    "headline": "Desenvolvedor Backend",
+    "address": "Belém, PA",
+    "email": "patricia.souza18@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "UFSC",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev019"
+      "linkedin": "https://linkedin.com/in/patricia.souza18",
+      "github": "https://github.com/patricia.souza18"
     },
-    "created_at": "2024-10-20 14:07:00"
+    "tech_skills": [
+      "JavaScript",
+      "Flask",
+      "Java",
+      "HTML",
+      "CSS",
+      "MongoDB"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Organização",
+      "Trabalho em equipe"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "avançado"
+      }
+    ],
+    "password": "Astro#24Specter"
   },
   {
-    "email": "dev020@example.com",
-    "username": "devuser020",
-    "password": "Str0ngP@ss020!",
-    "full_name": "Thiago Teixeira",
-    "stacks": [100, 115, 140],
-    "role": ["game", "techlead"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1100"],
-    "experience_level": 7,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "André Mendes",
+    "username": "andre.mendes19",
+    "headline": "Analista Frontend",
+    "address": "Salvador, BA",
+    "email": "andre.mendes19@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "UFRJ",
+        "completed_year": 2022,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev020",
-      "linkedin": "https://linkedin.com/in/dev020",
-      "instagram": "https://instagram.com/dev020"
+      "linkedin": "https://linkedin.com/in/andre.mendes19",
+      "github": "https://github.com/andre.mendes19"
     },
-    "created_at": "2024-10-21 15:20:00"
+    "tech_skills": [
+      "JavaScript",
+      "Django",
+      "Python",
+      "HTML",
+      "MongoDB",
+      "PostgreSQL"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Trabalho em equipe",
+      "Proatividade"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Solstice#29Aurora"
   },
   {
-    "email": "dev021@example.com",
-    "username": "devuser021",
-    "password": "Str0ngP@ss021!",
-    "full_name": "Ursula Uchoa",
-    "stacks": [100, 105],
-    "role": ["iot", "architect"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1105", "PRJ1106"],
-    "experience_level": 9,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Larissa Teixeira",
+    "username": "larissa.teixeira20",
+    "headline": "Programador Frontend",
+    "address": "Fortaleza, CE",
+    "email": "larissa.teixeira20@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unicamp",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev021",
-      "twitter": "https://twitter.com/dev021",
-      "portfolio": "https://dev021.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/larissa.teixeira20",
+      "github": "https://github.com/larissa.teixeira20"
     },
-    "created_at": "2024-10-22 09:33:00"
+    "tech_skills": [
+      "JavaScript",
+      "SQL",
+      "Node.js",
+      "Java",
+      "Python",
+      "Next.js"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Resolução de problemas",
+      "Criatividade"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Pulse#58Solstice"
   },
   {
-    "email": "dev022@example.com",
-    "username": "devuser022",
-    "password": "Str0ngP@ss022!",
-    "full_name": "Vitor Vieira",
-    "stacks": [110, 120],
-    "role": ["backend", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1110", "PRJ1111", "PRJ1112"],
-    "experience_level": 0,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Elaine Souza",
+    "username": "elaine.souza21",
+    "headline": "Analista Backend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "elaine.souza21@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unip",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "InovaTech",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev022",
-      "linkedin": "https://linkedin.com/in/dev022"
+      "linkedin": "https://linkedin.com/in/elaine.souza21",
+      "github": "https://github.com/elaine.souza21"
     },
-    "created_at": "2024-10-23 10:46:00"
+    "tech_skills": [
+      "Next.js",
+      "Node.js",
+      "Tailwind",
+      "PostgreSQL",
+      "Django",
+      "TypeScript"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Organização",
+      "Proatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Specter$86Mystic"
   },
   {
-    "email": "dev023@example.com",
-    "username": "devuser023",
-    "password": "Str0ngP@ss023!",
-    "full_name": "Wesley Wagner",
-    "stacks": [130, 135],
-    "role": ["techlead", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1115", "PRJ1116", "PRJ1117", "PRJ1118"],
-    "experience_level": 2,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Caio Nogueira",
+    "username": "caio.nogueira22",
+    "headline": "Analista Frontend",
+    "address": "Manaus, AM",
+    "email": "caio.nogueira22@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "Unicamp",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev023"
+      "linkedin": "https://linkedin.com/in/caio.nogueira22",
+      "github": "https://github.com/caio.nogueira22"
     },
-    "created_at": "2024-10-24 11:59:00"
+    "tech_skills": [
+      "HTML",
+      "Next.js",
+      "JavaScript",
+      "Node.js",
+      "Java",
+      "CSS"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Organização",
+      "Comunicação"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Genesis$63Mystic"
   },
   {
-    "email": "dev024@example.com",
-    "username": "devuser024",
-    "password": "Str0ngP@ss024!",
-    "full_name": "Ximena Xavier",
-    "stacks": [140, 145],
-    "role": ["architect", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1120"],
-    "experience_level": 4,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Matheus Mendes",
+    "username": "matheus.mendes23",
+    "headline": "Desenvolvedor Backend",
+    "address": "Curitiba, PR",
+    "email": "matheus.mendes23@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "PUC",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev024",
-      "linkedin": "https://linkedin.com/in/dev024",
-      "twitter": "https://twitter.com/dev024"
+      "linkedin": "https://linkedin.com/in/matheus.mendes23",
+      "github": "https://github.com/matheus.mendes23"
     },
-    "created_at": "2024-10-25 12:12:00"
+    "tech_skills": [
+      "C#",
+      "Kubernetes",
+      "SQL",
+      "Next.js",
+      "Tailwind",
+      "JavaScript"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Resolução de problemas",
+      "Criatividade"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Vortex+78Vector"
   },
   {
-    "email": "dev025@example.com",
-    "username": "devuser025",
-    "password": "Str0ngP@ss025!",
-    "full_name": "Yuri Yamada",
-    "stacks": [100, 130, 135],
-    "role": ["backend", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1125", "PRJ1126"],
-    "experience_level": 6,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Mariana Oliveira",
+    "username": "mariana.oliveira24",
+    "headline": "Analista DevOps",
+    "address": "Curitiba, PR",
+    "email": "mariana.oliveira24@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "Unicamp",
+        "completed_year": 2023,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev025",
-      "instagram": "https://instagram.com/dev025"
+      "linkedin": "https://linkedin.com/in/mariana.oliveira24",
+      "github": "https://github.com/mariana.oliveira24"
     },
-    "created_at": "2024-10-26 13:25:00"
+    "tech_skills": [
+      "Docker",
+      "SQL",
+      "C#",
+      "React",
+      "Next.js",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Organização",
+      "Trabalho em equipe"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Raptor&37Nimbus"
   },
   {
-    "email": "dev026@example.com",
-    "username": "devuser026",
-    "password": "Str0ngP@ss026!",
-    "full_name": "Zaira Zanetti",
-    "stacks": [105, 120, 150],
-    "role": ["mobile", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1130", "PRJ1131", "PRJ1132"],
-    "experience_level": 8,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Diego Ramos",
+    "username": "diego.ramos25",
+    "headline": "Desenvolvedor Backend",
+    "address": "Manaus, AM",
+    "email": "diego.ramos25@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "UFPR",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev026",
-      "linkedin": "https://linkedin.com/in/dev026"
+      "linkedin": "https://linkedin.com/in/diego.ramos25",
+      "github": "https://github.com/diego.ramos25"
     },
-    "created_at": "2024-10-27 14:38:00"
+    "tech_skills": [
+      "React",
+      "CSS",
+      "Flask",
+      "Docker",
+      "HTML",
+      "Redis"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Proatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Catalyst_96Glacier"
   },
   {
-    "email": "dev027@example.com",
-    "username": "devuser027",
-    "password": "Str0ngP@ss027!",
-    "full_name": "Alice Almeida",
-    "stacks": [115, 135],
-    "role": ["data", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1135", "PRJ1136", "PRJ1137", "PRJ1138"],
-    "experience_level": 10,
-    "badges": [0, 2, 4],
-    "is_deleted": true,
+    "full_name": "Yasmin Moreira",
+    "username": "yasmin.moreira26",
+    "headline": "Analista Frontend",
+    "address": "Manaus, AM",
+    "email": "yasmin.moreira26@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unip",
+        "completed_year": 2017,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev027",
-      "twitter": "https://twitter.com/dev027"
+      "linkedin": "https://linkedin.com/in/yasmin.moreira26",
+      "github": "https://github.com/yasmin.moreira26"
     },
-    "created_at": "2024-10-28 15:51:00"
+    "tech_skills": [
+      "SQL",
+      "TypeScript",
+      "Redis",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Trabalho em equipe",
+      "Proatividade"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Crimson@52Vertex"
   },
   {
-    "email": "dev028@example.com",
-    "username": "devuser028",
-    "password": "Str0ngP@ss028!",
-    "full_name": "Bruno Barbosa",
-    "stacks": [120, 140],
-    "role": ["qa", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1140"],
-    "experience_level": 1,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Felipe Oliveira",
+    "username": "felipe.oliveira27",
+    "headline": "Programador Backend",
+    "address": "Brasília, DF",
+    "email": "felipe.oliveira27@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "USP",
+        "completed_year": 2016,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev028",
-      "linkedin": "https://linkedin.com/in/dev028",
-      "portfolio": "https://dev028.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/felipe.oliveira27",
+      "github": "https://github.com/felipe.oliveira27"
     },
-    "created_at": "2024-10-29 09:04:00"
+    "tech_skills": [
+      "React",
+      "HTML",
+      "Redis",
+      "Node.js",
+      "Tailwind",
+      "Next.js"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Comunicação",
+      "Organização"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Velocity#15Phoenix"
   },
   {
-    "email": "dev029@example.com",
-    "username": "devuser029",
-    "password": "Str0ngP@ss029!",
-    "full_name": "Carla Cordeiro",
-    "stacks": [125, 150],
-    "role": ["game", "mobile"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1145", "PRJ1146"],
-    "experience_level": 3,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Patrícia Rocha",
+    "username": "patrícia.rocha28",
+    "headline": "Desenvolvedor Backend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "patrícia.rocha28@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "UFPR",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "SkySolutions",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev029"
+      "linkedin": "https://linkedin.com/in/patrícia.rocha28",
+      "github": "https://github.com/patrícia.rocha28"
     },
-    "created_at": "2024-10-30 10:17:00"
+    "tech_skills": [
+      "HTML",
+      "Flask",
+      "SQL",
+      "TypeScript",
+      "JavaScript",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Resolução de problemas",
+      "Comunicação"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Raptor#60Obsidian"
   },
   {
-    "email": "dev030@example.com",
-    "username": "devuser030",
-    "password": "Str0ngP@ss030!",
-    "full_name": "Diego Duarte",
-    "stacks": [100, 115, 140],
-    "role": ["iot", "data"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1150", "PRJ1151", "PRJ1152"],
-    "experience_level": 5,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Bianca Ferreira",
+    "username": "bianca.ferreira29",
+    "headline": "Engenheiro DevOps",
+    "address": "Belo Horizonte, MG",
+    "email": "bianca.ferreira29@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unicamp",
+        "completed_year": 2019,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev030",
-      "linkedin": "https://linkedin.com/in/dev030",
-      "twitter": "https://twitter.com/dev030",
-      "instagram": "https://instagram.com/dev030"
+      "linkedin": "https://linkedin.com/in/bianca.ferreira29",
+      "github": "https://github.com/bianca.ferreira29"
     },
-    "created_at": "2024-10-31 11:30:00"
+    "tech_skills": [
+      "Docker",
+      "Python",
+      "CSS",
+      "Node.js",
+      "Flask",
+      "SQL"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Comunicação"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Celestial)72Meteor"
   },
   {
-    "email": "dev031@example.com",
-    "username": "devuser031",
-    "password": "Str0ngP@ss031!",
-    "full_name": "Eduarda Esteves",
-    "stacks": [100, 105],
-    "role": ["qa", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1155", "PRJ1156", "PRJ1157", "PRJ1158"],
-    "experience_level": 7,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Cecília Ramos",
+    "username": "cecília.ramos30",
+    "headline": "Desenvolvedor Backend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "cecília.ramos30@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "Unip",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev031"
+      "linkedin": "https://linkedin.com/in/cecília.ramos30",
+      "github": "https://github.com/cecília.ramos30"
     },
-    "created_at": "2024-11-01 12:43:00"
+    "tech_skills": [
+      "Tailwind",
+      "SQL",
+      "Django",
+      "AWS",
+      "JavaScript",
+      "Docker"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Resolução de problemas",
+      "Organização"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Pulse@27Falcon"
   },
   {
-    "email": "dev032@example.com",
-    "username": "devuser032",
-    "password": "Str0ngP@ss032!",
-    "full_name": "Felipe Ferraz",
-    "stacks": [110, 120],
-    "role": ["game", "techlead"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1160"],
-    "experience_level": 9,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Renan Souza",
+    "username": "renan.souza31",
+    "headline": "Desenvolvedor Backend",
+    "address": "Salvador, BA",
+    "email": "renan.souza31@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "Unip",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev032",
-      "linkedin": "https://linkedin.com/in/dev032"
+      "linkedin": "https://linkedin.com/in/renan.souza31",
+      "github": "https://github.com/renan.souza31"
     },
-    "created_at": "2024-11-02 13:56:00"
+    "tech_skills": [
+      "Next.js",
+      "Java",
+      "AWS",
+      "Docker",
+      "Node.js",
+      "CSS"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Resolução de problemas",
+      "Proatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Vertex%31Echo"
   },
   {
-    "email": "dev033@example.com",
-    "username": "devuser033",
-    "password": "Str0ngP@ss033!",
-    "full_name": "Gabriela Gomes",
-    "stacks": [130, 135],
-    "role": ["iot", "architect"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1165", "PRJ1166"],
-    "experience_level": 0,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Paula Andrade",
+    "username": "paula.andrade32",
+    "headline": "Engenheiro DevOps",
+    "address": "Belém, PA",
+    "email": "paula.andrade32@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "Unip",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev033",
-      "twitter": "https://twitter.com/dev033"
+      "linkedin": "https://linkedin.com/in/paula.andrade32",
+      "github": "https://github.com/paula.andrade32"
     },
-    "created_at": "2024-11-03 14:09:00"
+    "tech_skills": [
+      "CSS",
+      "Kubernetes",
+      "Redis",
+      "C#",
+      "MongoDB",
+      "React"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Proatividade",
+      "Organização"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Genesis^24Crimson"
   },
   {
-    "email": "dev034@example.com",
-    "username": "devuser034",
-    "password": "Str0ngP@ss034!",
-    "full_name": "Henrique Henrique",
-    "stacks": [140, 145],
-    "role": ["backend", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1170", "PRJ1171", "PRJ1172"],
-    "experience_level": 2,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "Paula Lopes",
+    "username": "paula.lopes33",
+    "headline": "Desenvolvedor DevOps",
+    "address": "Recife, PE",
+    "email": "paula.lopes33@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "UFPR",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev034",
-      "linkedin": "https://linkedin.com/in/dev034"
+      "linkedin": "https://linkedin.com/in/paula.lopes33",
+      "github": "https://github.com/paula.lopes33"
     },
-    "created_at": "2024-11-04 15:22:00"
+    "tech_skills": [
+      "CSS",
+      "Python",
+      "C#",
+      "React",
+      "Redis",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "fluente"
+      }
+    ],
+    "password": "Velocity)51Specter"
   },
   {
-    "email": "dev035@example.com",
-    "username": "devuser035",
-    "password": "Str0ngP@ss035!",
-    "full_name": "Isabela Ibrahim",
-    "stacks": [100, 130, 135],
-    "role": ["techlead", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1175", "PRJ1176", "PRJ1177", "PRJ1178"],
-    "experience_level": 4,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Rafael Moreira",
+    "username": "rafael.moreira34",
+    "headline": "Programador Frontend",
+    "address": "São Paulo, SP",
+    "email": "rafael.moreira34@example.com",
+    "formation": [
+      {
+        "name": "Análise e Desenvolvimento de Sistemas",
+        "institution": "Unicamp",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "BrightWeb",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev035",
-      "instagram": "https://instagram.com/dev035",
-      "portfolio": "https://dev035.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/rafael.moreira34",
+      "github": "https://github.com/rafael.moreira34"
     },
-    "created_at": "2024-11-05 09:35:00"
+    "tech_skills": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "AWS",
+      "TypeScript",
+      "SQL"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Trabalho em equipe",
+      "Criatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Vertex!51Cosmos"
   },
   {
-    "email": "dev036@example.com",
-    "username": "devuser036",
-    "password": "Str0ngP@ss036!",
-    "full_name": "João Junqueira",
-    "stacks": [105, 120, 150],
-    "role": ["architect", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1180"],
-    "experience_level": 6,
-    "badges": [2, 3, 5],
-    "is_deleted": true,
+    "full_name": "Matheus Martins",
+    "username": "matheus.martins35",
+    "headline": "Analista Frontend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "matheus.martins35@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "Unicamp",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev036",
-      "linkedin": "https://linkedin.com/in/dev036",
-      "twitter": "https://twitter.com/dev036"
+      "linkedin": "https://linkedin.com/in/matheus.martins35",
+      "github": "https://github.com/matheus.martins35"
     },
-    "created_at": "2024-11-06 10:48:00"
+    "tech_skills": [
+      "SQL",
+      "CSS",
+      "HTML",
+      "MongoDB",
+      "Django",
+      "Docker"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Resolução de problemas",
+      "Organização"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Genesis@37Vortex"
   },
   {
-    "email": "dev037@example.com",
-    "username": "devuser037",
-    "password": "Str0ngP@ss037!",
-    "full_name": "Karen Klein",
-    "stacks": [115, 135],
-    "role": ["backend", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1185", "PRJ1186"],
-    "experience_level": 8,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Mariana Rocha",
+    "username": "mariana.rocha36",
+    "headline": "Analista Backend",
+    "address": "São Paulo, SP",
+    "email": "mariana.rocha36@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFRJ",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev037"
+      "linkedin": "https://linkedin.com/in/mariana.rocha36",
+      "github": "https://github.com/mariana.rocha36"
     },
-    "created_at": "2024-11-07 11:01:00"
+    "tech_skills": [
+      "Redis",
+      "Django",
+      "JavaScript",
+      "C#",
+      "Node.js",
+      "AWS"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Resolução de problemas",
+      "Proatividade"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Velocity!88Crimson"
   },
   {
-    "email": "dev038@example.com",
-    "username": "devuser038",
-    "password": "Str0ngP@ss038!",
-    "full_name": "Lucas Lima",
-    "stacks": [120, 140],
-    "role": ["mobile", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1190", "PRJ1191", "PRJ1192"],
-    "experience_level": 10,
-    "badges": [1, 2, 4],
-    "is_deleted": false,
+    "full_name": "Rafael Oliveira",
+    "username": "rafael.oliveira37",
+    "headline": "Desenvolvedor Backend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "rafael.oliveira37@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "UFRJ",
+        "completed_year": 2020,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechMind",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev038",
-      "linkedin": "https://linkedin.com/in/dev038"
+      "linkedin": "https://linkedin.com/in/rafael.oliveira37",
+      "github": "https://github.com/rafael.oliveira37"
     },
-    "created_at": "2024-11-08 12:14:00"
+    "tech_skills": [
+      "Django",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "C#",
+      "JavaScript"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Organização",
+      "Criatividade"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Celestial76Catalyst"
   },
   {
-    "email": "dev039@example.com",
-    "username": "devuser039",
-    "password": "Str0ngP@ss039!",
-    "full_name": "Mariana Marques",
-    "stacks": [125, 150],
-    "role": ["data", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1195", "PRJ1196", "PRJ1197", "PRJ1198"],
-    "experience_level": 1,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Bruno Moreira",
+    "username": "bruno.moreira38",
+    "headline": "Analista DevOps",
+    "address": "Recife, PE",
+    "email": "bruno.moreira38@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "PUC",
+        "completed_year": 2017,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev039",
-      "twitter": "https://twitter.com/dev039"
+      "linkedin": "https://linkedin.com/in/bruno.moreira38",
+      "github": "https://github.com/bruno.moreira38"
     },
-    "created_at": "2024-11-09 13:27:00"
+    "tech_skills": [
+      "Kubernetes",
+      "Node.js",
+      "Tailwind",
+      "Java",
+      "Next.js",
+      "PostgreSQL"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Trabalho em equipe",
+      "Resolução de problemas"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Mystic#62Meteor"
   },
   {
-    "email": "dev040@example.com",
-    "username": "devuser040",
-    "password": "Str0ngP@ss040!",
-    "full_name": "Nicolas Nascimento",
-    "stacks": [100, 115, 140],
-    "role": ["qa", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1200"],
-    "experience_level": 3,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Luan Ferreira",
+    "username": "luan.ferreira39",
+    "headline": "Programador Frontend",
+    "address": "Salvador, BA",
+    "email": "luan.ferreira39@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "UFSC",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "BrightWeb",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev040",
-      "linkedin": "https://linkedin.com/in/dev040",
-      "instagram": "https://instagram.com/dev040"
+      "linkedin": "https://linkedin.com/in/luan.ferreira39",
+      "github": "https://github.com/luan.ferreira39"
     },
-    "created_at": "2024-11-10 14:40:00"
+    "tech_skills": [
+      "TypeScript",
+      "Node.js",
+      "Docker",
+      "HTML",
+      "Java",
+      "C#"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Organização",
+      "Comunicação"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "avançado"
+      }
+    ],
+    "password": "Velocity(36Raptor"
   },
   {
-    "email": "dev041@example.com",
-    "username": "devuser041",
-    "password": "Str0ngP@ss041!",
-    "full_name": "Olivia Oliveira",
-    "stacks": [100, 105],
-    "role": ["game", "mobile"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1205", "PRJ1206"],
-    "experience_level": 5,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "Henrique Pires",
+    "username": "henrique.pires40",
+    "headline": "Programador Backend",
+    "address": "Manaus, AM",
+    "email": "henrique.pires40@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFSC",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev041"
+      "linkedin": "https://linkedin.com/in/henrique.pires40",
+      "github": "https://github.com/henrique.pires40"
     },
-    "created_at": "2024-11-11 15:53:00"
+    "tech_skills": [
+      "JavaScript",
+      "Flask",
+      "Docker",
+      "AWS",
+      "C#",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Organização",
+      "Comunicação",
+      "Trabalho em equipe"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Raptor&97Genesis"
   },
   {
-    "email": "dev042@example.com",
-    "username": "devuser042",
-    "password": "Str0ngP@ss042!",
-    "full_name": "Paulo Pereira",
-    "stacks": [110, 120],
-    "role": ["iot", "data"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1210", "PRJ1211", "PRJ1212"],
-    "experience_level": 7,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Yasmin Cardoso",
+    "username": "yasmin.cardoso41",
+    "headline": "Desenvolvedor DevOps",
+    "address": "Fortaleza, CE",
+    "email": "yasmin.cardoso41@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "PUC",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev042",
-      "linkedin": "https://linkedin.com/in/dev042",
-      "twitter": "https://twitter.com/dev042",
-      "portfolio": "https://dev042.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/yasmin.cardoso41",
+      "github": "https://github.com/yasmin.cardoso41"
     },
-    "created_at": "2024-11-12 09:06:00"
+    "tech_skills": [
+      "Java",
+      "Kubernetes",
+      "C#",
+      "Flask",
+      "Tailwind",
+      "AWS"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Criatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Solstice@69Eclipse"
   },
   {
-    "email": "dev043@example.com",
-    "username": "devuser043",
-    "password": "Str0ngP@ss043!",
-    "full_name": "Queila Queiroz",
-    "stacks": [130, 135],
-    "role": ["qa", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1215", "PRJ1216", "PRJ1217", "PRJ1218"],
-    "experience_level": 9,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Rodrigo Pires",
+    "username": "rodrigo.pires42",
+    "headline": "Engenheiro Frontend",
+    "address": "Rio de Janeiro, RJ",
+    "email": "rodrigo.pires42@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFSC",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev043"
+      "linkedin": "https://linkedin.com/in/rodrigo.pires42",
+      "github": "https://github.com/rodrigo.pires42"
     },
-    "created_at": "2024-11-13 10:19:00"
+    "tech_skills": [
+      "Node.js",
+      "React",
+      "PostgreSQL",
+      "JavaScript",
+      "Java",
+      "Kubernetes"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Organização",
+      "Comunicação"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "fluente"
+      }
+    ],
+    "password": "Aurora!26Falcon"
   },
   {
-    "email": "dev044@example.com",
-    "username": "devuser044",
-    "password": "Str0ngP@ss044!",
-    "full_name": "Rafael Ramos",
-    "stacks": [140, 145],
-    "role": ["game", "techlead"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1220"],
-    "experience_level": 0,
-    "badges": [3, 6],
-    "is_deleted": false,
+    "full_name": "Diego Oliveira",
+    "username": "diego.oliveira43",
+    "headline": "Programador DevOps",
+    "address": "Fortaleza, CE",
+    "email": "diego.oliveira43@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "UFPR",
+        "completed_year": 2016,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Frontend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev044",
-      "linkedin": "https://linkedin.com/in/dev044"
+      "linkedin": "https://linkedin.com/in/diego.oliveira43",
+      "github": "https://github.com/diego.oliveira43"
     },
-    "created_at": "2024-11-14 11:32:00"
+    "tech_skills": [
+      "MongoDB",
+      "Node.js",
+      "HTML",
+      "Docker",
+      "Redis",
+      "CSS"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Comunicação",
+      "Organização"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "intermediário"
+      }
+    ],
+    "password": "Nimbus^26Mirage"
   },
   {
-    "email": "dev045@example.com",
-    "username": "devuser045",
-    "password": "Str0ngP@ss045!",
-    "full_name": "Sofia Silva",
-    "stacks": [100, 130, 135],
-    "role": ["iot", "architect"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1225", "PRJ1226"],
-    "experience_level": 2,
-    "badges": [1, 2, 4],
-    "is_deleted": true,
+    "full_name": "Ícaro Andrade",
+    "username": "icaro.andrade44",
+    "headline": "Analista Frontend",
+    "address": "Belém, PA",
+    "email": "icaro.andrade44@example.com",
+    "formation": [
+      {
+        "name": "Sistemas da Informação",
+        "institution": "PUC",
+        "completed_year": 2019,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FutureCode",
+        "role": "Software Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev045",
-      "twitter": "https://twitter.com/dev045",
-      "instagram": "https://instagram.com/dev045"
+      "linkedin": "https://linkedin.com/in/icaro.andrade44",
+      "github": "https://github.com/icaro.andrade44"
     },
-    "created_at": "2024-11-15 12:45:00"
+    "tech_skills": [
+      "Node.js",
+      "React",
+      "Docker",
+      "Next.js",
+      "CSS",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Proatividade",
+      "Organização"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "intermediário-avançado"
+      }
+    ],
+    "password": "Vertex+53Vortex"
   },
   {
-    "email": "dev046@example.com",
-    "username": "devuser046",
-    "password": "Str0ngP@ss046!",
-    "full_name": "Thiago Teixeira",
-    "stacks": [105, 120, 150],
-    "role": ["backend", "ml"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1230", "PRJ1231", "PRJ1232"],
-    "experience_level": 4,
-    "badges": [5, 6],
-    "is_deleted": false,
+    "full_name": "Pedro Pires",
+    "username": "pedro.pires45",
+    "headline": "Programador DevOps",
+    "address": "São Paulo, SP",
+    "email": "pedro.pires45@example.com",
+    "formation": [
+      {
+        "name": "Análise e Desenvolvimento de Sistemas",
+        "institution": "FATEC",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev046",
-      "linkedin": "https://linkedin.com/in/dev046"
+      "linkedin": "https://linkedin.com/in/pedro.pires45",
+      "github": "https://github.com/pedro.pires45"
     },
-    "created_at": "2024-11-16 13:58:00"
+    "tech_skills": [
+      "HTML",
+      "Django",
+      "C#",
+      "TypeScript",
+      "Flask",
+      "CSS"
+    ],
+    "soft_skills": [
+      "Trabalho em equipe",
+      "Proatividade",
+      "Criatividade"
+    ],
+    "dev_level": "estagiário",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "avançado"
+      }
+    ],
+    "password": "Phoenix#50Glacier"
   },
   {
-    "email": "dev047@example.com",
-    "username": "devuser047",
-    "password": "Str0ngP@ss047!",
-    "full_name": "Ursula Uchoa",
-    "stacks": [115, 135],
-    "role": ["techlead", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1235", "PRJ1236", "PRJ1237", "PRJ1238"],
-    "experience_level": 6,
-    "badges": [1, 4, 6],
-    "is_deleted": false,
+    "full_name": "Helena Souza",
+    "username": "helena.souza46",
+    "headline": "Desenvolvedor Frontend",
+    "address": "Manaus, AM",
+    "email": "helena.souza46@example.com",
+    "formation": [
+      {
+        "name": "Engenharia de Software",
+        "institution": "UFRJ",
+        "completed_year": 2021,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DevNation",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev047"
+      "linkedin": "https://linkedin.com/in/helena.souza46",
+      "github": "https://github.com/helena.souza46"
     },
-    "created_at": "2024-11-17 14:11:00"
+    "tech_skills": [
+      "Flask",
+      "Python",
+      "Kubernetes",
+      "Java",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "soft_skills": [
+      "Proatividade",
+      "Criatividade",
+      "Resolução de problemas"
+    ],
+    "dev_level": "senior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Pulse$68Quantum"
   },
   {
-    "email": "dev048@example.com",
-    "username": "devuser048",
-    "password": "Str0ngP@ss048!",
-    "full_name": "Vitor Vieira",
-    "stacks": [120, 140],
-    "role": ["architect", "fullstack"],
-    "level": "senior",
-    "projects_subscribed": ["PRJ1240"],
-    "experience_level": 8,
-    "badges": [0, 2, 4],
-    "is_deleted": false,
+    "full_name": "Elaine Teixeira",
+    "username": "elaine.teixeira47",
+    "headline": "Analista Fullstack",
+    "address": "Manaus, AM",
+    "email": "elaine.teixeira47@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "Unicamp",
+        "completed_year": 2024,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Backend Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev048",
-      "linkedin": "https://linkedin.com/in/dev048",
-      "twitter": "https://twitter.com/dev048"
+      "linkedin": "https://linkedin.com/in/elaine.teixeira47",
+      "github": "https://github.com/elaine.teixeira47"
     },
-    "created_at": "2024-11-18 15:24:00"
+    "tech_skills": [
+      "Docker",
+      "TypeScript",
+      "Django",
+      "Next.js",
+      "AWS",
+      "Tailwind"
+    ],
+    "soft_skills": [
+      "Comunicação",
+      "Trabalho em equipe",
+      "Resolução de problemas"
+    ],
+    "dev_level": "junior",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Nebula$97Velocity"
   },
   {
-    "email": "dev049@example.com",
-    "username": "devuser049",
-    "password": "Str0ngP@ss049!",
-    "full_name": "Wesley Wagner",
-    "stacks": [125, 150],
-    "role": ["backend", "devops"],
-    "level": "junior",
-    "projects_subscribed": ["PRJ1245", "PRJ1246"],
-    "experience_level": 10,
-    "badges": [0, 1],
-    "is_deleted": false,
+    "full_name": "Eduarda Andrade",
+    "username": "eduarda.andrade48",
+    "headline": "Analista Backend",
+    "address": "Recife, PE",
+    "email": "eduarda.andrade48@example.com",
+    "formation": [
+      {
+        "name": "Tecnologia da Informação",
+        "institution": "USP",
+        "completed_year": 2016,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ByteLab",
+        "role": "Fullstack Developer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev049",
-      "portfolio": "https://dev049.portfolio.dev"
+      "linkedin": "https://linkedin.com/in/eduarda.andrade48",
+      "github": "https://github.com/eduarda.andrade48"
     },
-    "created_at": "2024-11-19 09:37:00"
+    "tech_skills": [
+      "Kubernetes",
+      "JavaScript",
+      "HTML",
+      "AWS",
+      "Next.js",
+      "TypeScript"
+    ],
+    "soft_skills": [
+      "Criatividade",
+      "Organização",
+      "Trabalho em equipe"
+    ],
+    "dev_level": "iniciante",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Francês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Specter&15Falcon"
   },
   {
-    "email": "dev050@example.com",
-    "username": "devuser050",
-    "password": "Str0ngP@ss050!",
-    "full_name": "Ximena Xavier",
-    "stacks": [100, 115, 140],
-    "role": ["mobile", "frontend"],
-    "level": "pleno",
-    "projects_subscribed": ["PRJ1250", "PRJ1251", "PRJ1252"],
-    "experience_level": 1,
-    "badges": [2, 3, 5],
-    "is_deleted": false,
+    "full_name": "Elaine Martins",
+    "username": "elaine.martins49",
+    "headline": "Desenvolvedor Frontend",
+    "address": "Curitiba, PR",
+    "email": "elaine.martins49@example.com",
+    "formation": [
+      {
+        "name": "Ciência da Computação",
+        "institution": "Unicamp",
+        "completed_year": 2018,
+        "description": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudBridge",
+        "role": "DevOps Engineer",
+        "begin": "2021-01-01",
+        "end": null,
+        "description": "Participação em projetos de tecnologia variados."
+      }
+    ],
     "social_medias": {
-      "github": "https://github.com/dev050",
-      "linkedin": "https://linkedin.com/in/dev050",
-      "instagram": "https://instagram.com/dev050"
+      "linkedin": "https://linkedin.com/in/elaine.martins49",
+      "github": "https://github.com/elaine.martins49"
     },
-    "created_at": "2024-11-20 10:50:00"
+    "tech_skills": [
+      "JavaScript",
+      "MongoDB",
+      "Java",
+      "Next.js",
+      "TypeScript",
+      "HTML"
+    ],
+    "soft_skills": [
+      "Resolução de problemas",
+      "Trabalho em equipe",
+      "Organização"
+    ],
+    "dev_level": "pleno",
+    "languages": [
+      {
+        "name": "Português",
+        "level": "fluente"
+      },
+      {
+        "name": "Inglês",
+        "level": "iniciante"
+      }
+    ],
+    "password": "Vortex)85Aurora"
   }
 ]

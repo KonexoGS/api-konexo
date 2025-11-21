@@ -4,7 +4,7 @@ from app.models.developers_model import *
 from app.enums import UserType, Roles, DeveloperLevel
 from app.service.user_service import UserService
 from app.service.auth_service import AuthService
-from fastapi import HTTPException
+from fastapi import HTTPException, UploadFile, File
 
 class DeveloperService(UserService):
     def __init__(self):
@@ -15,7 +15,7 @@ class DeveloperService(UserService):
         self.project_collection = super().get_collection_data(self.project_collection_name)
         self._auth_service = AuthService()
 
-    def insert_developer(self, user_response: DeveloperResponseModel, profile_photo: str = ""):
+    def insert_developer(self, user_response: DeveloperResponseModel, profile_photo: UploadFile = File(None)):
         new_user = UserModel(
             full_name=user_response.full_name,
             username=user_response.username,
@@ -23,7 +23,6 @@ class DeveloperService(UserService):
             password=self._auth_service.hash_password(user_response.password),
             headline=user_response.headline,
             address=user_response.address,
-            profile_photo=profile_photo,
             user_type=UserType.DEVELOPER.value,
             social_medias=user_response.social_medias
         )

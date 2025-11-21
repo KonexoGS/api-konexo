@@ -1,5 +1,5 @@
 from app.api.v1.routes import APIRouter
-from fastapi import HTTPException
+from fastapi import HTTPException, UploadFile, File
 from app.models.user_model import *
 from app.models.developers_model import *
 from app.service.developer_service import DeveloperService
@@ -33,3 +33,8 @@ def add_new_user(new_dev: DeveloperResponseModel):
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")
+
+
+@router.put('/{dev_id}/profile_photo', name="Adicione uma nova foto pro seu usuário", response_model=DevelopersModel)
+def add_profile_photo(file: UploadFile | None = File(None)):
+    pass
