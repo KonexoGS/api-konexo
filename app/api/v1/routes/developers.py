@@ -150,7 +150,7 @@ def add_profile_photo(dev_id: str, file: UploadFile):
             new_data={"profile_photo": file_name}
         )
 
-        path = Path('app/local/data')
+        path = Path('~/data').expanduser()
         path.mkdir(parents=True, exist_ok=True)
 
         file_location = path / file_name
