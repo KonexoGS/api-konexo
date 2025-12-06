@@ -51,5 +51,6 @@ class DeveloperService(UserService):
         return new_dev
 
 
-
-        
+    def is_developer_exist(self, dev_id: str) -> bool:
+        developer = super().find_by_id(self.dev_colection_name, dev_id);
+        return developer is not None

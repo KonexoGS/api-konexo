@@ -62,3 +62,8 @@ class LanguageLevel(str, Enum):
     ADVANCED_INTERMEDIATE = 'intermediário-avançado'
     ADVANCED = 'avançado'
     FLUENT = 'fluente'
+
+class ConnectionStatus(int, Enum):
+    WAITING = 0,
+    ACCEPTED = 1,
+    REJECTED = 2
