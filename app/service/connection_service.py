@@ -16,7 +16,7 @@ class ConnectionService(Database):
         self.default_collection_name: str = "connections"
         self.default_collection: Collection = super().get_collection_data(self.default_collection_name)
     
-    def get_connections(self, dev_id: str, conn_status: ConnectionStatus = ConnectionStatus.ACCEPTED) -> List[ShowConnectionsModel]:
+    def get_connections(self, dev_id: str, conn_status: ConnectionStatus) -> List[ShowConnectionsModel]:
         try:
             dev_connections = self.default_collection.aggregate([
                 {
@@ -40,9 +40,9 @@ class ConnectionService(Database):
                 result.append(ShowConnectionsModel(
                     username = default_user.username,
                     dev_id = dev_id,
-                    connected_username = source_user.username if default_user.user_id == source_user.user_id else target_user.username,
-                    connected_dev_id = source_user._id or "" if default_user.user_id == source_user.user_id else target_user._id or "",
-                    status = ConnectionStatus(connection["status"])
+                    connected_username = target_user.username if connection["source_dev_id"] == dev_id else source_user.username,
+                    connected_dev_id = target_user._id or "" if connection["source_dev_id"] == dev_id else source_user._id or "",
+                    status = conn_status.name
                 ))
             
             return result
@@ -71,7 +71,7 @@ class ConnectionService(Database):
                 is_created=connection_id != None,
                 conn_id=connection_id,
                 target_dev_id=dev_target_id,
-                current_status=ConnectionStatus(new_connection.status).name
+                current_status=ConnectionStatus.WAITING.name
             )
         except HTTPException:
             raise

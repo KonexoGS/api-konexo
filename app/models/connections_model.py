@@ -22,4 +22,4 @@ class ShowConnectionsModel(BaseModel):
     dev_id: str
     connected_username: str
     connected_dev_id: str
-    status: ConnectionStatus
+    status: str
