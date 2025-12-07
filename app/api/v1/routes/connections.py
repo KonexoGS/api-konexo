@@ -52,3 +52,36 @@ def create_connection(dev_source_id: str, dev_target_id: str, note: str | None =
     except Exception as e:
         print(format_exc())
         raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")   
+
+@router.patch("/accept", name="Aceite a conexão de um usuário solicitado", response_model=ConnectionResponseModel, status_code=status.HTTP_202_ACCEPTED)
+def accept_connection(connection_id: str):
+    try:
+        connection = _conn_service.find_by_id(_conn_service.default_collection_name, connection_id)
+        if not connection:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Não foi possível encontrar a conexão")
+        
+        if connection["status"] == ConnectionStatus.ACCEPTED.value:
+            raise HTTPException(status_code=status.HTTP_208_ALREADY_REPORTED, detail="Conexão já foi aceita")
+
+        connection["status"] = ConnectionStatus.ACCEPTED.value
+        _conn_service.update(
+            collection_name = _conn_service.default_collection_name,
+            new_data = connection,
+            old_data_id = connection_id
+        )
+
+        return ConnectionResponseModel(
+            is_created = connection is not None,
+            conn_id = connection_id,
+            target_dev_id = connection["target_dev_id"],
+            current_status = str(ConnectionStatus(connection["status"]).name),
+        )
+
+    except HTTPException:
+        raise
+    except ValueError as ex:
+        print(format_exc())
+        raise HTTPException(status_code=400, detail=str(ex))
+    except Exception as e:
+        print(format_exc())
+        raise HTTPException(status_code=500, detail="Ocorreu um erro inesperado durante a busca pelo projeto.")

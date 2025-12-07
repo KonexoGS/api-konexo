@@ -71,7 +71,7 @@ class ConnectionService(Database):
                 is_created=connection_id != None,
                 conn_id=connection_id,
                 target_dev_id=dev_target_id,
-                current_status=ConnectionStatus(new_connection.status) # type: ignore
+                current_status=ConnectionStatus(new_connection.status).name
             )
         except HTTPException:
             raise
