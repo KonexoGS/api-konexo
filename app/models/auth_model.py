@@ -7,3 +7,8 @@ class Token(BaseModel):
 
 class TokenData(Token):
     username: str
+    user_id: str
+
+class SimpleOAuthResponseForm(BaseModel):
+    username: str
+    password: str

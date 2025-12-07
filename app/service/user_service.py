@@ -20,7 +20,7 @@ class UserService(Database):
             raise Exception(f"Não foi possível adicionar o usuário {new_user_dict['user_type']}")
         return new_user_id
 
-    def find_user_by_login(self, user_email: str):
+    def find_user_by_login(self, user_email: str | None):
         if not isinstance(user_email, str):
             raise ValueError("O novo usuário deve ser do modelo UserModel")
         
