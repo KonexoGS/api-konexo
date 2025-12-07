@@ -1,12 +1,14 @@
 from app.core.session import Database
 from app.models.connections_model import *
+from app.service.developer_service import DeveloperService
 from app.models.developers_model import *
 from app.enums import ConnectionStatus
 from fastapi import HTTPException, status
-from typing import List
+from typing import List, Any
 from pymongo.collection import Collection
 from datetime import datetime
 
+_dev_service = DeveloperService()
 
 class ConnectionService(Database):
     def __init__(self):
@@ -14,9 +16,9 @@ class ConnectionService(Database):
         self.default_collection_name: str = "connections"
         self.default_collection: Collection = super().get_collection_data(self.default_collection_name)
     
-    def get_connections(self, dev_id: str, conn_status: ConnectionStatus = ConnectionStatus.ACCEPTED) -> List[ConnectionsModel]:
+    def get_connections(self, dev_id: str, conn_status: ConnectionStatus = ConnectionStatus.ACCEPTED) -> List[ShowConnectionsModel]:
         try:
-            dev_connections: List[ConnectionsModel] = self.default_collection.aggregate([
+            dev_connections = self.default_collection.aggregate([
                 {
                     "$match": {
                         "$or": [
@@ -28,7 +30,23 @@ class ConnectionService(Database):
                 }
             ]).to_list()
             
-            return dev_connections
+
+            result = []
+            default_user = _dev_service.find_user_by_dev_id(dev_id)
+            for connection in dev_connections:
+                source_user = _dev_service.find_user_by_dev_id(connection["source_dev_id"])
+                target_user = _dev_service.find_user_by_dev_id(connection["target_dev_id"])
+
+                result.append(ShowConnectionsModel(
+                    username = default_user.username,
+                    dev_id = dev_id,
+                    connected_username = source_user.username if default_user.user_id == source_user.user_id else target_user.username,
+                    connected_dev_id = source_user._id or "" if default_user.user_id == source_user.user_id else target_user._id or "",
+                    status = ConnectionStatus(connection["status"])
+                ))
+            
+            return result
+
         except HTTPException:
             raise
 

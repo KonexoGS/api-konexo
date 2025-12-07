@@ -1,6 +1,6 @@
 from app.api.v1.routes import APIRouter
 from app.service.developer_service import DeveloperService
-from app.service.connection_service import ConnectionService, ConnectionStatus, ConnectionResponseModel, ConnectionsModel
+from app.service.connection_service import *
 from fastapi import HTTPException, status
 from typing import List
 from traceback import format_exc
@@ -9,17 +9,17 @@ router = APIRouter()
 _dev_service = DeveloperService()
 _conn_service = ConnectionService()
 
-@router.get("/{dev_id}", name="Descubra com quem o usuário informado se conectou", response_model=List[ConnectionsModel], status_code=status.HTTP_200_OK)
+@router.get("/{dev_id}", name="Descubra com quem o usuário informado se conectou", response_model=List[ShowConnectionsModel], status_code=status.HTTP_200_OK)
 def get_connections_from_dev_id(dev_id: str):
     try:
         dev = _dev_service.find_by_id(_dev_service.dev_colection_name, dev_id)
         if not dev:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Não foi possivel encontrar o dev")
-        connection_accepted = _conn_service.get_connections(
+        connections_accepted = _conn_service.get_connections(
             dev_id=dev_id,
             conn_status=ConnectionStatus.ACCEPTED
         )
-        return connection_accepted
+        return connections_accepted
 
     except HTTPException:
         raise

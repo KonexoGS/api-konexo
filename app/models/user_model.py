@@ -16,6 +16,7 @@ class FormationModel(BaseModel):
     description: str | None = None
 
 class UserModel(BaseModel):
+    _id: str | None = None
     user_id: str = ""
     full_name: str
     username: str

@@ -4,7 +4,7 @@ from app.models.developers_model import *
 from app.enums import UserType
 from app.service.user_service import UserService
 from app.service.auth_service import AuthService
-from fastapi import HTTPException, UploadFile, File
+from fastapi import HTTPException, UploadFile, File, status
 
 class DeveloperService(UserService):
     def __init__(self):
@@ -51,5 +51,18 @@ class DeveloperService(UserService):
 
 
     def is_developer_exist(self, dev_id: str) -> bool:
-        developer = super().find_by_id(self.dev_colection_name, dev_id);
+        developer = super().find_by_id(self.dev_colection_name, dev_id)
         return developer is not None
+
+    def find_user_by_dev_id(self, dev_id: str) -> UserModel:
+        developer = super().find_by_id(self.dev_colection_name, dev_id)
+        if not developer:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Não foi possível encontrar o dev")
+        
+        user = super().find_by_id(self.user_collection_name, developer["user_id"])
+        if not user:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Não foi possível encontrar o usuário associado")
+
+        userModel = UserModel(**user)
+        userModel._id = str(user["_id"])
+        return userModel
