@@ -8,7 +8,6 @@ from app.service.user_service import UserService
 from app.service.project_service import ProjectService
 from app.api.v1.routes.user import get_all_users
 from traceback import format_exc
-from pydantic import Field
 from pathlib import Path
 from mimetypes import guess_type
 
@@ -78,7 +77,7 @@ def get_users_by_filter(username: str | None = None, name: str | None = None):
             filtered_data = _user_service.find_many_data_by_key(
                 collection_name=_user_service.user_collection_name,
                 key="full_name",
-                key_data=name
+                key_data=name or ""
             )
 
         
@@ -120,7 +119,7 @@ def get_users_by_filter(username: str | None = None, name: str | None = None):
 @router.post('/add', name='Adicione um dev desenvolvedor no sistema', response_model=DevelopersModel)
 def add_new_user(new_dev: DeveloperResponseModel):
     try:
-        new_dev = _dev_service.insert_developer(new_dev)
+        new_dev = _dev_service.insert_developer(user_response=new_dev) # type: ignore
         if not new_dev:
             raise HTTPException(status_code=400, detail="Não foi possível adicionar o usuário")
         
@@ -138,7 +137,7 @@ def add_new_user(new_dev: DeveloperResponseModel):
 @router.put('/{dev_id}/profile_photo', name="Adicione uma nova foto pro seu usuário", response_model=ProfilePhotoResponse)
 def add_profile_photo(dev_id: str, file: UploadFile):
     try:
-        file_name: str = file.filename
+        file_name: str = file.filename or ""
         physical_name = f"{dev_id}_{file_name}"
 
         if not file_name.endswith(('.jpg', '.png', '.jpeg')):
@@ -194,7 +193,7 @@ def get_profile_photo(dev_id: str):
             data_id=dev['user_id']
         )
 
-        filename = user.get("profile_photo")
+        filename = user.get("profile_photo") # type: ignore
         if not filename:
             raise HTTPException(status_code=404, detail="Usuário não possui nenhuma foto de perfil.")
 
