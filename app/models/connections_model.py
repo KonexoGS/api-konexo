@@ -1,15 +1,14 @@
-from typing import Annotated
+from typing import Literal
 from pydantic import BaseModel, Field
 from datetime import datetime
 from app.enums import ConnectionStatus
 
 class ConnectionsModel(BaseModel):
-    _id: str
     source_dev_id: str | None
     target_dev_id: str | None
-    note: str
-    status: int
-    created_on: datetime = Field(default_factory=datetime.now())
+    note: str | None = None
+    status: ConnectionStatus = ConnectionStatus.WAITING
+    created_on: datetime = Field(default_factory = datetime.now)
 
 
 class ConnectionResponseModel(BaseModel):
@@ -17,3 +16,10 @@ class ConnectionResponseModel(BaseModel):
     conn_id: str
     target_dev_id: str
     current_status: str
+
+class ShowConnectionsModel(BaseModel):
+    username: str
+    dev_id: str
+    connected_username: str
+    connected_dev_id: str
+    status: ConnectionStatus

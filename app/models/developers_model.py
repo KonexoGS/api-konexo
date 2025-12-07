@@ -16,7 +16,7 @@ class DevelopersModel(BaseModel):
     dev_id: str | None = None
     tech_skills: List[str]
     user_id: str
-    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER.value
+    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER
     soft_skills: List[str] = []
     languages: List[LanguageModel] = [LanguageModel(name="Português", level=LanguageLevel.FLUENT.value)]
     total_experience: int = 0
@@ -28,8 +28,7 @@ class DevelopersModel(BaseModel):
 class DeveloperUserModel(UserModel):
     dev_id: str | None = None
     tech_skills: List[str]
-    user_id: str
-    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER.value
+    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER
     soft_skills: List[str] = []
     languages: List[LanguageModel] = [LanguageModel(name="Português", level=LanguageLevel.FLUENT.value)]
     total_experience: int = 0
@@ -41,6 +40,6 @@ class DeveloperUserModel(UserModel):
 class DeveloperResponseModel(UserResponseModel):
     tech_skills: List[str]
     soft_skills: List[str] = []
-    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER.value
+    dev_level: DeveloperLevel = DeveloperLevel.BEGINNER
     languages: List[LanguageModel] = [LanguageModel(name="Português", level=LanguageLevel.FLUENT.value)]
 

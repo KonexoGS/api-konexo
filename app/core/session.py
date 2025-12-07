@@ -1,7 +1,7 @@
 from pymongo import MongoClient, ReturnDocument
 from pymongo.server_api import ServerApi
 from bson import ObjectId
-from app import db_connection, db_password
+from app import db_connection
 from typing import Dict, Any
 
 class Database():
@@ -82,7 +82,7 @@ class Database():
         old_data_id = self.validate_object_id(old_data_id)
 
         collection = self.get_collection_data(collection_name)
-        filter_query = {"_id": old_data_id}
+        filter_query: dict[str, Any] = {"_id": old_data_id}
         if collection_name in ['users', 'projects']:
             filter_query['is_deleted'] = False 
         updated_data = collection.find_one_and_update(
@@ -105,7 +105,7 @@ class Database():
         data_id = self.validate_object_id(data_id)
 
         collection = self.get_collection_data(collection_name)
-        filter_query = {"_id": data_id}
+        filter_query: dict[str, Any] = {"_id": data_id}
         if collection_name in ['users', 'projects']:
             filter_query['is_deleted'] = False
         result = collection.find_one(filter_query)
@@ -130,7 +130,7 @@ class Database():
 
         collection = self.get_collection_data(collection_name)
         
-        filter_query = {key: {"$regex": key_data, "$options": 'i'}}
+        filter_query: dict[str, Any] = {key: {"$regex": key_data, "$options": 'i'}}
         if collection_name in ['users', 'projects']:
             filter_query['is_deleted'] = False
         result = collection.find(filter_query)

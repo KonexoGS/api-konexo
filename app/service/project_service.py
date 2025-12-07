@@ -1,6 +1,6 @@
 from app.core.session import Database
 from bson import ObjectId
-from typing import Dict, List
+from typing import Dict, List, Any
 
 
 class ProjectService(Database):
@@ -85,7 +85,7 @@ class ProjectService(Database):
 
         return project
 
-    def insert_project(self, new_data: Dict[str, List[str]]):
+    def insert_project(self, new_data: Dict[str, Any]):
         try:
             dev_object_id = []
             for dev_id in new_data['developers_id']:

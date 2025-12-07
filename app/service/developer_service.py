@@ -1,7 +1,7 @@
 from app.core.session import Database
 from app.models.user_model import *
 from app.models.developers_model import *
-from app.enums import UserType, Roles, DeveloperLevel
+from app.enums import UserType
 from app.service.user_service import UserService
 from app.service.auth_service import AuthService
 from fastapi import HTTPException, UploadFile, File
@@ -37,7 +37,6 @@ class DeveloperService(UserService):
         new_dev = DevelopersModel(
             tech_skills=user_response.tech_skills,
             soft_skills=user_response.soft_skills,
-            experience=user_response.experience,
             dev_level=user_response.dev_level,
             languages=user_response.languages,
             user_id=new_user_id

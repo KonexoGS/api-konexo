@@ -30,7 +30,7 @@ class ProjectResponseModel(BaseModel):
     developers_id: List[str]
 
 class ProjectResponseSearchModel(ProjectResponseModel):
-    owner_name: str
+    owner_name: str | None
 
 class ProjectUpdateModel(BaseModel):
     project_name: Optional[str] = None

@@ -1,11 +1,11 @@
 from app.api.v1.routes import APIRouter
 from app.models.auth_model import TokenData
 from app.service.auth_service import AuthService
-from app.core.local_db import DatabaseLocal
-from fastapi import Depends, FastAPI, HTTPException, status
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi import Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordRequestForm
 from typing import Annotated
 from datetime import timedelta
+from traceback import format_exc
 
 router = APIRouter()
 
@@ -17,7 +17,7 @@ def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depen
         user = _auth_service.authenticate_user(form_data.username, form_data.password)
         if not user:
             raise HTTPException(
-                status_code=401,
+                status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Email ou senha estão incorretos",
                 headers={"WWW-Authenticate": "Bearer"},
             )

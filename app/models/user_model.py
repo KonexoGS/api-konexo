@@ -1,12 +1,12 @@
-from datetime import datetime
+from datetime import datetime, date
 from pydantic import BaseModel
 from typing import Dict, List
 
 class ExperienceModel(BaseModel):
     company: str
     role: str
-    begin: datetime = datetime.now().date()
-    end: datetime | str | None = None
+    begin: date = datetime.now().date()
+    end: date | str | None = None
     description: str | None = None
 
 class FormationModel(BaseModel):

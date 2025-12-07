@@ -2,13 +2,9 @@ from app.core.session import Database
 from app.models.connections_model import *
 from app.models.developers_model import *
 from app.enums import ConnectionStatus
-from app.service.user_service import UserService
-from app.service.auth_service import AuthService
-from fastapi import HTTPException, UploadFile, File, status
+from fastapi import HTTPException, status
 from typing import List
-from bson import ObjectId
 from pymongo.collection import Collection
-from pymongo.typings import _DocumentType
 from datetime import datetime
 
 
@@ -20,18 +16,23 @@ class ConnectionService(Database):
     
     def get_connections(self, dev_id: str, conn_status: ConnectionStatus = ConnectionStatus.ACCEPTED) -> List[ConnectionsModel]:
         try:
-            all_dev_connections: List[ConnectionsModel] = super().find_many_data_by_key(
-                collection_name=self.default_collection_name,
-                key="source_dev_id",
-                key_data=dev_id
-            )
-            dev_connections: List[ConnectionsModel] = self.default_collection.find({"status": conn_status.value}).to_list()
+            dev_connections: List[ConnectionsModel] = self.default_collection.aggregate([
+                {
+                    "$match": {
+                        "$or": [
+                            {"source_dev_id": dev_id},
+                            {"target_dev_id": dev_id}
+                        ],
+                        "status": conn_status.value
+                    }
+                }
+            ]).to_list()
             
             return dev_connections
         except HTTPException:
             raise
 
-    def create_connection(self, dev_source_id: str, dev_target_id: str, note: str) -> ConnectionResponseModel:
+    def create_connection(self, dev_source_id: str, dev_target_id: str, note: str | None) -> ConnectionResponseModel:
         try:
             if (self.already_connected(dev_source_id, dev_target_id)):
                 raise HTTPException(status_code=status.HTTP_302_FOUND, detail="Já existe uma conexão entre os usuários")
@@ -39,7 +40,7 @@ class ConnectionService(Database):
             new_connection = ConnectionsModel(
                 source_dev_id=dev_source_id,
                 target_dev_id=dev_target_id,
-                status=ConnectionStatus.WAITING.value,
+                status=ConnectionStatus.WAITING.value, # type: ignore
                 note=note,
                 created_on=datetime.now()
             )
@@ -52,7 +53,7 @@ class ConnectionService(Database):
                 is_created=connection_id != None,
                 conn_id=connection_id,
                 target_dev_id=dev_target_id,
-                current_status=ConnectionStatus(new_connection.status)
+                current_status=ConnectionStatus(new_connection.status) # type: ignore
             )
         except HTTPException:
             raise
@@ -60,7 +61,15 @@ class ConnectionService(Database):
 
     def already_connected(self, dev_source_id: str, dev_target_id: str) -> bool:
         connection = self.default_collection.find_one({
-            "source_dev_id": dev_source_id,
-            "target_dev_id": dev_target_id
+            "$or": [
+                {
+                    "source_dev_id": dev_source_id,
+                    "target_dev_id": dev_target_id
+                },
+                {
+                    "source_dev_id": dev_target_id,
+                    "target_dev_id": dev_source_id
+                }
+            ]
         })
         return connection is not None
